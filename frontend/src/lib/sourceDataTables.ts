@@ -1,0 +1,33791 @@
+export type SourceDataColumn = {
+  name: string;
+  type: string;
+  nullable: boolean;
+  primaryKey: boolean;
+  unique: boolean;
+  defaultValue: string;
+  sourceLine: string;
+};
+
+export type SourceDataTable = {
+  id: string;
+  sourceProject: string;
+  name: string;
+  displayName: string;
+  framework: string;
+  sourceFile: string;
+  columns: SourceDataColumn[];
+};
+
+export const sourceDataTables: SourceDataTable[] = [
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-ai-grief-support-chatbot-for-families-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_ai_grief_support_chatbot_for_families.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-ai-memorial-video-generation-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_ai_memorial_video_generation.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-ai-obituary-auto-generation-from-intake-form-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_ai_obituary_auto_generation_from_intake_form.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-ai-plot-grave-availability-optimization-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_ai_plot_grave_availability_optimization.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-ai-restoration-estimate-from-headstone-photos-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_ai_restoration_estimate_from_headstone_photos.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-funeral-home-coroner-system-integration-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_funeral_home_coroner_system_integration.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-gis-interactive-plot-map-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_gis_interactive_plot_map.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-payment-gateway-integration-for-pre-need-contra-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_payment_gateway_integration_for_pre_need_contra.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-public-facing-memorial-page-builder-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_public_facing_memorial_page_builder.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-webhook-outbound-api-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_no_webhook_outbound_api.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-gap-only-5-frontend-pages-despite-24-crud-entities-maj-js-gap-features",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "server/routes/gap_only_5_frontend_pages_despite_24_crud_entities_maj.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-cemetery-memorial-park-manager-server-routes-obituaries-js-obituaries",
+    "sourceProject": "AICemeteryMemorialParkManager",
+    "name": "obituaries",
+    "displayName": "Obituaries",
+    "framework": "Sequelize",
+    "sourceFile": "server/routes/obituaries.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "id: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-ab-tests-js-ab-test-results",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "ab_test_results",
+    "displayName": "Ab Test Results",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/abTests.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "test_id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "test_id INTEGER NOT NULL"
+      },
+      {
+        "name": "variant",
+        "type": "CHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "variant CHAR(1) NOT NULL CHECK (variant IN ('A', 'B'))"
+      },
+      {
+        "name": "conversation_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "conversation_id INTEGER"
+      },
+      {
+        "name": "resolved",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "resolved BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "satisfaction_score",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "satisfaction_score NUMERIC(3,2)"
+      },
+      {
+        "name": "turns_to_resolution",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "turns_to_resolution INTEGER"
+      },
+      {
+        "name": "user_feedback",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_feedback TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-ab-tests-js-ab-tests",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "ab_tests",
+    "displayName": "Ab Tests",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/abTests.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "intent_trigger",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "intent_trigger VARCHAR(255)"
+      },
+      {
+        "name": "variant_a",
+        "type": "JSONB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "variant_a JSONB NOT NULL DEFAULT '{}'"
+      },
+      {
+        "name": "variant_b",
+        "type": "JSONB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "variant_b JSONB NOT NULL DEFAULT '{}'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "traffic_split_pct",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "50",
+        "sourceLine": "traffic_split_pct INTEGER DEFAULT 50"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-analytics",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "analytics",
+    "displayName": "Analytics",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event_type VARCHAR(100)"
+      },
+      {
+        "name": "event_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "event_data JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "channel",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "channel VARCHAR(50)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-api-keys",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "api_keys",
+    "displayName": "API Keys",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "key_prefix",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "key_prefix VARCHAR(20) NOT NULL"
+      },
+      {
+        "name": "key_hash",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "key_hash VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "permissions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[\"read\"]'",
+        "sourceLine": "permissions JSONB DEFAULT '[\"read\"]'"
+      },
+      {
+        "name": "last_used",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_used TIMESTAMP"
+      },
+      {
+        "name": "expires_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expires_at TIMESTAMP"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-audit-logs",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "audit_logs",
+    "displayName": "Audit Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "user_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_name VARCHAR(255)"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "resource_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "resource_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_id INTEGER"
+      },
+      {
+        "name": "resource_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_name VARCHAR(255)"
+      },
+      {
+        "name": "details",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "details JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "ip_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ip_address VARCHAR(50)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-broadcasts",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "broadcasts",
+    "displayName": "Broadcasts",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "message",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "message TEXT NOT NULL"
+      },
+      {
+        "name": "channel",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'web'",
+        "sourceLine": "channel VARCHAR(50) DEFAULT 'web'"
+      },
+      {
+        "name": "target_segment",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "target_segment JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "scheduled_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "scheduled_at TIMESTAMP"
+      },
+      {
+        "name": "sent_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sent_at TIMESTAMP"
+      },
+      {
+        "name": "recipients_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "recipients_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "delivered_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "delivered_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "opened_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "opened_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'draft'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-channels",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "channels",
+    "displayName": "Channels",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'inactive'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'inactive'"
+      },
+      {
+        "name": "messages_sent",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "messages_sent INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-chatbots",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "chatbots",
+    "displayName": "Chatbots",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'draft'"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'en'",
+        "sourceLine": "language VARCHAR(50) DEFAULT 'en'"
+      },
+      {
+        "name": "avatar",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avatar VARCHAR(255)"
+      },
+      {
+        "name": "welcome_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Hello!",
+        "sourceLine": "welcome_message TEXT DEFAULT 'Hello! How can I help you today?'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-contacts",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "contacts",
+    "displayName": "Contacts",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255)"
+      },
+      {
+        "name": "phone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "phone VARCHAR(50)"
+      },
+      {
+        "name": "channel",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'web'",
+        "sourceLine": "channel VARCHAR(50) DEFAULT 'web'"
+      },
+      {
+        "name": "tags",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "tags JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "custom_fields",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "custom_fields JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "conversations_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "conversations_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "last_seen",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "last_seen TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-conversations",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "conversations",
+    "displayName": "Conversations",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "channel",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'web'",
+        "sourceLine": "channel VARCHAR(50) DEFAULT 'web'"
+      },
+      {
+        "name": "visitor_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "visitor_name VARCHAR(255)"
+      },
+      {
+        "name": "visitor_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "visitor_email VARCHAR(255)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "messages_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "messages_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "satisfaction_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "satisfaction_score DECIMAL(3,2)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-deployments",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "deployments",
+    "displayName": "Deployments",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "environment",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'staging'",
+        "sourceLine": "environment VARCHAR(50) DEFAULT 'staging'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'pending'"
+      },
+      {
+        "name": "deployed_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployed_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "changes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "changes TEXT"
+      },
+      {
+        "name": "rollback_version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "rollback_version VARCHAR(50)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "deployed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployed_at TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-entities",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "entities",
+    "displayName": "Entities",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(100)"
+      },
+      {
+        "name": "values",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "values JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-flows",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "flows",
+    "displayName": "Flows",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "nodes",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "nodes JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "edges",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "edges JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "is_active",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_active BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-forms",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "forms",
+    "displayName": "Forms",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "fields",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "fields JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "submissions_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "submissions_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-ai-conversation-quality-scoring-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_conversation_quality_scoring.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-ai-multi-bot-orchestration-router-agent-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_multi_bot_orchestration_router_agent.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-ai-self-improving-flow-optimizer-based-on-outco-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_self_improving_flow_optimizer_based_on_outco.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-ai-voice-ivr-channel-support-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_voice_ivr_channel_support.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-conversation-design-version-control-branching-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_conversation_design_version_control_branching.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-live-chat-takeover-ui-for-human-agents-channels-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_live_chat_takeover_ui_for_human_agents_channels.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-marketplace-for-community-contributed-flows-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_marketplace_for_community_contributed_flows.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-multi-language-flow-translation-tooling-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_multi_language_flow_translation_tooling.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-no-sdk-embed-code-generator-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_sdk_embed_code_generator.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-gap-only-7-mounted-ai-endpoints-for-33-routes-feature-js-gap-features",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_only_7_mounted_ai_endpoints_for_33_routes_feature_.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-routes-intents-js-intent-feedback",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "intent_feedback",
+    "displayName": "Intent Feedback",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/intents.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "intent_id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "intent_id INTEGER NOT NULL"
+      },
+      {
+        "name": "was_correct",
+        "type": "BOOLEAN",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "was_correct BOOLEAN NOT NULL"
+      },
+      {
+        "name": "user_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_message TEXT"
+      },
+      {
+        "name": "matched_response",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "matched_response TEXT"
+      },
+      {
+        "name": "submitted_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "submitted_by INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-intents",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "intents",
+    "displayName": "Intents",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "examples",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "examples JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "confidence_threshold",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0.70",
+        "sourceLine": "confidence_threshold DECIMAL(3,2) DEFAULT 0.70"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-knowledge-bases",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "knowledge_bases",
+    "displayName": "Knowledge Bases",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'document'",
+        "sourceLine": "type VARCHAR(50) DEFAULT 'document'"
+      },
+      {
+        "name": "content",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content TEXT"
+      },
+      {
+        "name": "file_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_url VARCHAR(500)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "chunks_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "chunks_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-media",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "media",
+    "displayName": "Media",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "file_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "mime_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mime_type VARCHAR(100)"
+      },
+      {
+        "name": "file_size",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "file_size INTEGER DEFAULT 0"
+      },
+      {
+        "name": "url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url VARCHAR(500)"
+      },
+      {
+        "name": "thumbnail_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "thumbnail_url VARCHAR(500)"
+      },
+      {
+        "name": "folder",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'general'",
+        "sourceLine": "folder VARCHAR(255) DEFAULT 'general'"
+      },
+      {
+        "name": "tags",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "tags JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-messages",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "messages",
+    "displayName": "Messages",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "conversation_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "conversation_id INTEGER REFERENCES conversations(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "content",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content TEXT NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-plugins",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "plugins",
+    "displayName": "Plugins",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "icon",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "icon VARCHAR(100)"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100)"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'1.0.0'",
+        "sourceLine": "version VARCHAR(20) DEFAULT '1.0.0'"
+      },
+      {
+        "name": "author",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "author VARCHAR(255)"
+      },
+      {
+        "name": "config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'inactive'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'inactive'"
+      },
+      {
+        "name": "installed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "installed_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-quick-replies",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "quick_replies",
+    "displayName": "Quick Replies",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "text",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "text VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'text'",
+        "sourceLine": "type VARCHAR(50) DEFAULT 'text'"
+      },
+      {
+        "name": "payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "payload JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100)"
+      },
+      {
+        "name": "sort_order",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "sort_order INTEGER DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-responses",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "responses",
+    "displayName": "Responses",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "intent",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "intent VARCHAR(255)"
+      },
+      {
+        "name": "content",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content TEXT NOT NULL"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'text'",
+        "sourceLine": "type VARCHAR(50) DEFAULT 'text'"
+      },
+      {
+        "name": "variations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "variations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-settings",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "settings",
+    "displayName": "Settings",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "value",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "value JSONB"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-tags",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "tags",
+    "displayName": "Tags",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "color",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'#4F46E5'",
+        "sourceLine": "color VARCHAR(20) DEFAULT '#4F46E5'"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'general'",
+        "sourceLine": "category VARCHAR(100) DEFAULT 'general'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "usage_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "usage_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-templates",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "templates",
+    "displayName": "Templates",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100)"
+      },
+      {
+        "name": "flow_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "flow_data JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "popularity",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "popularity INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-training-data",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "training_data",
+    "displayName": "Training Data",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "input_text",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_text TEXT NOT NULL"
+      },
+      {
+        "name": "expected_intent",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expected_intent VARCHAR(255)"
+      },
+      {
+        "name": "expected_entities",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "expected_entities JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "verified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "verified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-users",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'user'",
+        "sourceLine": "role VARCHAR(50) DEFAULT 'user'"
+      },
+      {
+        "name": "avatar",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avatar VARCHAR(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-chatbot-builder-backend-seed-js-webhooks",
+    "sourceProject": "AIChatbotBuilder",
+    "name": "webhooks",
+    "displayName": "Webhooks",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "chatbot_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chatbot_id INTEGER REFERENCES chatbots(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "url",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'POST'",
+        "sourceLine": "method VARCHAR(10) DEFAULT 'POST'"
+      },
+      {
+        "name": "headers",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "headers JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "events",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "events JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "last_triggered",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_triggered TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-table",
+    "sourceProject": "AICodeInterpreter",
+    "name": "${TABLE}",
+    "displayName": "${TABLE}",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True)"
+      },
+      {
+        "name": "name",
+        "type": "String(255",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name = Column(String(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "datetime.utcnow",
+        "sourceLine": "created_at = Column(DateTime, default=datetime.utcnow)"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-code-reviews",
+    "sourceProject": "AICodeInterpreter",
+    "name": "code_reviews",
+    "displayName": "Code Reviews",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code TEXT"
+      },
+      {
+        "name": "review_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'full'",
+        "sourceLine": "review_type VARCHAR(50) DEFAULT 'full'"
+      },
+      {
+        "name": "score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "score INTEGER DEFAULT 0"
+      },
+      {
+        "name": "grade",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grade VARCHAR(10)"
+      },
+      {
+        "name": "summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "summary TEXT"
+      },
+      {
+        "name": "issues",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "issues JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "suggestions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "suggestions JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-code-snippets",
+    "sourceProject": "AICodeInterpreter",
+    "name": "code_snippets",
+    "displayName": "Code Snippets",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'python'",
+        "sourceLine": "language VARCHAR(50) DEFAULT 'python'"
+      },
+      {
+        "name": "code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code TEXT"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "tags",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tags TEXT"
+      },
+      {
+        "name": "is_public",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_public BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "run_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "run_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "metadata",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "metadata JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-code-templates",
+    "sourceProject": "AICodeInterpreter",
+    "name": "code_templates",
+    "displayName": "Code Templates",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'python'",
+        "sourceLine": "language VARCHAR(50) DEFAULT 'python'"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code TEXT"
+      },
+      {
+        "name": "variables",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "variables JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "usage_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "usage_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "is_public",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "is_public BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-collaborators",
+    "sourceProject": "AICodeInterpreter",
+    "name": "collaborators",
+    "displayName": "Collaborators",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "notebook_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notebook_id INTEGER"
+      },
+      {
+        "name": "user_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_email VARCHAR(255)"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'viewer'",
+        "sourceLine": "role VARCHAR(50) DEFAULT 'viewer'"
+      },
+      {
+        "name": "permissions",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'view'",
+        "sourceLine": "permissions VARCHAR(200) DEFAULT 'view'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "invited_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "invited_by VARCHAR(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-conversation-messages",
+    "sourceProject": "AICodeInterpreter",
+    "name": "conversation_messages",
+    "displayName": "Conversation Messages",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "conversation_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "conversation_id INTEGER REFERENCES conversations(id)"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role VARCHAR(50)"
+      },
+      {
+        "name": "content",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-conversations",
+    "sourceProject": "AICodeInterpreter",
+    "name": "conversations",
+    "displayName": "Conversations",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500)"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-custom-views-js-custom-views-config",
+    "sourceProject": "AICodeInterpreter",
+    "name": "custom_views_config",
+    "displayName": "Custom Views Config",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/customViews.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "value",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'::jsonb",
+        "sourceLine": "value JSONB DEFAULT '{}'::jsonb"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-datasets",
+    "sourceProject": "AICodeInterpreter",
+    "name": "datasets",
+    "displayName": "Datasets",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "format",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'csv'",
+        "sourceLine": "format VARCHAR(50) DEFAULT 'csv'"
+      },
+      {
+        "name": "size",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "size VARCHAR(50)"
+      },
+      {
+        "name": "row_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "row_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "column_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "column_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "schema_def",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "schema_def JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "sample_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "sample_data JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "source",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source VARCHAR(500)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-environments",
+    "sourceProject": "AICodeInterpreter",
+    "name": "environments",
+    "displayName": "Environments",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "runtime",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "runtime VARCHAR(100)"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(50)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "packages",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "packages JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "env_vars",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "env_vars JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "memory_limit",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'512MB'",
+        "sourceLine": "memory_limit VARCHAR(50) DEFAULT '512MB'"
+      },
+      {
+        "name": "timeout_seconds",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "30",
+        "sourceLine": "timeout_seconds INTEGER DEFAULT 30"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-execution-history",
+    "sourceProject": "AICodeInterpreter",
+    "name": "execution_history",
+    "displayName": "Execution History",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "snippet_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "snippet_id INTEGER"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "code_preview",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_preview VARCHAR(500)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "execution_time_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "execution_time_ms INTEGER DEFAULT 0"
+      },
+      {
+        "name": "exit_code",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "exit_code INTEGER DEFAULT 0"
+      },
+      {
+        "name": "triggered_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'manual'",
+        "sourceLine": "triggered_by VARCHAR(100) DEFAULT 'manual'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-execution-logs",
+    "sourceProject": "AICodeInterpreter",
+    "name": "execution_logs",
+    "displayName": "Execution Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "execution_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "execution_id INTEGER"
+      },
+      {
+        "name": "level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'info'",
+        "sourceLine": "level VARCHAR(20) DEFAULT 'info'"
+      },
+      {
+        "name": "message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "message TEXT"
+      },
+      {
+        "name": "source",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source VARCHAR(100)"
+      },
+      {
+        "name": "line_number",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "line_number INTEGER"
+      },
+      {
+        "name": "timestamp_ms",
+        "type": "BIGINT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "timestamp_ms BIGINT"
+      },
+      {
+        "name": "metadata",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "metadata JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-executions",
+    "sourceProject": "AICodeInterpreter",
+    "name": "executions",
+    "displayName": "Executions",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "snippet_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "snippet_id INTEGER"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'python'",
+        "sourceLine": "language VARCHAR(50) DEFAULT 'python'"
+      },
+      {
+        "name": "code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "exit_code",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "exit_code INTEGER DEFAULT 0"
+      },
+      {
+        "name": "stdout",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stdout TEXT"
+      },
+      {
+        "name": "stderr",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stderr TEXT"
+      },
+      {
+        "name": "execution_time_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "execution_time_ms INTEGER DEFAULT 0"
+      },
+      {
+        "name": "memory_used_mb",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "memory_used_mb NUMERIC(10,2) DEFAULT 0"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "output JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "environment",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "environment JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-ai-agentic-notebook-write-run-fix-loop-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_agentic_notebook_write_run_fix_loop.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-ai-auto-eda-dataset-profiler-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_auto_eda_dataset_profiler.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-ai-chart-recommendation-from-data-shape-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_chart_recommendation_from_data_shape.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-ai-privacy-pii-scanner-over-datasets-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ai_privacy_pii_scanner_over_datasets.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-ci-cd-or-scheduled-job-trigger-orchestration-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_ci_cd_or_scheduled_job_trigger_orchestration.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-export-reporting-pdf-html-notebook-export-endpo-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_export_reporting_pdf_html_notebook_export_endpo.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-gpu-accelerator-quota-billing-ui-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_gpu_accelerator_quota_billing_ui.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-no-real-time-collaborative-cursors-presence-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_real_time_collaborative_cursors_presence.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-notification-routes-exist-but-no-email-slack-deliv-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_notification_routes_exist_but_no_email_slack_deliv.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-routes-gap-only-6-frontend-pages-despite-20-backend-routes-ui-js-gap-features",
+    "sourceProject": "AICodeInterpreter",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_only_6_frontend_pages_despite_20_backend_routes_ui.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-notebooks",
+    "sourceProject": "AICodeInterpreter",
+    "name": "notebooks",
+    "displayName": "Notebooks",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'python'",
+        "sourceLine": "language VARCHAR(50) DEFAULT 'python'"
+      },
+      {
+        "name": "cell_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "cell_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "cells",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "cells JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "tags",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tags TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-packages",
+    "sourceProject": "AICodeInterpreter",
+    "name": "packages",
+    "displayName": "Packages",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(50)"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'python'",
+        "sourceLine": "language VARCHAR(50) DEFAULT 'python'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "install_command",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "install_command VARCHAR(500)"
+      },
+      {
+        "name": "homepage",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "homepage VARCHAR(500)"
+      },
+      {
+        "name": "license",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "license VARCHAR(100)"
+      },
+      {
+        "name": "downloads",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "downloads INTEGER DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'installed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'installed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-secrets",
+    "sourceProject": "AICodeInterpreter",
+    "name": "secrets",
+    "displayName": "Secrets",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "secret_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'api_key'",
+        "sourceLine": "secret_type VARCHAR(50) DEFAULT 'api_key'"
+      },
+      {
+        "name": "masked_value",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "masked_value VARCHAR(100)"
+      },
+      {
+        "name": "environment",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'all'",
+        "sourceLine": "environment VARCHAR(100) DEFAULT 'all'"
+      },
+      {
+        "name": "last_used",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_used TIMESTAMP"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-settings",
+    "sourceProject": "AICodeInterpreter",
+    "name": "settings",
+    "displayName": "Settings",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "value",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "value TEXT"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'general'",
+        "sourceLine": "category VARCHAR(100) DEFAULT 'general'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-users",
+    "sourceProject": "AICodeInterpreter",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Admin'",
+        "sourceLine": "name VARCHAR(255) DEFAULT 'Admin'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-interpreter-backend-seeds-seed-js-visualizations",
+    "sourceProject": "AICodeInterpreter",
+    "name": "visualizations",
+    "displayName": "Visualizations",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "viz_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "viz_type VARCHAR(50)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code TEXT"
+      },
+      {
+        "name": "config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "data_source",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "data_source JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "library",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'matplotlib'",
+        "sourceLine": "library VARCHAR(100) DEFAULT 'matplotlib'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-api-docs",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "api_docs",
+    "displayName": "API Docs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "endpoint",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "endpoint VARCHAR(255)"
+      },
+      {
+        "name": "method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "method VARCHAR(10)"
+      },
+      {
+        "name": "request_body",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "request_body TEXT"
+      },
+      {
+        "name": "response_body",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response_body TEXT"
+      },
+      {
+        "name": "generated_docs",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_docs TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-api-keys",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "api_keys",
+    "displayName": "API Keys",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "key_hash",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "key_hash VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "last_used_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_used_at TIMESTAMP"
+      },
+      {
+        "name": "expires_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expires_at TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-architecture-reviews",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "architecture_reviews",
+    "displayName": "Architecture Reviews",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "architecture_diagram",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "architecture_diagram TEXT"
+      },
+      {
+        "name": "tech_stack",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tech_stack TEXT"
+      },
+      {
+        "name": "system_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "system_type VARCHAR(100)"
+      },
+      {
+        "name": "review_result",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_result TEXT"
+      },
+      {
+        "name": "recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recommendations JSONB"
+      },
+      {
+        "name": "scalability_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "scalability_score INTEGER"
+      },
+      {
+        "name": "maintainability_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "maintainability_score INTEGER"
+      },
+      {
+        "name": "security_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "security_score INTEGER"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-audit-logs",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "audit_logs",
+    "displayName": "Audit Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "user_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_email VARCHAR(255)"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "resource_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_type VARCHAR(100)"
+      },
+      {
+        "name": "resource_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_id VARCHAR(100)"
+      },
+      {
+        "name": "details",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "details JSONB"
+      },
+      {
+        "name": "ip_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ip_address VARCHAR(45)"
+      },
+      {
+        "name": "user_agent",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_agent TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-custom-views-js-auto-tag-rules",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "auto_tag_rules",
+    "displayName": "Auto Tag Rules",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/customViews.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "file_pattern",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_pattern VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "label",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "label VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "priority",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "priority INTEGER DEFAULT 0"
+      },
+      {
+        "name": "enabled",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "TRUE",
+        "sourceLine": "enabled BOOLEAN DEFAULT TRUE"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-bug-predictions",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "bug_predictions",
+    "displayName": "Bug Predictions",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "predicted_bugs",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "predicted_bugs TEXT"
+      },
+      {
+        "name": "bug_probability",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bug_probability INTEGER"
+      },
+      {
+        "name": "risk_areas",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_areas JSONB"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-code-analysis",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "code_analysis",
+    "displayName": "Code Analysis",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "complexity_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "complexity_score INTEGER"
+      },
+      {
+        "name": "quality_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quality_score INTEGER"
+      },
+      {
+        "name": "analysis_result",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "analysis_result TEXT"
+      },
+      {
+        "name": "metrics",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "metrics JSONB"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-code-comments",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "code_comments",
+    "displayName": "Code Comments",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "generated_comments",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_comments TEXT"
+      },
+      {
+        "name": "comment_style",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "comment_style VARCHAR(50)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-code-explanations",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "code_explanations",
+    "displayName": "Code Explanations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "context",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'devops'",
+        "sourceLine": "context VARCHAR(100) DEFAULT 'devops'"
+      },
+      {
+        "name": "explanation",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "explanation TEXT"
+      },
+      {
+        "name": "key_concepts",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "key_concepts JSONB"
+      },
+      {
+        "name": "complexity_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "complexity_level VARCHAR(20)"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-code-reviews",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "code_reviews",
+    "displayName": "Code Reviews",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "review_result",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_result TEXT"
+      },
+      {
+        "name": "suggestions",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "suggestions TEXT"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "severity VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-dependency-audits",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "dependency_audits",
+    "displayName": "Dependency Audits",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "dependencies_list",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dependencies_list TEXT"
+      },
+      {
+        "name": "package_manager",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "package_manager VARCHAR(50)"
+      },
+      {
+        "name": "project_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project_type VARCHAR(50)"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "vulnerabilities JSONB"
+      },
+      {
+        "name": "outdated_packages",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "outdated_packages JSONB"
+      },
+      {
+        "name": "license_issues",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "license_issues JSONB"
+      },
+      {
+        "name": "audit_result",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "audit_result TEXT"
+      },
+      {
+        "name": "risk_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_score INTEGER"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-deployment-advices",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "deployment_advices",
+    "displayName": "Deployment Advices",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "current_setup",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "current_setup TEXT"
+      },
+      {
+        "name": "target_environment",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_environment VARCHAR(100)"
+      },
+      {
+        "name": "deployment_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployment_type VARCHAR(50)"
+      },
+      {
+        "name": "infrastructure_config",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "infrastructure_config TEXT"
+      },
+      {
+        "name": "deployment_strategy",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployment_strategy TEXT"
+      },
+      {
+        "name": "recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recommendations JSONB"
+      },
+      {
+        "name": "checklist",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "checklist JSONB"
+      },
+      {
+        "name": "risk_assessment",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_assessment TEXT"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-documentation",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "documentation",
+    "displayName": "Documentation",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "source_code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source_code TEXT"
+      },
+      {
+        "name": "generated_docs",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_docs TEXT"
+      },
+      {
+        "name": "doc_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "doc_type VARCHAR(50)"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-critical-0-mounted-chat-style-ai-endpoints-despite-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_critical_0_mounted_chat_style_ai_endpoints_despite.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-ai-documentation-generator-from-source-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_ai_documentation_generator_from_source.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-ai-pr-summary-or-change-impact-analyzer-wired-t-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_ai_pr_summary_or_change_impact_analyzer_wired_t.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-ai-test-generation-actually-wired-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_ai_test_generation_actually_wired.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-ai-vulnerability-secret-scan-integrated-with-co-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_ai_vulnerability_secret_scan_integrated_with_co.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-ci-cd-plugin-jenkins-circleci-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_ci_cd_plugin_jenkins_circleci.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-gitlab-bitbucket-integration-parity-only-github-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_gitlab_bitbucket_integration_parity_only_github.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-ide-plugin-vs-code-jetbrains-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_ide_plugin_vs_code_jetbrains.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-no-sbom-license-compliance-reporting-beyond-depend-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_sbom_license_compliance_reporting_beyond_depend.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-routes-gap-notification-routes-exist-but-no-slack-email-deliv-js-gap-features",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_notification_routes_exist_but_no_slack_email_deliv.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_key VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-github-integrations",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "github_integrations",
+    "displayName": "Github Integrations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "access_token",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "access_token TEXT NOT NULL"
+      },
+      {
+        "name": "username",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "username VARCHAR(255)"
+      },
+      {
+        "name": "avatar_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avatar_url VARCHAR(500)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-performance-reports",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "performance_reports",
+    "displayName": "Performance Reports",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "bottlenecks",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bottlenecks TEXT"
+      },
+      {
+        "name": "optimization_suggestions",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "optimization_suggestions TEXT"
+      },
+      {
+        "name": "performance_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "performance_score INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-pull-requests",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "pull_requests",
+    "displayName": "Pull Requests",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "integration_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "integration_id INTEGER REFERENCES github_integrations(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "pr_number",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pr_number INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500)"
+      },
+      {
+        "name": "author",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "author VARCHAR(255)"
+      },
+      {
+        "name": "repository",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "repository VARCHAR(500)"
+      },
+      {
+        "name": "base_branch",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "base_branch VARCHAR(255)"
+      },
+      {
+        "name": "head_branch",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "head_branch VARCHAR(255)"
+      },
+      {
+        "name": "diff_content",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "diff_content TEXT"
+      },
+      {
+        "name": "files_changed",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "files_changed JSONB"
+      },
+      {
+        "name": "pr_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pr_url VARCHAR(500)"
+      },
+      {
+        "name": "state",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "state VARCHAR(20)"
+      },
+      {
+        "name": "review_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_id INTEGER REFERENCES code_reviews(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-readme-projects",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "readme_projects",
+    "displayName": "Readme Projects",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "project_structure",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project_structure TEXT"
+      },
+      {
+        "name": "tech_stack",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tech_stack TEXT"
+      },
+      {
+        "name": "generated_readme",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_readme TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-refactoring-suggestions",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "refactoring_suggestions",
+    "displayName": "Refactoring Suggestions",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "original_code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "original_code TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "refactored_code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "refactored_code TEXT"
+      },
+      {
+        "name": "improvement_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "improvement_type VARCHAR(50)"
+      },
+      {
+        "name": "rationale",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "rationale TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-review-assignments",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "review_assignments",
+    "displayName": "Review Assignments",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "review_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_id INTEGER REFERENCES code_reviews(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "assigned_to",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_to VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "assigned_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_by VARCHAR(255)"
+      },
+      {
+        "name": "priority",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "priority VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "due_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "due_date TIMESTAMP"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-review-issues",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "review_issues",
+    "displayName": "Review Issues",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "review_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_id INTEGER REFERENCES code_reviews(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(50)"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(20)"
+      },
+      {
+        "name": "severity_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity_score INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "line_number",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "line_number INTEGER"
+      },
+      {
+        "name": "suggestion",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "suggestion TEXT"
+      },
+      {
+        "name": "fixed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "fixed BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-review-metrics",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "review_metrics",
+    "displayName": "Review Metrics",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "date",
+        "type": "DATE",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "date DATE NOT NULL UNIQUE"
+      },
+      {
+        "name": "total_reviews",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "total_reviews INTEGER DEFAULT 0"
+      },
+      {
+        "name": "completed_reviews",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "completed_reviews INTEGER DEFAULT 0"
+      },
+      {
+        "name": "avg_severity_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avg_severity_score DECIMAL(5,2)"
+      },
+      {
+        "name": "issues_by_category",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "issues_by_category JSONB"
+      },
+      {
+        "name": "top_languages",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "top_languages JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-security-scans",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "security_scans",
+    "displayName": "Security Scans",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "vulnerabilities",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "vulnerabilities TEXT"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_level VARCHAR(20)"
+      },
+      {
+        "name": "recommendations",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recommendations TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-team-members",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "team_members",
+    "displayName": "Team Members",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "team_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "team_id INTEGER REFERENCES teams(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255)"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'member'",
+        "sourceLine": "role VARCHAR(50) DEFAULT 'member'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-teams",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "teams",
+    "displayName": "Teams",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-tech-debt-items",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "tech_debt_items",
+    "displayName": "Tech Debt Items",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "code_snippet",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code_snippet TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "project_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project_name VARCHAR(255)"
+      },
+      {
+        "name": "debt_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "debt_type VARCHAR(50)"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(20)"
+      },
+      {
+        "name": "estimated_effort",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "estimated_effort VARCHAR(50)"
+      },
+      {
+        "name": "debt_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "debt_analysis TEXT"
+      },
+      {
+        "name": "remediation_plan",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "remediation_plan TEXT"
+      },
+      {
+        "name": "priority_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "priority_score INTEGER"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-test-generations",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "test_generations",
+    "displayName": "Test Generations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "source_code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source_code TEXT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language VARCHAR(50)"
+      },
+      {
+        "name": "test_framework",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "test_framework VARCHAR(50)"
+      },
+      {
+        "name": "generated_tests",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_tests TEXT"
+      },
+      {
+        "name": "coverage_estimate",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "coverage_estimate INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'pending'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-users",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password_hash",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_hash TEXT NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255)"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'viewer'",
+        "sourceLine": "role VARCHAR(20) DEFAULT 'viewer'"
+      },
+      {
+        "name": "avatar_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avatar_url VARCHAR(500)"
+      },
+      {
+        "name": "email_verified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "email_verified BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "email_verification_token",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email_verification_token VARCHAR(255)"
+      },
+      {
+        "name": "password_reset_token",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_reset_token VARCHAR(255)"
+      },
+      {
+        "name": "password_reset_expires",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_reset_expires TIMESTAMP"
+      },
+      {
+        "name": "two_factor_secret",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "two_factor_secret VARCHAR(255)"
+      },
+      {
+        "name": "two_factor_enabled",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "two_factor_enabled BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "last_login_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_login_at TIMESTAMP"
+      },
+      {
+        "name": "failed_login_attempts",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "failed_login_attempts INTEGER DEFAULT 0"
+      },
+      {
+        "name": "locked_until",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "locked_until TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-webhook-events",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "webhook_events",
+    "displayName": "Webhook Events",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "webhook_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhook_id INTEGER REFERENCES webhooks(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event_type VARCHAR(50)"
+      },
+      {
+        "name": "payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payload JSONB"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status VARCHAR(20)"
+      },
+      {
+        "name": "review_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_id INTEGER REFERENCES code_reviews(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-code-review-documentation-backend-src-config-database-js-webhooks",
+    "sourceProject": "AiCodeReviewDocumentation",
+    "name": "webhooks",
+    "displayName": "Webhooks",
+    "framework": "SQL",
+    "sourceFile": "backend/src/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "integration_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "integration_id INTEGER REFERENCES github_integrations(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "secret_token",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "secret_token VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "events",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[\"push\"",
+        "sourceLine": "events JSONB DEFAULT '[\"push\""
+      },
+      {
+        "name": "auto_review",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "TRUE",
+        "sourceLine": "auto_review BOOLEAN DEFAULT TRUE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "last_triggered_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_triggered_at TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-daos",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "daos",
+    "displayName": "Daos",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "blockchain",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'Ethereum'",
+        "sourceLine": "blockchain VARCHAR(100) DEFAULT 'Ethereum'"
+      },
+      {
+        "name": "governance_token",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "governance_token VARCHAR(50)"
+      },
+      {
+        "name": "total_members",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "total_members INTEGER DEFAULT 0"
+      },
+      {
+        "name": "treasury_value",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "treasury_value DECIMAL(20,2) DEFAULT 0"
+      },
+      {
+        "name": "active_proposals",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "active_proposals INTEGER DEFAULT 0"
+      },
+      {
+        "name": "website_url",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "website_url VARCHAR(500)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-delegates",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "delegates",
+    "displayName": "Delegates",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "address VARCHAR(255)"
+      },
+      {
+        "name": "dao_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dao_name VARCHAR(255)"
+      },
+      {
+        "name": "voting_power",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "voting_power DECIMAL(20,4) DEFAULT 0"
+      },
+      {
+        "name": "participation_rate",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "participation_rate DECIMAL(5,2) DEFAULT 0"
+      },
+      {
+        "name": "delegators_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "delegators_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "proposals_voted",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "proposals_voted INTEGER DEFAULT 0"
+      },
+      {
+        "name": "proposals_created",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "proposals_created INTEGER DEFAULT 0"
+      },
+      {
+        "name": "reputation_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "50",
+        "sourceLine": "reputation_score INTEGER DEFAULT 50"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-daos-events-lack-ai-endpoints-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_daos_events_lack_ai_endpoints.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-limited-governance-platform-integrations-no-snapshot-aragon-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_limited_governance_platform_integrations_no_snapshot_aragon.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-no-blockchain-integration-ethereum-polygon-for-on-chain-prop-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_blockchain_integration_ethereum_polygon_for_on_chain_prop.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-no-historical-voting-pattern-analytics-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_historical_voting_pattern_analytics.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-no-real-time-voting-dashboard-or-live-results-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_real_time_voting_dashboard_or_live_results.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-no-webhooks-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_webhooks.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-proposals-lacks-auto-generate-proposal-or-analyze-proposal-l-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_proposals_lacks_auto_generate_proposal_or_analyze_proposal_l.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-routes-gap-treasury-lacks-ai-scenario-modeling-endpoint-despite-treasur-js-gap-features",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_treasury_lacks_ai_scenario_modeling_endpoint_despite_treasur.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-governance-events",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "governance_events",
+    "displayName": "Governance Events",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "dao_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dao_name VARCHAR(255)"
+      },
+      {
+        "name": "event_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'vote'",
+        "sourceLine": "event_type VARCHAR(100) DEFAULT 'vote'"
+      },
+      {
+        "name": "event_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "event_date TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "impact_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "impact_level VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'upcoming'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'upcoming'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-proposals",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "proposals",
+    "displayName": "Proposals",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "dao_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dao_name VARCHAR(255)"
+      },
+      {
+        "name": "proposal_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'governance'",
+        "sourceLine": "proposal_type VARCHAR(100) DEFAULT 'governance'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "votes_for",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "votes_for INTEGER DEFAULT 0"
+      },
+      {
+        "name": "votes_against",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "votes_against INTEGER DEFAULT 0"
+      },
+      {
+        "name": "quorum_required",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "50",
+        "sourceLine": "quorum_required INTEGER DEFAULT 50"
+      },
+      {
+        "name": "proposer",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "proposer VARCHAR(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-treasury-transactions",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "treasury_transactions",
+    "displayName": "Treasury Transactions",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "dao_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dao_name VARCHAR(255)"
+      },
+      {
+        "name": "transaction_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'transfer'",
+        "sourceLine": "transaction_type VARCHAR(50) DEFAULT 'transfer'"
+      },
+      {
+        "name": "amount",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "amount DECIMAL(20,4) DEFAULT 0"
+      },
+      {
+        "name": "token_symbol",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'ETH'",
+        "sourceLine": "token_symbol VARCHAR(20) DEFAULT 'ETH'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "from_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "from_address VARCHAR(255)"
+      },
+      {
+        "name": "to_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "to_address VARCHAR(255)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "transaction_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "transaction_date TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-users",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password_hash",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_hash VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'user'",
+        "sourceLine": "role VARCHAR(50) DEFAULT 'user'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aidao-governance-assistant-backend-seeds-seed-js-voting-records",
+    "sourceProject": "AIDAOGovernanceAssistant",
+    "name": "voting_records",
+    "displayName": "Voting Records",
+    "framework": "SQL",
+    "sourceFile": "backend/seeds/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "proposal_title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "proposal_title VARCHAR(500)"
+      },
+      {
+        "name": "voter_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "voter_name VARCHAR(255)"
+      },
+      {
+        "name": "voter_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "voter_address VARCHAR(255)"
+      },
+      {
+        "name": "dao_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dao_name VARCHAR(255)"
+      },
+      {
+        "name": "vote_choice",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'for'",
+        "sourceLine": "vote_choice VARCHAR(20) DEFAULT 'for'"
+      },
+      {
+        "name": "voting_power",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "1",
+        "sourceLine": "voting_power DECIMAL(20,4) DEFAULT 1"
+      },
+      {
+        "name": "reason",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "reason TEXT"
+      },
+      {
+        "name": "voted_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "voted_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-access-policies",
+    "sourceProject": "AiDataAnalyst",
+    "name": "access_policies",
+    "displayName": "Access Policies",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "policy_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "policy_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "data_sensitivity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "data_sensitivity VARCHAR(50) DEFAULT 'medium'"
+      },
+      {
+        "name": "rls_rules",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "rls_rules JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "mask_rules",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "mask_rules JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "role_assignments",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "role_assignments JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "jit_access_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "jit_access_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "effectiveness_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "effectiveness_score DECIMAL(5,2)"
+      },
+      {
+        "name": "is_active",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "is_active BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-activity-log",
+    "sourceProject": "AiDataAnalyst",
+    "name": "activity_log",
+    "displayName": "Activity Log",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "entity_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type VARCHAR(50)"
+      },
+      {
+        "name": "entity_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id INTEGER"
+      },
+      {
+        "name": "details",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "details JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "ip_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ip_address VARCHAR(45)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-ai-fill-down-actions",
+    "sourceProject": "AiDataAnalyst",
+    "name": "ai_fill_down_actions",
+    "displayName": "Ai Fill Down Actions",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "grid_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grid_id INTEGER REFERENCES cell_grids(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "source_range",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source_range VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "target_range",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_range VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "fill_mode",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "fill_mode VARCHAR(100)"
+      },
+      {
+        "name": "fill_direction",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'down'",
+        "sourceLine": "fill_direction VARCHAR(50) DEFAULT 'down'"
+      },
+      {
+        "name": "pattern_detected",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pattern_detected TEXT"
+      },
+      {
+        "name": "confidence_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "confidence_score DECIMAL(5,2)"
+      },
+      {
+        "name": "fill_explanation",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "fill_explanation TEXT"
+      },
+      {
+        "name": "actual_values",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "actual_values JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-ai-insights",
+    "sourceProject": "AiDataAnalyst",
+    "name": "ai_insights",
+    "displayName": "Ai Insights",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "report_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_id INTEGER REFERENCES reports(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "insight_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "insight_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "content",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content TEXT NOT NULL"
+      },
+      {
+        "name": "confidence",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "confidence DECIMAL(5,2)"
+      },
+      {
+        "name": "impact",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "impact VARCHAR(50)"
+      },
+      {
+        "name": "recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "recommendations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "data_points",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "data_points JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'new'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'new'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-ai-new-js-ai-results",
+    "sourceProject": "AiDataAnalyst",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/aiNew.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "feature",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature TEXT NOT NULL"
+      },
+      {
+        "name": "cache_key",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cache_key TEXT NOT NULL"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result JSONB NOT NULL"
+      },
+      {
+        "name": "expires_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expires_at TIMESTAMPTZ NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-alerts",
+    "sourceProject": "AiDataAnalyst",
+    "name": "alerts",
+    "displayName": "Alerts",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "report_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_id INTEGER REFERENCES reports(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "condition",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "condition TEXT NOT NULL"
+      },
+      {
+        "name": "threshold",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "threshold DECIMAL(15,2)"
+      },
+      {
+        "name": "frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'hourly'",
+        "sourceLine": "frequency VARCHAR(50) DEFAULT 'hourly'"
+      },
+      {
+        "name": "notification_channels",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[\"email\"]'",
+        "sourceLine": "notification_channels JSONB DEFAULT '[\"email\"]'"
+      },
+      {
+        "name": "is_active",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "is_active BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "last_triggered",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_triggered TIMESTAMP"
+      },
+      {
+        "name": "trigger_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "trigger_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-anomalies",
+    "sourceProject": "AiDataAnalyst",
+    "name": "anomalies",
+    "displayName": "Anomalies",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "data_source_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_source_id INTEGER REFERENCES data_sources(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "metric_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "metric_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "expected_value",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expected_value DECIMAL(15,2)"
+      },
+      {
+        "name": "actual_value",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "actual_value DECIMAL(15,2)"
+      },
+      {
+        "name": "deviation_percentage",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deviation_percentage DECIMAL(5,2)"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "severity VARCHAR(50) DEFAULT 'medium'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "is_resolved",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_resolved BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "detected_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "resolved_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resolved_at TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-cell-grids",
+    "sourceProject": "AiDataAnalyst",
+    "name": "cell_grids",
+    "displayName": "Cell Grids",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "workbook_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workbook_id INTEGER REFERENCES spreadsheet_workbooks(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "sheet_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sheet_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "sheet_purpose",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sheet_purpose VARCHAR(100)"
+      },
+      {
+        "name": "cell_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "cell_data JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "conditional_formats",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "conditional_formats JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "frozen_panes",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "frozen_panes JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "merged_cells",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "merged_cells JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "data_validations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "data_validations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "quality_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quality_score DECIMAL(5,2)"
+      },
+      {
+        "name": "row_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "row_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "col_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "col_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-charts-api-configs",
+    "sourceProject": "AiDataAnalyst",
+    "name": "charts_api_configs",
+    "displayName": "Charts API Configs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "grid_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grid_id INTEGER REFERENCES cell_grids(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "chart_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chart_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "chart_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chart_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "chart_purpose",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chart_purpose VARCHAR(100)"
+      },
+      {
+        "name": "data_source_range",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_source_range VARCHAR(255)"
+      },
+      {
+        "name": "axis_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "axis_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "color_palette",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "color_palette JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "annotations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "annotations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "effectiveness_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "effectiveness_score DECIMAL(5,2)"
+      },
+      {
+        "name": "alt_text",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "alt_text TEXT"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-collab-presence-sessions",
+    "sourceProject": "AiDataAnalyst",
+    "name": "collab_presence_sessions",
+    "displayName": "Collab Presence Sessions",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "grid_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grid_id INTEGER REFERENCES cell_grids(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "session_token",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_token VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "cursor_position",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "cursor_position JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "active_cell",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "active_cell VARCHAR(50)"
+      },
+      {
+        "name": "is_idle",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_idle BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "idle_since",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "idle_since TIMESTAMP"
+      },
+      {
+        "name": "health_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "health_score DECIMAL(5,2)"
+      },
+      {
+        "name": "comments",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "comments JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "edit_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "edit_summary TEXT"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-collaborations",
+    "sourceProject": "AiDataAnalyst",
+    "name": "collaborations",
+    "displayName": "Collaborations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "dashboard_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dashboard_id INTEGER REFERENCES dashboards(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "permission",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'view'",
+        "sourceLine": "permission VARCHAR(50) DEFAULT 'view'"
+      },
+      {
+        "name": "invited_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "invited_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-dashboard-configs",
+    "sourceProject": "AiDataAnalyst",
+    "name": "dashboard_configs",
+    "displayName": "Dashboard Configs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "dashboard_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dashboard_id INTEGER REFERENCES dashboards(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "ai_generated",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "ai_generated BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "prompt",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prompt TEXT"
+      },
+      {
+        "name": "layout_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "layout_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "widgets",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "widgets JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "color_scheme",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "color_scheme VARCHAR(50)"
+      },
+      {
+        "name": "data_sources",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "data_sources JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "refresh_interval",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "300",
+        "sourceLine": "refresh_interval INTEGER DEFAULT 300"
+      },
+      {
+        "name": "ai_suggestions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "ai_suggestions JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-dashboards",
+    "sourceProject": "AiDataAnalyst",
+    "name": "dashboards",
+    "displayName": "Dashboards",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "layout",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "layout JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "is_public",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_public BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "share_token",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "share_token VARCHAR(64) UNIQUE"
+      },
+      {
+        "name": "views",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "views INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-data-exports",
+    "sourceProject": "AiDataAnalyst",
+    "name": "data_exports",
+    "displayName": "Data Exports",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "report_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_id INTEGER REFERENCES reports(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "format",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "format VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "file_path",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_path TEXT"
+      },
+      {
+        "name": "file_size",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_size INTEGER"
+      },
+      {
+        "name": "row_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "row_count INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-data-pipelines",
+    "sourceProject": "AiDataAnalyst",
+    "name": "data_pipelines",
+    "displayName": "Data Pipelines",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'draft'"
+      },
+      {
+        "name": "schedule",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "schedule VARCHAR(100)"
+      },
+      {
+        "name": "last_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run TIMESTAMP"
+      },
+      {
+        "name": "next_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_run TIMESTAMP"
+      },
+      {
+        "name": "run_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "run_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "avg_duration",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "avg_duration INTEGER DEFAULT 0"
+      },
+      {
+        "name": "steps",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "steps JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "source_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "source_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "destination_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "destination_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "error_handling",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "error_handling JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "ai_suggestions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "ai_suggestions JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "tags",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "tags JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-data-quality-scores",
+    "sourceProject": "AiDataAnalyst",
+    "name": "data_quality_scores",
+    "displayName": "Data Quality Scores",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "data_source_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_source_id INTEGER REFERENCES data_sources(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "overall_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "overall_score DECIMAL(5,2)"
+      },
+      {
+        "name": "completeness_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completeness_score DECIMAL(5,2)"
+      },
+      {
+        "name": "accuracy_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "accuracy_score DECIMAL(5,2)"
+      },
+      {
+        "name": "consistency_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "consistency_score DECIMAL(5,2)"
+      },
+      {
+        "name": "timeliness_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "timeliness_score DECIMAL(5,2)"
+      },
+      {
+        "name": "uniqueness_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "uniqueness_score DECIMAL(5,2)"
+      },
+      {
+        "name": "validity_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "validity_score DECIMAL(5,2)"
+      },
+      {
+        "name": "issues_found",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "issues_found JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "recommendations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "records_analyzed",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "records_analyzed INTEGER"
+      },
+      {
+        "name": "columns_analyzed",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "columns_analyzed INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-data-sources",
+    "sourceProject": "AiDataAnalyst",
+    "name": "data_sources",
+    "displayName": "Data Sources",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "connection_string",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "connection_string TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "last_sync",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_sync TIMESTAMP"
+      },
+      {
+        "name": "record_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "record_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-formula-engine-entries",
+    "sourceProject": "AiDataAnalyst",
+    "name": "formula_engine_entries",
+    "displayName": "Formula Engine Entries",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "grid_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grid_id INTEGER REFERENCES cell_grids(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "cell_ref",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cell_ref VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "formula_text",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "formula_text TEXT NOT NULL"
+      },
+      {
+        "name": "formula_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "formula_type VARCHAR(100)"
+      },
+      {
+        "name": "is_volatile",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_volatile BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "is_circular",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_circular BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "recompute_cost_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recompute_cost_ms INTEGER"
+      },
+      {
+        "name": "named_ranges",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "named_ranges JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "result_value",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_value TEXT"
+      },
+      {
+        "name": "error_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_type VARCHAR(50)"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-gap-missing-query-builder-generate-dashboard-analyze-data-predic-js-gap-features",
+    "sourceProject": "AiDataAnalyst",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_missing_query_builder_generate_dashboard_analyze_data_predic.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-gap-no-advanced-visualization-library-plotly-d3-deck-gl-on-backe-js-gap-features",
+    "sourceProject": "AiDataAnalyst",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_advanced_visualization_library_plotly_d3_deck_gl_on_backe.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-gap-no-data-quality-monitoring-engine-js-gap-features",
+    "sourceProject": "AiDataAnalyst",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_data_quality_monitoring_engine.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-gap-no-database-connectors-sql-nosql-cloud-data-warehouses-only-js-gap-features",
+    "sourceProject": "AiDataAnalyst",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_database_connectors_sql_nosql_cloud_data_warehouses_only.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-gap-no-real-time-data-streaming-js-gap-features",
+    "sourceProject": "AiDataAnalyst",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_real_time_data_streaming.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-gap-no-sms-notification-js-gap-features",
+    "sourceProject": "AiDataAnalyst",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/gap_no_sms_notification.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-ingestion-connectors",
+    "sourceProject": "AiDataAnalyst",
+    "name": "ingestion_connectors",
+    "displayName": "Ingestion Connectors",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "source_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "connection_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "connection_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "schema_mapping",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "schema_mapping JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "incremental_key",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "incremental_key VARCHAR(255)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "last_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run TIMESTAMP"
+      },
+      {
+        "name": "last_run_status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run_status VARCHAR(50)"
+      },
+      {
+        "name": "run_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "run_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "pii_fields",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "pii_fields JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "throttle_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "throttle_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-insight-narratives",
+    "sourceProject": "AiDataAnalyst",
+    "name": "insight_narratives",
+    "displayName": "Insight Narratives",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "insight_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "insight_id INTEGER REFERENCES ai_insights(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "narrative_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "narrative_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(255)"
+      },
+      {
+        "name": "executive_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "executive_summary TEXT"
+      },
+      {
+        "name": "detailed_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "detailed_analysis TEXT"
+      },
+      {
+        "name": "key_findings",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "key_findings JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "action_items",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "action_items JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "visualizations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "visualizations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "audience",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'general'",
+        "sourceLine": "audience VARCHAR(50) DEFAULT 'general'"
+      },
+      {
+        "name": "tone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'professional'",
+        "sourceLine": "tone VARCHAR(50) DEFAULT 'professional'"
+      },
+      {
+        "name": "word_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "word_count INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-integrations",
+    "sourceProject": "AiDataAnalyst",
+    "name": "integrations",
+    "displayName": "Integrations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "service_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "service_name VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "service_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "service_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "credentials",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "credentials JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'connected'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'connected'"
+      },
+      {
+        "name": "last_sync",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_sync TIMESTAMP"
+      },
+      {
+        "name": "sync_frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'daily'",
+        "sourceLine": "sync_frequency VARCHAR(50) DEFAULT 'daily'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-lineage-assets",
+    "sourceProject": "AiDataAnalyst",
+    "name": "lineage_assets",
+    "displayName": "Lineage Assets",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "asset_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "asset_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "asset_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "asset_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "upstream_assets",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "upstream_assets JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "downstream_assets",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "downstream_assets JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "column_lineage",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "column_lineage JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "tags",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "tags JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "completeness_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completeness_score DECIMAL(5,2)"
+      },
+      {
+        "name": "dependency_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dependency_type VARCHAR(100)"
+      },
+      {
+        "name": "is_orphan",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_orphan BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-log-analysis",
+    "sourceProject": "AiDataAnalyst",
+    "name": "log_analysis",
+    "displayName": "Log Analysis",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "analysis_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "analysis_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "log_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "log_count INTEGER"
+      },
+      {
+        "name": "error_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_count INTEGER"
+      },
+      {
+        "name": "warning_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "warning_count INTEGER"
+      },
+      {
+        "name": "patterns_detected",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "patterns_detected JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "root_causes",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "root_causes JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "recommendations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "summary TEXT"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(20)"
+      },
+      {
+        "name": "time_range_start",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "time_range_start TIMESTAMP"
+      },
+      {
+        "name": "time_range_end",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "time_range_end TIMESTAMP"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-log-entries",
+    "sourceProject": "AiDataAnalyst",
+    "name": "log_entries",
+    "displayName": "Log Entries",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "source",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "level",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "level VARCHAR(20) NOT NULL"
+      },
+      {
+        "name": "message",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "message TEXT NOT NULL"
+      },
+      {
+        "name": "timestamp",
+        "type": "TIMESTAMP",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "timestamp TIMESTAMP NOT NULL"
+      },
+      {
+        "name": "metadata",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "metadata JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "stack_trace",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stack_trace TEXT"
+      },
+      {
+        "name": "analyzed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "analyzed BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_classification",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_classification VARCHAR(50)"
+      },
+      {
+        "name": "ai_severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_severity VARCHAR(20)"
+      },
+      {
+        "name": "ai_root_cause",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_root_cause TEXT"
+      },
+      {
+        "name": "ai_solution",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_solution TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-materialized-views",
+    "sourceProject": "AiDataAnalyst",
+    "name": "materialized_views",
+    "displayName": "Materialized Views",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "view_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "view_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "sql_definition",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sql_definition TEXT NOT NULL"
+      },
+      {
+        "name": "grain",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grain VARCHAR(100)"
+      },
+      {
+        "name": "refresh_strategy",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'full'",
+        "sourceLine": "refresh_strategy VARCHAR(100) DEFAULT 'full'"
+      },
+      {
+        "name": "refresh_window_cron",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "refresh_window_cron VARCHAR(100)"
+      },
+      {
+        "name": "last_refreshed",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_refreshed TIMESTAMP"
+      },
+      {
+        "name": "refresh_cost_estimate",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "refresh_cost_estimate DECIMAL(10,4)"
+      },
+      {
+        "name": "hit_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "hit_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "roi_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "roi_score DECIMAL(5,2)"
+      },
+      {
+        "name": "mv_pattern",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mv_pattern VARCHAR(100)"
+      },
+      {
+        "name": "is_stale",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_stale BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-nl-formula-translations",
+    "sourceProject": "AiDataAnalyst",
+    "name": "nl_formula_translations",
+    "displayName": "Nl Formula Translations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "grid_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grid_id INTEGER REFERENCES cell_grids(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "natural_language",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "natural_language TEXT NOT NULL"
+      },
+      {
+        "name": "generated_formula",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_formula TEXT"
+      },
+      {
+        "name": "confidence_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "confidence_score DECIMAL(5,2)"
+      },
+      {
+        "name": "question_difficulty",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "question_difficulty VARCHAR(50)"
+      },
+      {
+        "name": "intent_class",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "intent_class VARCHAR(100)"
+      },
+      {
+        "name": "alternative_formulas",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "alternative_formulas JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "validation_passed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "validation_passed BOOLEAN"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-parquet-iceberg-tables",
+    "sourceProject": "AiDataAnalyst",
+    "name": "parquet_iceberg_tables",
+    "displayName": "Parquet Iceberg Tables",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "connector_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "connector_id INTEGER REFERENCES ingestion_connectors(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "table_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "table_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "namespace",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "namespace VARCHAR(255)"
+      },
+      {
+        "name": "partition_spec",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "partition_spec JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "sort_order",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "sort_order JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "file_size_bytes",
+        "type": "BIGINT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "file_size_bytes BIGINT DEFAULT 0"
+      },
+      {
+        "name": "snapshot_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "snapshot_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "record_count",
+        "type": "BIGINT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "record_count BIGINT DEFAULT 0"
+      },
+      {
+        "name": "storage_location",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "storage_location TEXT"
+      },
+      {
+        "name": "format_version",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "2",
+        "sourceLine": "format_version INTEGER DEFAULT 2"
+      },
+      {
+        "name": "schema_json",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "schema_json JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "health_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "health_score DECIMAL(5,2)"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-password-resets",
+    "sourceProject": "AiDataAnalyst",
+    "name": "password_resets",
+    "displayName": "Password Resets",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "token",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "token VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "expires_at",
+        "type": "TIMESTAMP",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expires_at TIMESTAMP NOT NULL"
+      },
+      {
+        "name": "used",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "used BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-pipeline-runs",
+    "sourceProject": "AiDataAnalyst",
+    "name": "pipeline_runs",
+    "displayName": "Pipeline Runs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "pipeline_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pipeline_id INTEGER REFERENCES data_pipelines(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'running'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'running'"
+      },
+      {
+        "name": "started_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "completed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_at TIMESTAMP"
+      },
+      {
+        "name": "duration",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration INTEGER"
+      },
+      {
+        "name": "records_processed",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "records_processed INTEGER DEFAULT 0"
+      },
+      {
+        "name": "records_failed",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "records_failed INTEGER DEFAULT 0"
+      },
+      {
+        "name": "step_results",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "step_results JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "error_log",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "error_log JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-pivot-engine-configs",
+    "sourceProject": "AiDataAnalyst",
+    "name": "pivot_engine_configs",
+    "displayName": "Pivot Engine Configs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "grid_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grid_id INTEGER REFERENCES cell_grids(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "pivot_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pivot_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "row_keys",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "row_keys JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "col_keys",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "col_keys JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "value_fields",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "value_fields JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "aggregation_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'sum'",
+        "sourceLine": "aggregation_type VARCHAR(50) DEFAULT 'sum'"
+      },
+      {
+        "name": "filter_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "filter_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "refresh_cost_estimate",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "refresh_cost_estimate DECIMAL(10,4)"
+      },
+      {
+        "name": "clarity_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "clarity_score DECIMAL(5,2)"
+      },
+      {
+        "name": "use_case",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "use_case VARCHAR(100)"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-predictions",
+    "sourceProject": "AiDataAnalyst",
+    "name": "predictions",
+    "displayName": "Predictions",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "model_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "target_metric",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_metric VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "prediction_period",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prediction_period VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "predicted_value",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "predicted_value DECIMAL(15,2)"
+      },
+      {
+        "name": "confidence_interval",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "confidence_interval JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "accuracy",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "accuracy DECIMAL(5,2)"
+      },
+      {
+        "name": "features_used",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "features_used JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-queries",
+    "sourceProject": "AiDataAnalyst",
+    "name": "queries",
+    "displayName": "Queries",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "natural_language_query",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "natural_language_query TEXT NOT NULL"
+      },
+      {
+        "name": "generated_sql",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "generated_sql TEXT"
+      },
+      {
+        "name": "result_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_summary TEXT"
+      },
+      {
+        "name": "execution_time",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "execution_time INTEGER"
+      },
+      {
+        "name": "row_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "row_count INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-query-engine-entries",
+    "sourceProject": "AiDataAnalyst",
+    "name": "query_engine_entries",
+    "displayName": "Query Engine Entries",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "sql_text",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sql_text TEXT NOT NULL"
+      },
+      {
+        "name": "query_intent",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "query_intent VARCHAR(100)"
+      },
+      {
+        "name": "query_pattern",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "query_pattern VARCHAR(100)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'pending'"
+      },
+      {
+        "name": "execution_time_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "execution_time_ms INTEGER"
+      },
+      {
+        "name": "rows_returned",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "rows_returned INTEGER"
+      },
+      {
+        "name": "bytes_scanned",
+        "type": "BIGINT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "bytes_scanned BIGINT"
+      },
+      {
+        "name": "cost_estimate",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cost_estimate DECIMAL(10,4)"
+      },
+      {
+        "name": "error_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_message TEXT"
+      },
+      {
+        "name": "query_plan",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "query_plan JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "optimization_hints",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "optimization_hints JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-query-optimizations",
+    "sourceProject": "AiDataAnalyst",
+    "name": "query_optimizations",
+    "displayName": "Query Optimizations",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "original_query",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "original_query TEXT NOT NULL"
+      },
+      {
+        "name": "optimized_query",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "optimized_query TEXT"
+      },
+      {
+        "name": "optimization_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "optimization_type VARCHAR(100)"
+      },
+      {
+        "name": "improvement_percentage",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "improvement_percentage DECIMAL(5,2)"
+      },
+      {
+        "name": "execution_time_before",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "execution_time_before INTEGER"
+      },
+      {
+        "name": "execution_time_after",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "execution_time_after INTEGER"
+      },
+      {
+        "name": "suggestions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "suggestions JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "index_recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "index_recommendations JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-reports",
+    "sourceProject": "AiDataAnalyst",
+    "name": "reports",
+    "displayName": "Reports",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "dashboard_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dashboard_id INTEGER REFERENCES dashboards(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "query",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "query TEXT"
+      },
+      {
+        "name": "visualization_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "visualization_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "schedule",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "schedule VARCHAR(100)"
+      },
+      {
+        "name": "last_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run TIMESTAMP"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-scheduled-jobs",
+    "sourceProject": "AiDataAnalyst",
+    "name": "scheduled_jobs",
+    "displayName": "Scheduled Jobs",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "job_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "job_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "job_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "job_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "cron_expression",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cron_expression VARCHAR(100)"
+      },
+      {
+        "name": "last_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run TIMESTAMP"
+      },
+      {
+        "name": "next_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_run TIMESTAMP"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-routes-custom-views-js-scheduled-reports",
+    "sourceProject": "AiDataAnalyst",
+    "name": "scheduled_reports",
+    "displayName": "Scheduled Reports",
+    "framework": "SQL",
+    "sourceFile": "backend/src/routes/customViews.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id          SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id     INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "sql_query",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sql_query   TEXT         NOT NULL"
+      },
+      {
+        "name": "frequency",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "frequency   VARCHAR(32)  NOT NULL"
+      },
+      {
+        "name": "recipients",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recipients  TEXT         NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at  TIMESTAMP    DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-semantic-layer-metrics",
+    "sourceProject": "AiDataAnalyst",
+    "name": "semantic_layer_metrics",
+    "displayName": "Semantic Layer Metrics",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "metric_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "metric_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "dimension",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dimension VARCHAR(255)"
+      },
+      {
+        "name": "grain",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "grain VARCHAR(100)"
+      },
+      {
+        "name": "formula",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "formula TEXT"
+      },
+      {
+        "name": "synonyms",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "synonyms JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "pre_aggregation_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "pre_aggregation_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "quality_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quality_score DECIMAL(5,2)"
+      },
+      {
+        "name": "usage_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "usage_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "is_deprecated",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_deprecated BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "rls_rules",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "rls_rules JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-spreadsheet-js-spreadsheet-workbooks",
+    "sourceProject": "AiDataAnalyst",
+    "name": "spreadsheet_workbooks",
+    "displayName": "Spreadsheet Workbooks",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/spreadsheet.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-templates",
+    "sourceProject": "AiDataAnalyst",
+    "name": "templates",
+    "displayName": "Templates",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "preview_image",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "preview_image TEXT"
+      },
+      {
+        "name": "usage_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "usage_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "is_premium",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_premium BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-warehouse-js-transform-dbt-models",
+    "sourceProject": "AiDataAnalyst",
+    "name": "transform_dbt_models",
+    "displayName": "Transform Dbt Models",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/warehouse.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "model_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "model_layer",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'staging'",
+        "sourceLine": "model_layer VARCHAR(50) DEFAULT 'staging'"
+      },
+      {
+        "name": "materialization",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'view'",
+        "sourceLine": "materialization VARCHAR(50) DEFAULT 'view'"
+      },
+      {
+        "name": "sql_definition",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sql_definition TEXT"
+      },
+      {
+        "name": "ref_targets",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "ref_targets JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "tests",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "tests JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "yml_doc",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "yml_doc TEXT"
+      },
+      {
+        "name": "build_time_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "build_time_ms INTEGER"
+      },
+      {
+        "name": "coverage_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "coverage_score DECIMAL(5,2)"
+      },
+      {
+        "name": "is_stale",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_stale BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "incremental_strategy",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "incremental_strategy VARCHAR(100)"
+      },
+      {
+        "name": "warehouse_cost_estimate",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "warehouse_cost_estimate DECIMAL(10,4)"
+      },
+      {
+        "name": "is_archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "is_archived BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "ai_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-seed-js-upload-customer-data",
+    "sourceProject": "AiDataAnalyst",
+    "name": "upload_customer_data",
+    "displayName": "Upload Customer Data",
+    "framework": "SQL",
+    "sourceFile": "backend/src/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name TEXT"
+      },
+      {
+        "name": "email",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email TEXT"
+      },
+      {
+        "name": "company",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "company TEXT"
+      },
+      {
+        "name": "industry",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "industry TEXT"
+      },
+      {
+        "name": "plan",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "plan TEXT"
+      },
+      {
+        "name": "monthly_spend",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "monthly_spend NUMERIC(10,2)"
+      },
+      {
+        "name": "lifetime_value",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lifetime_value NUMERIC(10,2)"
+      },
+      {
+        "name": "signup_date",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "signup_date TEXT"
+      },
+      {
+        "name": "last_active",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_active TEXT"
+      },
+      {
+        "name": "satisfaction_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "satisfaction_score INTEGER"
+      },
+      {
+        "name": "support_tickets",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "support_tickets INTEGER"
+      },
+      {
+        "name": "country",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "country TEXT"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-seed-js-upload-employee-performance",
+    "sourceProject": "AiDataAnalyst",
+    "name": "upload_employee_performance",
+    "displayName": "Upload Employee Performance",
+    "framework": "SQL",
+    "sourceFile": "backend/src/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "employee_name",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employee_name TEXT"
+      },
+      {
+        "name": "department",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department TEXT"
+      },
+      {
+        "name": "role",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role TEXT"
+      },
+      {
+        "name": "hire_date",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "hire_date TEXT"
+      },
+      {
+        "name": "salary",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "salary INTEGER"
+      },
+      {
+        "name": "performance_score",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "performance_score NUMERIC(3,1)"
+      },
+      {
+        "name": "projects_completed",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "projects_completed INTEGER"
+      },
+      {
+        "name": "hours_logged",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "hours_logged INTEGER"
+      },
+      {
+        "name": "satisfaction_rating",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "satisfaction_rating NUMERIC(3,1)"
+      },
+      {
+        "name": "training_hours",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "training_hours INTEGER"
+      },
+      {
+        "name": "region",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "region TEXT"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-seed-js-upload-sales-transactions",
+    "sourceProject": "AiDataAnalyst",
+    "name": "upload_sales_transactions",
+    "displayName": "Upload Sales Transactions",
+    "framework": "SQL",
+    "sourceFile": "backend/src/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "date",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "date TEXT"
+      },
+      {
+        "name": "customer",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "customer TEXT"
+      },
+      {
+        "name": "product",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product TEXT"
+      },
+      {
+        "name": "category",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category TEXT"
+      },
+      {
+        "name": "quantity",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quantity INTEGER"
+      },
+      {
+        "name": "unit_price",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "unit_price NUMERIC(10,2)"
+      },
+      {
+        "name": "total",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "total NUMERIC(10,2)"
+      },
+      {
+        "name": "region",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "region TEXT"
+      },
+      {
+        "name": "sales_rep",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sales_rep TEXT"
+      },
+      {
+        "name": "payment_method",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payment_method TEXT"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-analyst-backend-src-models-schema-js-users",
+    "sourceProject": "AiDataAnalyst",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/src/models/schema.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-database-schema-new-sql-agent-analysis-log",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "agent_analysis_log",
+    "displayName": "Agent Analysis Log",
+    "framework": "SQL",
+    "sourceFile": "backend/database/schema_new.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id              SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "agent_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agent_type      VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "input_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_payload   JSONB"
+      },
+      {
+        "name": "output_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_payload  JSONB"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id         INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at      TIMESTAMP    DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-agents-new-js-ai-results",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/agentsNew.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "feature",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature TEXT NOT NULL"
+      },
+      {
+        "name": "cache_key",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cache_key TEXT NOT NULL"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result JSONB NOT NULL"
+      },
+      {
+        "name": "expires_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expires_at TIMESTAMPTZ NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-backup-new-js-backup-history",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "backup_history",
+    "displayName": "Backup History",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/backupNew.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "schedule_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "schedule_id INTEGER REFERENCES backup_schedules(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "db_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "db_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(50) NOT NULL DEFAULT 'pending' CHECK (status IN ('pending', 'running', 'success', 'failed'))"
+      },
+      {
+        "name": "size_mb",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "size_mb DECIMAL(10,2)"
+      },
+      {
+        "name": "duration_seconds",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration_seconds INTEGER"
+      },
+      {
+        "name": "storage_path",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "storage_path TEXT"
+      },
+      {
+        "name": "error_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_message TEXT"
+      },
+      {
+        "name": "started_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "started_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "completed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_at TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-database-schema-new-sql-backup-history",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "backup_history",
+    "displayName": "Backup History",
+    "framework": "SQL",
+    "sourceFile": "backend/database/schema_new.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id               SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "schedule_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "schedule_id      INTEGER REFERENCES backup_schedules(id) ON DELETE SET NULL"
+      },
+      {
+        "name": "db_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "db_name          VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status           VARCHAR(50)  NOT NULL DEFAULT 'pending'\n                     CHECK (status IN ('pending', 'running', 'success', 'failed'))"
+      },
+      {
+        "name": "size_mb",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "size_mb          DECIMAL(10, 2)"
+      },
+      {
+        "name": "duration_seconds",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration_seconds INTEGER"
+      },
+      {
+        "name": "storage_path",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "storage_path     TEXT"
+      },
+      {
+        "name": "error_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_message    TEXT"
+      },
+      {
+        "name": "started_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "started_at       TIMESTAMP    DEFAULT NOW()"
+      },
+      {
+        "name": "completed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_at     TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-backup-new-js-backup-schedules",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "backup_schedules",
+    "displayName": "Backup Schedules",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/backupNew.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "db_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "db_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "frequency",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "frequency VARCHAR(50) NOT NULL CHECK (frequency IN ('hourly', 'daily', 'weekly', 'monthly'))"
+      },
+      {
+        "name": "retention_days",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "30",
+        "sourceLine": "retention_days INTEGER NOT NULL DEFAULT 30"
+      },
+      {
+        "name": "enabled",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "TRUE",
+        "sourceLine": "enabled BOOLEAN DEFAULT TRUE"
+      },
+      {
+        "name": "last_run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run_at TIMESTAMP"
+      },
+      {
+        "name": "next_run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_run_at TIMESTAMP"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-database-schema-new-sql-backup-schedules",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "backup_schedules",
+    "displayName": "Backup Schedules",
+    "framework": "SQL",
+    "sourceFile": "backend/database/schema_new.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id              SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "db_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "db_name         VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "frequency",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "frequency       VARCHAR(50)  NOT NULL\n                    CHECK (frequency IN ('hourly', 'daily', 'weekly', 'monthly'))"
+      },
+      {
+        "name": "retention_days",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "30",
+        "sourceLine": "retention_days  INTEGER      NOT NULL DEFAULT 30"
+      },
+      {
+        "name": "enabled",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "TRUE",
+        "sourceLine": "enabled         BOOLEAN      DEFAULT TRUE"
+      },
+      {
+        "name": "last_run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run_at     TIMESTAMP"
+      },
+      {
+        "name": "next_run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_run_at     TIMESTAMP"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by      INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at      TIMESTAMP    DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at      TIMESTAMP    DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-models-schema-sql-backups",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "backups",
+    "displayName": "Backups",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "database_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "database_id INTEGER REFERENCES monitored_databases(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "backup_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'full'",
+        "sourceLine": "backup_type VARCHAR(50) DEFAULT 'full'"
+      },
+      {
+        "name": "size_mb",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "size_mb NUMERIC DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "file_path",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_path TEXT"
+      },
+      {
+        "name": "started_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "started_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "completed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_at TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-models-schema-sql-db-logs",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "db_logs",
+    "displayName": "DB Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "database_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "database_id INTEGER REFERENCES monitored_databases(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "agent",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agent VARCHAR(100)"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(255)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'info'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'info'"
+      },
+      {
+        "name": "message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "message TEXT"
+      },
+      {
+        "name": "duration_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration_ms INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-limited-cloud-db-integrations-no-aws-rds-azure-sql-gcp-cloud-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_limited_cloud_db_integrations_no_aws_rds_azure_sql_gcp_cloud.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-missing-optimize-query-analyze-slow-queries-recommend-indexe-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_missing_optimize_query_analyze_slow_queries_recommend_indexe.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-no-connection-pooling-or-driver-management-module-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_connection_pooling_or_driver_management_module.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-no-encryption-or-security-audit-module-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_encryption_or_security_audit_module.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-no-notification-system-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_notification_system.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-no-real-time-monitoring-alerting-beyond-stubs-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_real_time_monitoring_alerting_beyond_stubs.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-gap-no-replication-failover-management-js-gap-features",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_replication_failover_management.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-routes-custom-views-js-maintenance-windows",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "maintenance_windows",
+    "displayName": "Maintenance Windows",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/customViews.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "cron_expression",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cron_expression VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "duration_minutes",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "60",
+        "sourceLine": "duration_minutes INTEGER NOT NULL DEFAULT 60"
+      },
+      {
+        "name": "database_names",
+        "type": "TEXT[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "database_names TEXT[] NOT NULL DEFAULT '{}'"
+      },
+      {
+        "name": "timezone",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'UTC'",
+        "sourceLine": "timezone VARCHAR(80) DEFAULT 'UTC'"
+      },
+      {
+        "name": "enabled",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "TRUE",
+        "sourceLine": "enabled BOOLEAN DEFAULT TRUE"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-models-schema-sql-monitored-databases",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "monitored_databases",
+    "displayName": "Monitored Databases",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "host",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "host VARCHAR(255)"
+      },
+      {
+        "name": "port",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "5432",
+        "sourceLine": "port INTEGER DEFAULT 5432"
+      },
+      {
+        "name": "db_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "db_name VARCHAR(255)"
+      },
+      {
+        "name": "db_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'PostgreSQL'",
+        "sourceLine": "db_type VARCHAR(50) DEFAULT 'PostgreSQL'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'healthy'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'healthy'"
+      },
+      {
+        "name": "size_mb",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "size_mb NUMERIC DEFAULT 0"
+      },
+      {
+        "name": "total_queries",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "total_queries INTEGER DEFAULT 0"
+      },
+      {
+        "name": "slow_queries",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "slow_queries INTEGER DEFAULT 0"
+      },
+      {
+        "name": "uptime_hours",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "uptime_hours NUMERIC DEFAULT 0"
+      },
+      {
+        "name": "last_check",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_check TIMESTAMP"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-models-schema-sql-query-logs",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "query_logs",
+    "displayName": "Query Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "database_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "database_id INTEGER REFERENCES monitored_databases(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "query_text",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "query_text TEXT"
+      },
+      {
+        "name": "execution_time_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "execution_time_ms INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "table_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "table_name VARCHAR(255)"
+      },
+      {
+        "name": "query_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "query_type VARCHAR(50)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-models-schema-sql-suggested-indexes",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "suggested_indexes",
+    "displayName": "Suggested Indexes",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "database_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "database_id INTEGER REFERENCES monitored_databases(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "table_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "table_name VARCHAR(255)"
+      },
+      {
+        "name": "column_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "column_name VARCHAR(255)"
+      },
+      {
+        "name": "index_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'btree'",
+        "sourceLine": "index_type VARCHAR(50) DEFAULT 'btree'"
+      },
+      {
+        "name": "impact_score",
+        "type": "NUMERIC",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "impact_score NUMERIC DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'suggested'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'suggested'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-database-admin-agent-backend-models-schema-sql-users",
+    "sourceProject": "AIDatabaseAdminAgent",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-ai-features-js-ai-results",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/aiFeatures.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project_id INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "input JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "output JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(255)"
+      },
+      {
+        "name": "success",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "success BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-custom-views-js-annotation-rules",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "annotation_rules",
+    "displayName": "Annotation Rules",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/customViews.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "label_class",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "label_class VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "rule_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "rule_type VARCHAR(60) NOT NULL"
+      },
+      {
+        "name": "constraint_value",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "constraint_value TEXT"
+      },
+      {
+        "name": "required",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "required BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-missing-auto-label-suggest-labels-detect-disagreement-identi-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_missing_auto_label_suggest_labels_detect_disagreement_identi.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-no-calendar-integration-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_calendar_integration.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-no-dataset-management-or-versioning-surface-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_dataset_management_or_versioning_surface.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-no-integration-with-ml-training-pipelines-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_integration_with_ml_training_pipelines.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-no-label-schema-definition-and-validation-engine-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_label_schema_definition_and_validation_engine.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-no-payment-billing-module-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_payment_billing_module.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-data-labeling-platform-backend-routes-gap-no-user-labeler-management-and-quality-control-workflows-js-gap-features",
+    "sourceProject": "AIDataLabelingPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_no_user_labeler_management_and_quality_control_workflows.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "input_data_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data_json TEXT"
+      },
+      {
+        "name": "result_json",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result_json TEXT"
+      },
+      {
+        "name": "model_used",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used VARCHAR(120)"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-agentic-compliance-auditor-js-agentic-compliance-scans",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "agentic_compliance_scans",
+    "displayName": "Agentic Compliance Scans",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/agenticComplianceAuditor.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "scope",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "scope TEXT"
+      },
+      {
+        "name": "payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payload JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-consent-records",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "consent_records",
+    "displayName": "Consent Records",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "data_subject_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_subject_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "data_subject_email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_subject_email VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "consent_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "consent_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "purpose",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "purpose TEXT NOT NULL"
+      },
+      {
+        "name": "legal_basis",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'consent'",
+        "sourceLine": "legal_basis VARCHAR(100) DEFAULT 'consent'"
+      },
+      {
+        "name": "consent_given",
+        "type": "BOOLEAN",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "consent_given BOOLEAN NOT NULL"
+      },
+      {
+        "name": "consent_date",
+        "type": "TIMESTAMP",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "consent_date TIMESTAMP NOT NULL"
+      },
+      {
+        "name": "withdrawal_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "withdrawal_date TIMESTAMP"
+      },
+      {
+        "name": "expiry_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expiry_date DATE"
+      },
+      {
+        "name": "collection_method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "collection_method VARCHAR(100)"
+      },
+      {
+        "name": "consent_text",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "consent_text TEXT"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(20)"
+      },
+      {
+        "name": "ip_address",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ip_address VARCHAR(50)"
+      },
+      {
+        "name": "granularity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "granularity VARCHAR(50)"
+      },
+      {
+        "name": "freely_given",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "freely_given BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "specific",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "specific BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "informed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "informed BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "unambiguous",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "unambiguous BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-cookie-compliance",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "cookie_compliance",
+    "displayName": "Cookie Compliance",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "cookie_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cookie_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "domain",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "domain VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "purpose",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "purpose TEXT NOT NULL"
+      },
+      {
+        "name": "provider",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "provider VARCHAR(255)"
+      },
+      {
+        "name": "duration",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration VARCHAR(100)"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(50)"
+      },
+      {
+        "name": "data_collected",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_collected TEXT"
+      },
+      {
+        "name": "consent_required",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "consent_required BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "consent_mechanism",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "consent_mechanism VARCHAR(100)"
+      },
+      {
+        "name": "opt_out_available",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "opt_out_available BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "privacy_policy_link",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "privacy_policy_link VARCHAR(500)"
+      },
+      {
+        "name": "country_scope",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "country_scope TEXT"
+      },
+      {
+        "name": "legal_basis",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "legal_basis VARCHAR(100)"
+      },
+      {
+        "name": "last_scan_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_scan_date DATE"
+      },
+      {
+        "name": "compliant",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "compliant BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-cross-border-transfers",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "cross_border_transfers",
+    "displayName": "Cross Border Transfers",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "transfer_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "transfer_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "source_country",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source_country VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "destination_country",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "destination_country VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "data_categories",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_categories TEXT NOT NULL"
+      },
+      {
+        "name": "data_subjects",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_subjects TEXT"
+      },
+      {
+        "name": "transfer_mechanism",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "transfer_mechanism VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "legal_basis",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "legal_basis VARCHAR(255)"
+      },
+      {
+        "name": "recipient_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recipient_name VARCHAR(255)"
+      },
+      {
+        "name": "recipient_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recipient_type VARCHAR(50)"
+      },
+      {
+        "name": "adequacy_decision",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "adequacy_decision BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "safeguards_description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "safeguards_description TEXT"
+      },
+      {
+        "name": "tia_completed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "tia_completed BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "tia_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tia_date DATE"
+      },
+      {
+        "name": "supplementary_measures",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "supplementary_measures TEXT"
+      },
+      {
+        "name": "volume_estimate",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "volume_estimate VARCHAR(100)"
+      },
+      {
+        "name": "frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "frequency VARCHAR(50)"
+      },
+      {
+        "name": "encryption_in_transit",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "encryption_in_transit BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "encryption_at_rest",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "encryption_at_rest BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "risk_level VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "review_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_date DATE"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-data-breaches",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "data_breaches",
+    "displayName": "Data Breaches",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "incident_title",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "incident_title VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT NOT NULL"
+      },
+      {
+        "name": "breach_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "breach_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(20) NOT NULL"
+      },
+      {
+        "name": "discovery_date",
+        "type": "TIMESTAMP",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "discovery_date TIMESTAMP NOT NULL"
+      },
+      {
+        "name": "occurrence_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "occurrence_date TIMESTAMP"
+      },
+      {
+        "name": "containment_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "containment_date TIMESTAMP"
+      },
+      {
+        "name": "notification_date",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notification_date TIMESTAMP"
+      },
+      {
+        "name": "data_categories_affected",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_categories_affected TEXT"
+      },
+      {
+        "name": "number_of_records",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "number_of_records INTEGER"
+      },
+      {
+        "name": "number_of_individuals",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "number_of_individuals INTEGER"
+      },
+      {
+        "name": "systems_affected",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "systems_affected TEXT"
+      },
+      {
+        "name": "root_cause",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "root_cause TEXT"
+      },
+      {
+        "name": "containment_actions",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "containment_actions TEXT"
+      },
+      {
+        "name": "remediation_actions",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "remediation_actions TEXT"
+      },
+      {
+        "name": "supervisory_authority_notified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "supervisory_authority_notified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "data_subjects_notified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "data_subjects_notified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "notification_required",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "notification_required BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "risk_to_individuals",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_to_individuals VARCHAR(50)"
+      },
+      {
+        "name": "reported_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "reported_by VARCHAR(255)"
+      },
+      {
+        "name": "assigned_to",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_to VARCHAR(255)"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'investigating'",
+        "sourceLine": "status VARCHAR(30) DEFAULT 'investigating'"
+      },
+      {
+        "name": "lessons_learned",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lessons_learned TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-data-subject-requests",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "data_subject_requests",
+    "displayName": "Data Subject Requests",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "request_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "request_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "requester_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "requester_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "requester_email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "requester_email VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "requester_id_verified",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "requester_id_verified BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "data_categories_affected",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_categories_affected TEXT"
+      },
+      {
+        "name": "systems_affected",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "systems_affected TEXT"
+      },
+      {
+        "name": "received_date",
+        "type": "DATE",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "received_date DATE NOT NULL"
+      },
+      {
+        "name": "acknowledgement_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "acknowledgement_date DATE"
+      },
+      {
+        "name": "due_date",
+        "type": "DATE",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "due_date DATE NOT NULL"
+      },
+      {
+        "name": "completed_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_date DATE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(30) DEFAULT 'pending'"
+      },
+      {
+        "name": "denial_reason",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "denial_reason TEXT"
+      },
+      {
+        "name": "assigned_to",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_to VARCHAR(255)"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "response_method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response_method VARCHAR(50)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-limited-webhook-surface-no-webhook-keywo-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-limited-webhook-surface-no-webhook-keywo.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-no-automated-dpa-contract-template-gener-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-no-automated-dpa-contract-template-gener.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-no-automated-dsr-fulfillment-data-export-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-no-automated-dsr-fulfillment-data-export.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-no-public-facing-privacy-portal-for-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-no-public-facing-privacy-portal-for.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-no-real-time-data-flow-monitoring-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-no-real-time-data-flow-monitoring.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-no-recommendation-engine-bias-check-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-no-recommendation-engine-bias-check.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-gap-no-third-party-code-sdk-audit-js-gap-features",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap-no-third-party-code-sdk-audit.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "slug",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug VARCHAR(120)"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-llm-usage-registry-js-llm-usage-registry",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "llm_usage_registry",
+    "displayName": "Llm Usage Registry",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/llmUsageRegistry.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "vendor",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "vendor TEXT NOT NULL"
+      },
+      {
+        "name": "product",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product TEXT NOT NULL"
+      },
+      {
+        "name": "business_owner",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "business_owner TEXT"
+      },
+      {
+        "name": "tier",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'consumer'",
+        "sourceLine": "tier TEXT NOT NULL DEFAULT 'consumer'"
+      },
+      {
+        "name": "data_residency",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_residency TEXT"
+      },
+      {
+        "name": "processes_personal_data",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "processes_personal_data BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "processes_special_categories",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "processes_special_categories BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "dpa_status",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'none'",
+        "sourceLine": "dpa_status TEXT NOT NULL DEFAULT 'none'"
+      },
+      {
+        "name": "training_opt_out",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "training_opt_out BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "retention_days",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "retention_days INTEGER"
+      },
+      {
+        "name": "use_case",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "use_case TEXT"
+      },
+      {
+        "name": "risk_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_score INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-privacy-impact-assessments",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "privacy_impact_assessments",
+    "displayName": "Privacy Impact Assessments",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "assessment_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assessment_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "project_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "assessment_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assessment_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "assessor",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assessor VARCHAR(255)"
+      },
+      {
+        "name": "processing_description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "processing_description TEXT"
+      },
+      {
+        "name": "necessity_justification",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "necessity_justification TEXT"
+      },
+      {
+        "name": "identified_risks",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "identified_risks TEXT"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "risk_level VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "mitigation_measures",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mitigation_measures TEXT"
+      },
+      {
+        "name": "residual_risk",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "residual_risk VARCHAR(20)"
+      },
+      {
+        "name": "dpo_opinion",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dpo_opinion TEXT"
+      },
+      {
+        "name": "dpo_consulted",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "dpo_consulted BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "supervisory_authority_consulted",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "supervisory_authority_consulted BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "start_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "start_date DATE"
+      },
+      {
+        "name": "completion_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completion_date DATE"
+      },
+      {
+        "name": "review_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_date DATE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "status VARCHAR(30) DEFAULT 'draft'"
+      },
+      {
+        "name": "outcome",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "outcome VARCHAR(50)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-processing-activities",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "processing_activities",
+    "displayName": "Processing Activities",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "activity_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "activity_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "purpose",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "purpose TEXT NOT NULL"
+      },
+      {
+        "name": "legal_basis",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "legal_basis VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "data_categories",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_categories TEXT NOT NULL"
+      },
+      {
+        "name": "data_subjects",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_subjects VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "recipients",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recipients TEXT"
+      },
+      {
+        "name": "third_country_transfers",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "third_country_transfers BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "transfer_safeguards",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "transfer_safeguards VARCHAR(255)"
+      },
+      {
+        "name": "retention_period",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "retention_period VARCHAR(100)"
+      },
+      {
+        "name": "technical_measures",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "technical_measures TEXT"
+      },
+      {
+        "name": "organizational_measures",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "organizational_measures TEXT"
+      },
+      {
+        "name": "data_source",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_source VARCHAR(255)"
+      },
+      {
+        "name": "automated_decision_making",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "automated_decision_making BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "dpo_review_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dpo_review_date DATE"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "controller_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "controller_name VARCHAR(255)"
+      },
+      {
+        "name": "processor_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "processor_name VARCHAR(255)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "risk_level VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-regulatory-tracker-js-regulatory-changes",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "regulatory_changes",
+    "displayName": "Regulatory Changes",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/regulatoryTracker.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "jurisdiction",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "jurisdiction TEXT NOT NULL"
+      },
+      {
+        "name": "source",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source TEXT NOT NULL"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT NOT NULL"
+      },
+      {
+        "name": "summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "summary TEXT"
+      },
+      {
+        "name": "effective_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "effective_date DATE"
+      },
+      {
+        "name": "impact",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "impact TEXT NOT NULL DEFAULT 'medium'"
+      },
+      {
+        "name": "tags",
+        "type": "TEXT[]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "ARRAY[]::TEXT[]",
+        "sourceLine": "tags TEXT[] DEFAULT ARRAY[]::TEXT[]"
+      },
+      {
+        "name": "url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-routes-regulatory-tracker-js-regulatory-subscriptions",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "regulatory_subscriptions",
+    "displayName": "Regulatory Subscriptions",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/regulatoryTracker.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER NOT NULL"
+      },
+      {
+        "name": "jurisdictions",
+        "type": "TEXT[]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "ARRAY[]::TEXT[]",
+        "sourceLine": "jurisdictions TEXT[] DEFAULT ARRAY[]::TEXT[]"
+      },
+      {
+        "name": "tags",
+        "type": "TEXT[]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "ARRAY[]::TEXT[]",
+        "sourceLine": "tags TEXT[] DEFAULT ARRAY[]::TEXT[]"
+      },
+      {
+        "name": "min_impact",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'low'",
+        "sourceLine": "min_impact TEXT NOT NULL DEFAULT 'low'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-retention-policies",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "retention_policies",
+    "displayName": "Retention Policies",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "policy_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "policy_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "data_category",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_category VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "retention_period",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "retention_period VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "retention_period_days",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "retention_period_days INTEGER"
+      },
+      {
+        "name": "legal_basis",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "legal_basis VARCHAR(255)"
+      },
+      {
+        "name": "regulatory_requirement",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "regulatory_requirement TEXT"
+      },
+      {
+        "name": "disposal_method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "disposal_method VARCHAR(100)"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "applies_to_systems",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "applies_to_systems TEXT"
+      },
+      {
+        "name": "review_frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review_frequency VARCHAR(50)"
+      },
+      {
+        "name": "last_review_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_review_date DATE"
+      },
+      {
+        "name": "next_review_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_review_date DATE"
+      },
+      {
+        "name": "data_owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_owner VARCHAR(255)"
+      },
+      {
+        "name": "exceptions",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "exceptions TEXT"
+      },
+      {
+        "name": "automated_enforcement",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "automated_enforcement BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-training-records",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "training_records",
+    "displayName": "Training Records",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "training_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "training_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "training_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "training_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "provider",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "provider VARCHAR(255)"
+      },
+      {
+        "name": "delivery_method",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "delivery_method VARCHAR(50)"
+      },
+      {
+        "name": "duration_hours",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration_hours DECIMAL(5,2)"
+      },
+      {
+        "name": "employee_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employee_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "employee_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employee_email VARCHAR(255)"
+      },
+      {
+        "name": "employee_department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employee_department VARCHAR(100)"
+      },
+      {
+        "name": "employee_role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "employee_role VARCHAR(100)"
+      },
+      {
+        "name": "assigned_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_date DATE"
+      },
+      {
+        "name": "completion_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completion_date DATE"
+      },
+      {
+        "name": "expiry_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expiry_date DATE"
+      },
+      {
+        "name": "score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "score DECIMAL(5,2)"
+      },
+      {
+        "name": "passing_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "80.00",
+        "sourceLine": "passing_score DECIMAL(5,2) DEFAULT 80.00"
+      },
+      {
+        "name": "passed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "passed BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "certificate_issued",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "certificate_issued BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "topics_covered",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "topics_covered TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'assigned'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'assigned'"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-users",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password_hash",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_hash VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "full_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "full_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "department VARCHAR(100)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "aigdpr-data-mapping-privacy-manager-backend-seed-js-vendors",
+    "sourceProject": "AIGDPRDataMappingPrivacyManager",
+    "name": "vendors",
+    "displayName": "Vendors",
+    "framework": "SQL",
+    "sourceFile": "backend/seed.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "vendor_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "vendor_name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "vendor_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "vendor_type VARCHAR(50) NOT NULL"
+      },
+      {
+        "name": "contact_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contact_name VARCHAR(255)"
+      },
+      {
+        "name": "contact_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contact_email VARCHAR(255)"
+      },
+      {
+        "name": "country",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "country VARCHAR(100)"
+      },
+      {
+        "name": "services_provided",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "services_provided TEXT"
+      },
+      {
+        "name": "data_categories_shared",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_categories_shared TEXT"
+      },
+      {
+        "name": "legal_basis",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "legal_basis VARCHAR(100)"
+      },
+      {
+        "name": "dpa_signed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "dpa_signed BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "dpa_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dpa_date DATE"
+      },
+      {
+        "name": "scc_in_place",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "scc_in_place BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "risk_level",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'medium'",
+        "sourceLine": "risk_level VARCHAR(20) DEFAULT 'medium'"
+      },
+      {
+        "name": "last_audit_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_audit_date DATE"
+      },
+      {
+        "name": "next_audit_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_audit_date DATE"
+      },
+      {
+        "name": "certifications",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "certifications TEXT"
+      },
+      {
+        "name": "sub_processors",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sub_processors TEXT"
+      },
+      {
+        "name": "data_breach_notification_hours",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "72",
+        "sourceLine": "data_breach_notification_hours INTEGER DEFAULT 72"
+      },
+      {
+        "name": "contract_start_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contract_start_date DATE"
+      },
+      {
+        "name": "contract_end_date",
+        "type": "DATE",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contract_end_date DATE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(20) DEFAULT 'active'"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-ai-results",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature VARCHAR(80) NOT NULL"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(120)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-approval-history",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "approval_history",
+    "displayName": "Approval History",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "approval_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "approval_id  VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "from_state",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "from_state   VARCHAR(40)"
+      },
+      {
+        "name": "to_state",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "to_state     VARCHAR(40) NOT NULL"
+      },
+      {
+        "name": "actor_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "actor_id     VARCHAR(160) NOT NULL"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes        TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at   TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-002-pass7-backlog-sql-approval-history",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "approval_history",
+    "displayName": "Approval History",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/002_pass7_backlog.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "approval_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "approval_id  VARCHAR(120) NOT NULL"
+      },
+      {
+        "name": "from_state",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "from_state   VARCHAR(40)"
+      },
+      {
+        "name": "to_state",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "to_state     VARCHAR(40) NOT NULL"
+      },
+      {
+        "name": "actor_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "actor_id     VARCHAR(160) NOT NULL"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes        TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at   TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-approvals",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "approvals",
+    "displayName": "Approvals",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "approval_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "approval_id   VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "resource_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_type VARCHAR(80)  NOT NULL"
+      },
+      {
+        "name": "resource_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_id   VARCHAR(160) NOT NULL"
+      },
+      {
+        "name": "state",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "state         VARCHAR(40)  NOT NULL DEFAULT 'pending'"
+      },
+      {
+        "name": "requested_by",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "requested_by  VARCHAR(160) NOT NULL"
+      },
+      {
+        "name": "approver_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "approver_id   VARCHAR(160)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes         TEXT"
+      },
+      {
+        "name": "decided_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "decided_at    TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at    TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at    TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-002-pass7-backlog-sql-approvals",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "approvals",
+    "displayName": "Approvals",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/002_pass7_backlog.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "approval_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "approval_id   VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "resource_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_type VARCHAR(80)  NOT NULL"
+      },
+      {
+        "name": "resource_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_id   VARCHAR(160) NOT NULL"
+      },
+      {
+        "name": "state",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "state         VARCHAR(40)  NOT NULL DEFAULT 'pending'"
+      },
+      {
+        "name": "requested_by",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "requested_by  VARCHAR(160) NOT NULL"
+      },
+      {
+        "name": "approver_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "approver_id   VARCHAR(160)"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes         TEXT"
+      },
+      {
+        "name": "decided_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "decided_at    TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at    TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at    TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-attachments",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "attachments",
+    "displayName": "Attachments",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "attachment_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "attachment_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "resource",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource VARCHAR(60)"
+      },
+      {
+        "name": "resource_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_id VARCHAR(120)"
+      },
+      {
+        "name": "filename",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "filename VARCHAR(300)"
+      },
+      {
+        "name": "mime",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mime VARCHAR(120)"
+      },
+      {
+        "name": "size_bytes",
+        "type": "BIGINT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "size_bytes BIGINT DEFAULT 0"
+      },
+      {
+        "name": "content",
+        "type": "BYTEA",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content BYTEA"
+      },
+      {
+        "name": "uploaded_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "uploaded_by VARCHAR(160)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-audit-logs",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "audit_logs",
+    "displayName": "Audit Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "log_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "log_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "actor",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "actor VARCHAR(160)"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(120)"
+      },
+      {
+        "name": "target",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target VARCHAR(200)"
+      },
+      {
+        "name": "timestamp",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "timestamp TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "model_version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_version VARCHAR(60)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-controls",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "controls",
+    "displayName": "Controls",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "control_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "control_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "framework",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "framework VARCHAR(40)"
+      },
+      {
+        "name": "control_id_ext",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "control_id_ext VARCHAR(120)"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(300)"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status VARCHAR(40)"
+      },
+      {
+        "name": "last_tested",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_tested TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-datasets",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "datasets",
+    "displayName": "Datasets",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "dataset_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "dataset_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(200) NOT NULL"
+      },
+      {
+        "name": "source",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "source VARCHAR(200)"
+      },
+      {
+        "name": "sensitivity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sensitivity VARCHAR(40)"
+      },
+      {
+        "name": "size_rows",
+        "type": "BIGINT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "size_rows BIGINT DEFAULT 0"
+      },
+      {
+        "name": "license",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "license VARCHAR(80)"
+      },
+      {
+        "name": "registered_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "registered_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "pii_present",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "pii_present BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-deployments",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "deployments",
+    "displayName": "Deployments",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "deployment_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "deployment_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "env",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "env VARCHAR(40)"
+      },
+      {
+        "name": "region",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "region VARCHAR(60)"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(60)"
+      },
+      {
+        "name": "deployed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "deployed_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-dpia-records",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "dpia_records",
+    "displayName": "Dpia Records",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "dpia_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "dpia_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "system",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "system VARCHAR(200)"
+      },
+      {
+        "name": "scope",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "scope TEXT"
+      },
+      {
+        "name": "data_categories",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_categories VARCHAR(300)"
+      },
+      {
+        "name": "mitigations",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mitigations TEXT"
+      },
+      {
+        "name": "residual_risk",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "residual_risk VARCHAR(40)"
+      },
+      {
+        "name": "approved_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "approved_by VARCHAR(160)"
+      },
+      {
+        "name": "approved_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "approved_at TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-evaluations",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "evaluations",
+    "displayName": "Evaluations",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "eval_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "eval_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "dataset",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dataset VARCHAR(200)"
+      },
+      {
+        "name": "metric",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "metric VARCHAR(80)"
+      },
+      {
+        "name": "score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "score DECIMAL(10,4)"
+      },
+      {
+        "name": "run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "run_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "passed",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "passed BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-fine-tunes",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "fine_tunes",
+    "displayName": "Fine Tunes",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "ft_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "ft_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "base_model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "base_model VARCHAR(200)"
+      },
+      {
+        "name": "dataset",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dataset VARCHAR(200)"
+      },
+      {
+        "name": "run_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "run_id VARCHAR(120)"
+      },
+      {
+        "name": "eval_score",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "eval_score DECIMAL(10,4)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status VARCHAR(40)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-incidents",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "incidents",
+    "displayName": "Incidents",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "incident_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "incident_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type VARCHAR(40)"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(40)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'open'",
+        "sourceLine": "status VARCHAR(40) DEFAULT 'open'"
+      },
+      {
+        "name": "opened_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "opened_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-jurisdictions",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "jurisdictions",
+    "displayName": "Jurisdictions",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "juris_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "juris_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "country",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "country VARCHAR(120)"
+      },
+      {
+        "name": "regulation",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "regulation VARCHAR(80)"
+      },
+      {
+        "name": "applicable_systems",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "applicable_systems VARCHAR(400)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status VARCHAR(40)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-model-cards",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "model_cards",
+    "displayName": "Model Cards",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "card_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "card_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(60)"
+      },
+      {
+        "name": "owners",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owners VARCHAR(300)"
+      },
+      {
+        "name": "intended_use",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "intended_use TEXT"
+      },
+      {
+        "name": "limitations",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "limitations TEXT"
+      },
+      {
+        "name": "ethical_considerations",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ethical_considerations TEXT"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-models",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "models",
+    "displayName": "Models",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "model_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "model_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(200) NOT NULL"
+      },
+      {
+        "name": "provider",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "provider VARCHAR(120)"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(60)"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "deployed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployed_at TIMESTAMP"
+      },
+      {
+        "name": "risk_tier",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_tier VARCHAR(40)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(40) DEFAULT 'active'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-notifications",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "notifications",
+    "displayName": "Notifications",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_email",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_email VARCHAR(160)"
+      },
+      {
+        "name": "kind",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "kind VARCHAR(60)"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title VARCHAR(300)"
+      },
+      {
+        "name": "body",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "body TEXT"
+      },
+      {
+        "name": "resource",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource VARCHAR(120)"
+      },
+      {
+        "name": "resource_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resource_id VARCHAR(120)"
+      },
+      {
+        "name": "read_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "read_at TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-policies",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "policies",
+    "displayName": "Policies",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "policy_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "policy_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(200) NOT NULL"
+      },
+      {
+        "name": "framework",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "framework VARCHAR(40)"
+      },
+      {
+        "name": "scope",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "scope VARCHAR(200)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "status VARCHAR(40) DEFAULT 'draft'"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-prompts",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "prompts",
+    "displayName": "Prompts",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "prompt_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "prompt_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(200)"
+      },
+      {
+        "name": "system",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "system TEXT"
+      },
+      {
+        "name": "user_template",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_template TEXT"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(60)"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "last_used",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_used TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-redteam-findings",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "redteam_findings",
+    "displayName": "Redteam Findings",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "finding_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "finding_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "technique",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "technique VARCHAR(160)"
+      },
+      {
+        "name": "severity",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity VARCHAR(40)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'open'",
+        "sourceLine": "status VARCHAR(40) DEFAULT 'open'"
+      },
+      {
+        "name": "found_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "found_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-risk-register",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "risk_register",
+    "displayName": "Risk Register",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "risk_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "risk_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(120)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "likelihood",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "likelihood VARCHAR(40)"
+      },
+      {
+        "name": "impact",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "impact VARCHAR(40)"
+      },
+      {
+        "name": "mitigation",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "mitigation TEXT"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-ssp",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "ssp",
+    "displayName": "Ssp",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "ssp_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "ssp_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "system_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "system_name VARCHAR(200)"
+      },
+      {
+        "name": "framework",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "framework VARCHAR(40)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'draft'",
+        "sourceLine": "status VARCHAR(40) DEFAULT 'draft'"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner VARCHAR(120)"
+      },
+      {
+        "name": "version",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version VARCHAR(60)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-third-parties",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "third_parties",
+    "displayName": "Third Parties",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "party_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "party_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(200)"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role VARCHAR(40)"
+      },
+      {
+        "name": "dpia_required",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "dpia_required BOOLEAN DEFAULT false"
+      },
+      {
+        "name": "contract_expires",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contract_expires TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-training-runs",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "training_runs",
+    "displayName": "Training Runs",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "run_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "run_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(200)"
+      },
+      {
+        "name": "dataset",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dataset VARCHAR(200)"
+      },
+      {
+        "name": "hours",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "hours DECIMAL(10,2)"
+      },
+      {
+        "name": "gpu_count",
+        "type": "INT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "gpu_count INT"
+      },
+      {
+        "name": "cost_usd",
+        "type": "DECIMAL",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cost_usd DECIMAL(12,2)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status VARCHAR(40)"
+      },
+      {
+        "name": "finished_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "finished_at TIMESTAMP"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-users",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(160) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(200) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(120)"
+      },
+      {
+        "name": "role",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'compliance'",
+        "sourceLine": "role VARCHAR(40) DEFAULT 'compliance'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-webhook-deliveries",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "webhook_deliveries",
+    "displayName": "Webhook Deliveries",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "webhook_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhook_id VARCHAR(120)"
+      },
+      {
+        "name": "event",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event VARCHAR(80)"
+      },
+      {
+        "name": "payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payload JSONB"
+      },
+      {
+        "name": "status_code",
+        "type": "INT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status_code INT"
+      },
+      {
+        "name": "response",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response TEXT"
+      },
+      {
+        "name": "signature",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "signature VARCHAR(200)"
+      },
+      {
+        "name": "delivered_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "delivered_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-governance-model-ops-backend-migrations-001-schema-sql-webhooks",
+    "sourceProject": "AIGovernanceModelOps",
+    "name": "webhooks",
+    "displayName": "Webhooks",
+    "framework": "SQL",
+    "sourceFile": "backend/migrations/001_schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "webhook_id",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "webhook_id VARCHAR(120) UNIQUE NOT NULL"
+      },
+      {
+        "name": "url",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url VARCHAR(500) NOT NULL"
+      },
+      {
+        "name": "secret",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "secret VARCHAR(200)"
+      },
+      {
+        "name": "events",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "events VARCHAR(400)"
+      },
+      {
+        "name": "active",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "active BOOLEAN DEFAULT true"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-activity-logs",
+    "sourceProject": "AIRAGPlatform",
+    "name": "activity_logs",
+    "displayName": "Activity Logs",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "user_name",
+        "type": "String(255",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_name = Column(String(255)"
+      },
+      {
+        "name": "action",
+        "type": "String(100",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action = Column(String(100)"
+      },
+      {
+        "name": "entity_type",
+        "type": "String(50",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type = Column(String(50)"
+      },
+      {
+        "name": "entity_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id = Column(Integer, nullable=True)"
+      },
+      {
+        "name": "entity_name",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_name = Column(String(500)"
+      },
+      {
+        "name": "details",
+        "type": "Text",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "details = Column(Text, nullable=True)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-ai-summaries",
+    "sourceProject": "AIRAGPlatform",
+    "name": "ai_summaries",
+    "displayName": "Ai Summaries",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "document_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "document_id = Column(Integer, ForeignKey(\"documents.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "title",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title = Column(String(500)"
+      },
+      {
+        "name": "summary",
+        "type": "Text",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "summary = Column(Text, nullable=False)"
+      },
+      {
+        "name": "model_used",
+        "type": "String(100",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used = Column(String(100)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-chat-messages",
+    "sourceProject": "AIRAGPlatform",
+    "name": "chat_messages",
+    "displayName": "Chat Messages",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "session_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id = Column(Integer, ForeignKey(\"chat_sessions.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "role",
+        "type": "String(20",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role = Column(String(20)"
+      },
+      {
+        "name": "content",
+        "type": "Text",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content = Column(Text, nullable=False)"
+      },
+      {
+        "name": "sources",
+        "type": "JSON",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sources = Column(JSON, nullable=True)"
+      },
+      {
+        "name": "model_used",
+        "type": "String(100",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model_used = Column(String(100)"
+      },
+      {
+        "name": "response_time",
+        "type": "Float",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response_time = Column(Float, nullable=True)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-chat-sessions",
+    "sourceProject": "AIRAGPlatform",
+    "name": "chat_sessions",
+    "displayName": "Chat Sessions",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "title",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title = Column(String(500)"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      },
+      {
+        "name": "updated_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "updated_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-document-events",
+    "sourceProject": "AIRAGPlatform",
+    "name": "document_events",
+    "displayName": "Document Events",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "document_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "document_id = Column(Integer, ForeignKey(\"documents.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "event_type",
+        "type": "String(50",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event_type = Column(String(50)"
+      },
+      {
+        "name": "event_metadata",
+        "type": "\"metadata\"",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event_metadata = Column(\"metadata\", JSON, nullable=True)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-document-tags",
+    "sourceProject": "AIRAGPlatform",
+    "name": "document_tags",
+    "displayName": "Document Tags",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "document_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "document_id = Column(Integer, ForeignKey(\"documents.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "tag_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tag_id = Column(Integer, ForeignKey(\"tags.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-documents",
+    "sourceProject": "AIRAGPlatform",
+    "name": "documents",
+    "displayName": "Documents",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "title",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title = Column(String(500)"
+      },
+      {
+        "name": "filename",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "filename = Column(String(500)"
+      },
+      {
+        "name": "file_type",
+        "type": "String(20",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_type = Column(String(20)"
+      },
+      {
+        "name": "content",
+        "type": "Text",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content = Column(Text)"
+      },
+      {
+        "name": "file_size",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "file_size = Column(Integer, default=0)"
+      },
+      {
+        "name": "status",
+        "type": "String(50",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status = Column(String(50)"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      },
+      {
+        "name": "updated_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "updated_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-favorites",
+    "sourceProject": "AIRAGPlatform",
+    "name": "favorites",
+    "displayName": "Favorites",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "entity_type",
+        "type": "String(50",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_type = Column(String(50)"
+      },
+      {
+        "name": "entity_id",
+        "type": "Integer",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_id = Column(Integer, nullable=False)"
+      },
+      {
+        "name": "entity_name",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entity_name = Column(String(500)"
+      },
+      {
+        "name": "note",
+        "type": "Text",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "note = Column(Text, nullable=True)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-audit-log-of-who-queried-what-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_audit_log_of_who_queried_what.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-bulk-import-s3-google-drive-sharepoint-co-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_bulk_import_s3_google_drive_sharepoint_co.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-citationprovenance-route-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_citationprovenance_route.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-contradictiondetection-across-docs-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_contradictiondetection_across_docs.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-explicit-embed-ingestion-route-exposed-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_explicit_embed_ingestion_route_exposed.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-exportshare-workflow-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_exportshare_workflow.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-multisource-rag-apis-dbs-live-web-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_multisource_rag_apis_dbs_live_web.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-notification-system-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_notification_system.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-public-webhookintegration-system-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_public_webhookintegration_system.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-recommendsources-crossdocument-discovery-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_recommendsources_crossdocument_discovery.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-summarize-collectionlevel-overview-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_summarize_collectionlevel_overview.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-routers-gap-no-teamlevel-access-control-role-permissions-py-gap-features",
+    "sourceProject": "AIRAGPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routers/gap_no_teamlevel_access_control_role_permissions.py",
+    "columns": [
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title TEXT"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-knowledge-chunks",
+    "sourceProject": "AIRAGPlatform",
+    "name": "knowledge_chunks",
+    "displayName": "Knowledge Chunks",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "document_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "document_id = Column(Integer, ForeignKey(\"documents.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "chunk_text",
+        "type": "Text",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "chunk_text = Column(Text, nullable=False)"
+      },
+      {
+        "name": "chunk_index",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "chunk_index = Column(Integer, default=0)"
+      },
+      {
+        "name": "tokens",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "tokens = Column(Integer, default=0)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-prompt-templates",
+    "sourceProject": "AIRAGPlatform",
+    "name": "prompt_templates",
+    "displayName": "Prompt Templates",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "title",
+        "type": "String(500",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "title = Column(String(500)"
+      },
+      {
+        "name": "description",
+        "type": "Text",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description = Column(Text, nullable=True)"
+      },
+      {
+        "name": "template_text",
+        "type": "Text",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "template_text = Column(Text, nullable=False)"
+      },
+      {
+        "name": "category",
+        "type": "String(100",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category = Column(String(100)"
+      },
+      {
+        "name": "is_active",
+        "type": "Boolean",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "True",
+        "sourceLine": "is_active = Column(Boolean, default=True)"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      },
+      {
+        "name": "updated_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "updated_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-tags",
+    "sourceProject": "AIRAGPlatform",
+    "name": "tags",
+    "displayName": "Tags",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "name",
+        "type": "String(100",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name = Column(String(100)"
+      },
+      {
+        "name": "color",
+        "type": "String(20",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "color = Column(String(20)"
+      },
+      {
+        "name": "description",
+        "type": "Text",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description = Column(Text, nullable=True)"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-users",
+    "sourceProject": "AIRAGPlatform",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "email",
+        "type": "String(255",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email = Column(String(255)"
+      },
+      {
+        "name": "password_hash",
+        "type": "String(255",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password_hash = Column(String(255)"
+      },
+      {
+        "name": "name",
+        "type": "String(255",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name = Column(String(255)"
+      },
+      {
+        "name": "role",
+        "type": "String(50",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role = Column(String(50)"
+      },
+      {
+        "name": "is_active",
+        "type": "Boolean",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "True",
+        "sourceLine": "is_active = Column(Boolean, default=True)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-workspace-members",
+    "sourceProject": "AIRAGPlatform",
+    "name": "workspace_members",
+    "displayName": "Workspace Members",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "workspace_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workspace_id = Column(Integer, ForeignKey(\"workspaces.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "user_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id = Column(Integer, ForeignKey(\"users.id\", ondelete=\"CASCADE\")"
+      },
+      {
+        "name": "role",
+        "type": "String(50",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "role = Column(String(50)"
+      },
+      {
+        "name": "invited_by",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "invited_by = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "airag-platform-backend-models-database-models-py-workspaces",
+    "sourceProject": "AIRAGPlatform",
+    "name": "workspaces",
+    "displayName": "Workspaces",
+    "framework": "SQLAlchemy",
+    "sourceFile": "backend/models/database_models.py",
+    "columns": [
+      {
+        "name": "id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id = Column(Integer, primary_key=True, index=True)"
+      },
+      {
+        "name": "name",
+        "type": "String(255",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name = Column(String(255)"
+      },
+      {
+        "name": "description",
+        "type": "Text",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description = Column(Text, nullable=True)"
+      },
+      {
+        "name": "owner_id",
+        "type": "Integer",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner_id = Column(Integer, ForeignKey(\"users.id\")"
+      },
+      {
+        "name": "slug",
+        "type": "String(100",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug = Column(String(100)"
+      },
+      {
+        "name": "is_active",
+        "type": "Boolean",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "True",
+        "sourceLine": "is_active = Column(Boolean, default=True)"
+      },
+      {
+        "name": "created_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at = Column(DateTime(timezone=True)"
+      },
+      {
+        "name": "updated_at",
+        "type": "DateTime(timezone=True",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "updated_at = Column(DateTime(timezone=True)"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-config-database-js-ai-results",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER"
+      },
+      {
+        "name": "endpoint",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "endpoint VARCHAR(100)"
+      },
+      {
+        "name": "input_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_data JSONB"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-config-database-js-datasets",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "datasets",
+    "displayName": "Datasets",
+    "framework": "SQL",
+    "sourceFile": "backend/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description TEXT"
+      },
+      {
+        "name": "record_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "record_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "schema_config",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "schema_config JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "data JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'ready'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'ready'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-data-masking-anonymization-ai-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoDataMaskingAnonymizationAi.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-dataset-preview-endpoint-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoDatasetPreviewEndpoint.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-distribution-aware-generation-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoDistributionAwareGeneration.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-export-to-csv-parquet-json-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoExportToCsvParquetJson.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-multi-tenant-project-workspaces-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoMultiTenantProjectWorkspaces.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-notifications-integrations-audit-log-subsystems-only-stub-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoNotificationsIntegrationsAuditLogSubsystemsOnlyStub.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-privacy-compliance-pii-redaction-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoPrivacyCompliancePiiRedaction.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-schema-editor-backend-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoSchemaEditorBackend.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-schema-inference-from-samples-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoSchemaInferenceFromSamples.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-routes-gap-no-synthetic-data-generation-engine-endpoint-js-gap-features",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoSyntheticDataGenerationEngineEndpoint.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-config-database-js-generations",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "generations",
+    "displayName": "Generations",
+    "framework": "SQL",
+    "sourceFile": "backend/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "dataset_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dataset_id INTEGER REFERENCES datasets(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "prompt",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prompt TEXT NOT NULL"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "result JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(100)"
+      },
+      {
+        "name": "tokens_used",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "tokens_used INTEGER DEFAULT 0"
+      },
+      {
+        "name": "duration_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "duration_ms INTEGER DEFAULT 0"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-synthetic-data-generator-backend-config-database-js-users",
+    "sourceProject": "AISyntheticDataGenerator",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/config/database.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "CURRENT_TIMESTAMP",
+        "sourceLine": "created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-critical-gap-no-ai-driven-test-generation-despite-domain-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapCriticalGapNoAiDrivenTestGenerationDespiteDomain.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-limited-ci-cd-platform-integration-beyond-stub-modules-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapLimitedCiCdPlatformIntegrationBeyondStubModules.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-limited-vcs-integration-git-auto-trigger-not-visible-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapLimitedVcsIntegrationGitAutoTriggerNotVisible.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-no-code-coverage-gap-recommender-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoCodeCoverageGapRecommender.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-no-code-coverage-visualization-ui-route-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoCodeCoverageVisualizationUiRoute.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-no-flaky-test-detection-ml-model-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoFlakyTestDetectionMlModel.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-no-mutation-testing-ai-analysis-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoMutationTestingAiAnalysis.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-no-test-flakiness-detection-feature-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoTestFlakinessDetectionFeature.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-backend-routes-gap-notifications-limited-to-one-reference-not-a-full-js-gap-features",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNotificationsLimitedToOneReferenceNotAFull.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-test-generation-platform-frontend-src-pages-gap-no-flaky-test-detection-ml-model-jsx-import",
+    "sourceProject": "AITestGenerationPlatform",
+    "name": "import",
+    "displayName": "Import",
+    "framework": "Prisma",
+    "sourceFile": "frontend/src/pages/GapNoFlakyTestDetectionMlModel.jsx",
+    "columns": [
+      {
+        "name": "useState",
+        "type": "}",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "useState } from 'react'"
+      },
+      {
+        "name": "const",
+        "type": "API_BASE",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "const API_BASE = (typeof window !== 'undefined' && window.__API_BASE__) || 'http://localhost:5001'"
+      },
+      {
+        "name": "function",
+        "type": "getHeaders",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "function getHeaders() {"
+      },
+      {
+        "name": "return",
+        "type": "{",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "return { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-node-session-database-ts-file-edits",
+    "sourceProject": "cursor",
+    "name": "file_edits",
+    "displayName": "File Edits",
+    "framework": "SQL",
+    "sourceFile": "vscode/src/vs/platform/agentHost/node/sessionDatabase.ts",
+    "columns": [
+      {
+        "name": "turn_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "turn_id        TEXT    NOT NULL REFERENCES turns(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "tool_call_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tool_call_id   TEXT    NOT NULL"
+      },
+      {
+        "name": "file_path",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_path      TEXT    NOT NULL"
+      },
+      {
+        "name": "before_content",
+        "type": "BLOB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "before_content BLOB   NOT NULL"
+      },
+      {
+        "name": "after_content",
+        "type": "BLOB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "after_content  BLOB   NOT NULL"
+      },
+      {
+        "name": "added_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "added_lines    INTEGER"
+      },
+      {
+        "name": "removed_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "removed_lines  INTEGER"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-node-session-database-js-file-edits",
+    "sourceProject": "cursor",
+    "name": "file_edits",
+    "displayName": "File Edits",
+    "framework": "SQL",
+    "sourceFile": "vscode/out/vs/platform/agentHost/node/sessionDatabase.js",
+    "columns": [
+      {
+        "name": "turn_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "turn_id        TEXT    NOT NULL REFERENCES turns(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "tool_call_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tool_call_id   TEXT    NOT NULL"
+      },
+      {
+        "name": "file_path",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_path      TEXT    NOT NULL"
+      },
+      {
+        "name": "before_content",
+        "type": "BLOB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "before_content BLOB   NOT NULL"
+      },
+      {
+        "name": "after_content",
+        "type": "BLOB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "after_content  BLOB   NOT NULL"
+      },
+      {
+        "name": "added_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "added_lines    INTEGER"
+      },
+      {
+        "name": "removed_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "removed_lines  INTEGER"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-node-session-database-ts-file-edits-v3",
+    "sourceProject": "cursor",
+    "name": "file_edits_v3",
+    "displayName": "File Edits V3",
+    "framework": "SQL",
+    "sourceFile": "vscode/src/vs/platform/agentHost/node/sessionDatabase.ts",
+    "columns": [
+      {
+        "name": "turn_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "turn_id        TEXT    NOT NULL REFERENCES turns(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "tool_call_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tool_call_id   TEXT    NOT NULL"
+      },
+      {
+        "name": "file_path",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_path      TEXT    NOT NULL"
+      },
+      {
+        "name": "edit_type",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'edit'",
+        "sourceLine": "edit_type      TEXT    NOT NULL DEFAULT 'edit'"
+      },
+      {
+        "name": "original_path",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "original_path  TEXT"
+      },
+      {
+        "name": "before_content",
+        "type": "BLOB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "before_content BLOB"
+      },
+      {
+        "name": "after_content",
+        "type": "BLOB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "after_content  BLOB"
+      },
+      {
+        "name": "added_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "added_lines    INTEGER"
+      },
+      {
+        "name": "removed_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "removed_lines  INTEGER"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-node-session-database-js-file-edits-v3",
+    "sourceProject": "cursor",
+    "name": "file_edits_v3",
+    "displayName": "File Edits V3",
+    "framework": "SQL",
+    "sourceFile": "vscode/out/vs/platform/agentHost/node/sessionDatabase.js",
+    "columns": [
+      {
+        "name": "turn_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "turn_id        TEXT    NOT NULL REFERENCES turns(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "tool_call_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tool_call_id   TEXT    NOT NULL"
+      },
+      {
+        "name": "file_path",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_path      TEXT    NOT NULL"
+      },
+      {
+        "name": "edit_type",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'edit'",
+        "sourceLine": "edit_type      TEXT    NOT NULL DEFAULT 'edit'"
+      },
+      {
+        "name": "original_path",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "original_path  TEXT"
+      },
+      {
+        "name": "before_content",
+        "type": "BLOB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "before_content BLOB"
+      },
+      {
+        "name": "after_content",
+        "type": "BLOB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "after_content  BLOB"
+      },
+      {
+        "name": "added_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "added_lines    INTEGER"
+      },
+      {
+        "name": "removed_lines",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "removed_lines  INTEGER"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-jobs",
+    "sourceProject": "cursor",
+    "name": "jobs",
+    "displayName": "Jobs",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id TEXT PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id TEXT NOT NULL"
+      },
+      {
+        "name": "task",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "task TEXT NOT NULL"
+      },
+      {
+        "name": "status",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "status TEXT NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at INTEGER NOT NULL"
+      },
+      {
+        "name": "finished_at",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "finished_at INTEGER"
+      },
+      {
+        "name": "log",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "''",
+        "sourceLine": "log TEXT NOT NULL DEFAULT ''"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-memory-files",
+    "sourceProject": "cursor",
+    "name": "memory_files",
+    "displayName": "Memory Files",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY AUTOINCREMENT"
+      },
+      {
+        "name": "user_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id TEXT NOT NULL"
+      },
+      {
+        "name": "workspace",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workspace TEXT NOT NULL"
+      },
+      {
+        "name": "rel_path",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "rel_path TEXT NOT NULL"
+      },
+      {
+        "name": "content",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content TEXT NOT NULL"
+      },
+      {
+        "name": "updated_at",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "updated_at INTEGER NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-oauth-codes",
+    "sourceProject": "cursor",
+    "name": "oauth_codes",
+    "displayName": "Oauth Codes",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "code",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code TEXT PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id TEXT NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at INTEGER NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-common-agent-host-schema-ts-platform-session",
+    "sourceProject": "cursor",
+    "name": "platformSession",
+    "displayName": "Platform Session",
+    "framework": "Mongoose",
+    "sourceFile": "vscode/src/vs/platform/agentHost/common/agentHostSchema.ts",
+    "columns": [
+      {
+        "name": "enum",
+        "type": "['default' 'autoApprove' 'autopilot']",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "enum: ['default', 'autoApprove', 'autopilot']"
+      },
+      {
+        "name": "enumLabels",
+        "type": "[\n\t\t\tlocalize\n\t\t\tlocalize\n\t\t\tlocalize\")\n\t\t]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "enumLabels: [\n\t\t\tlocalize('agentHost.sessionConfig.autoApprove.default', \"Default Approvals\"),\n\t\t\tlocalize('agentHost.sessionConfig.autoApprove.bypass', \"Bypass Approvals\"),\n\t\t\tlocalize('agentHost.sessionConfig.autoApprove.autopilot', \"Autopilot (Preview)\"),\n\t\t]"
+      },
+      {
+        "name": "enumDescriptions",
+        "type": "[\n\t\t\tlocalize\n\t\t\tlocalize\n\t\t\tlocalize\n\t\t]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "enumDescriptions: [\n\t\t\tlocalize('agentHost.sessionConfig.autoApprove.defaultDescription', \"Copilot uses your configured settings\"),\n\t\t\tlocalize('agentHost.sessionConfig.autoApprove.bypassDescription', \"All tool calls are auto-approved\"),\n\t\t\tlocalize('agentHost.sessionConfig.autoApprove.autopilotDescription', \"Autonomously iterates from start to finish\"),\n\t\t]"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-common-agent-host-schema-js-platform-session",
+    "sourceProject": "cursor",
+    "name": "platformSession",
+    "displayName": "Platform Session",
+    "framework": "Mongoose",
+    "sourceFile": "vscode/out/vs/platform/agentHost/common/agentHostSchema.js",
+    "columns": [
+      {
+        "name": "enum",
+        "type": "['default' 'autoApprove' 'autopilot']",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "enum: ['default', 'autoApprove', 'autopilot']"
+      },
+      {
+        "name": "enumLabels",
+        "type": "[\n            localize\n            localize\n            localize\")\n        ]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "enumLabels: [\n            localize('agentHost.sessionConfig.autoApprove.default', \"Default Approvals\"),\n            localize('agentHost.sessionConfig.autoApprove.bypass', \"Bypass Approvals\"),\n            localize('agentHost.sessionConfig.autoApprove.autopilot', \"Autopilot (Preview)\"),\n        ]"
+      },
+      {
+        "name": "enumDescriptions",
+        "type": "[\n            localize\n            localize\n            localize\n        ]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "enumDescriptions: [\n            localize('agentHost.sessionConfig.autoApprove.defaultDescription', \"Copilot uses your configured settings\"),\n            localize('agentHost.sessionConfig.autoApprove.bypassDescription', \"All tool calls are auto-approved\"),\n            localize('agentHost.sessionConfig.autoApprove.autopilotDescription', \"Autonomously iterates from start to finish\"),\n        ]"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-node-session-database-ts-session-metadata",
+    "sourceProject": "cursor",
+    "name": "session_metadata",
+    "displayName": "Session Metadata",
+    "framework": "SQL",
+    "sourceFile": "vscode/src/vs/platform/agentHost/node/sessionDatabase.ts",
+    "columns": [
+      {
+        "name": "value",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "value TEXT NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-node-session-database-js-session-metadata",
+    "sourceProject": "cursor",
+    "name": "session_metadata",
+    "displayName": "Session Metadata",
+    "framework": "SQL",
+    "sourceFile": "vscode/out/vs/platform/agentHost/node/sessionDatabase.js",
+    "columns": [
+      {
+        "name": "value",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "value TEXT NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-sessions",
+    "sourceProject": "cursor",
+    "name": "sessions",
+    "displayName": "Sessions",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "token",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "token TEXT PRIMARY KEY"
+      },
+      {
+        "name": "user_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id TEXT NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at INTEGER NOT NULL"
+      },
+      {
+        "name": "expires_at",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expires_at INTEGER NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-test-node-session-database-test-ts-t1",
+    "sourceProject": "cursor",
+    "name": "t1",
+    "displayName": "T1",
+    "framework": "SQL",
+    "sourceFile": "vscode/src/vs/platform/agentHost/test/node/sessionDatabase.test.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-test-node-session-database-test-js-t1",
+    "sourceProject": "cursor",
+    "name": "t1",
+    "displayName": "T1",
+    "framework": "SQL",
+    "sourceFile": "vscode/out/vs/platform/agentHost/test/node/sessionDatabase.test.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-test-node-session-database-test-ts-t2",
+    "sourceProject": "cursor",
+    "name": "t2",
+    "displayName": "T2",
+    "framework": "SQL",
+    "sourceFile": "vscode/src/vs/platform/agentHost/test/node/sessionDatabase.test.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-test-node-session-database-test-js-t2",
+    "sourceProject": "cursor",
+    "name": "t2",
+    "displayName": "T2",
+    "framework": "SQL",
+    "sourceFile": "vscode/out/vs/platform/agentHost/test/node/sessionDatabase.test.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-telemetry-events",
+    "sourceProject": "cursor",
+    "name": "telemetry_events",
+    "displayName": "Telemetry Events",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY AUTOINCREMENT"
+      },
+      {
+        "name": "client_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "client_id TEXT NOT NULL"
+      },
+      {
+        "name": "user_id",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id TEXT"
+      },
+      {
+        "name": "ts",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ts INTEGER NOT NULL"
+      },
+      {
+        "name": "kind",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "kind TEXT NOT NULL"
+      },
+      {
+        "name": "props",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "props TEXT"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-extensions-copilot-src-extension-tools-node-test-to-json-schema-spec-ts-to-json-schema-spec",
+    "sourceProject": "cursor",
+    "name": "toJsonSchema.spec",
+    "displayName": "To Json Schema.Spec",
+    "framework": "Mongoose",
+    "sourceFile": "vscode/extensions/copilot/src/extension/tools/node/test/toJsonSchema.spec.ts",
+    "columns": [
+      {
+        "name": "person",
+        "type": "unknown",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "person: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-src-vs-platform-agent-host-node-session-database-ts-turns",
+    "sourceProject": "cursor",
+    "name": "turns",
+    "displayName": "Turns",
+    "framework": "SQL",
+    "sourceFile": "vscode/src/vs/platform/agentHost/node/sessionDatabase.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id TEXT PRIMARY KEY NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-vscode-out-vs-platform-agent-host-node-session-database-js-turns",
+    "sourceProject": "cursor",
+    "name": "turns",
+    "displayName": "Turns",
+    "framework": "SQL",
+    "sourceFile": "vscode/out/vs/platform/agentHost/node/sessionDatabase.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id TEXT PRIMARY KEY NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-usage",
+    "sourceProject": "cursor",
+    "name": "usage",
+    "displayName": "Usage",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id INTEGER PRIMARY KEY AUTOINCREMENT"
+      },
+      {
+        "name": "user_id",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id TEXT NOT NULL"
+      },
+      {
+        "name": "ts",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ts INTEGER NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model TEXT NOT NULL"
+      },
+      {
+        "name": "input_tokens",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_tokens INTEGER NOT NULL"
+      },
+      {
+        "name": "output_tokens",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output_tokens INTEGER NOT NULL"
+      },
+      {
+        "name": "cost_micros",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cost_micros INTEGER NOT NULL"
+      }
+    ]
+  },
+  {
+    "id": "cursor-server-src-db-ts-users",
+    "sourceProject": "cursor",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "server/src/db.ts",
+    "columns": [
+      {
+        "name": "id",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id TEXT PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email TEXT UNIQUE"
+      },
+      {
+        "name": "github_id",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "github_id TEXT UNIQUE"
+      },
+      {
+        "name": "created_at",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_at INTEGER NOT NULL"
+      },
+      {
+        "name": "plan",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'free'",
+        "sourceLine": "plan TEXT NOT NULL DEFAULT 'free'"
+      },
+      {
+        "name": "stripe_customer_id",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stripe_customer_id TEXT"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-activity-log",
+    "sourceProject": "noCodeAIAgency",
+    "name": "ActivityLog",
+    "displayName": "Activity Log",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "userId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "userId      String?"
+      },
+      {
+        "name": "user",
+        "type": "User?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user        User?    @relation(fields: [userId], references: [id])"
+      },
+      {
+        "name": "action",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action      String"
+      },
+      {
+        "name": "entityType",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entityType  String"
+      },
+      {
+        "name": "entityId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entityId    String?"
+      },
+      {
+        "name": "metadata",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "metadata    Json     @default(\"{}\")"
+      },
+      {
+        "name": "ipAddress",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ipAddress   String?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-agency",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Agency",
+    "displayName": "Agency",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name            String"
+      },
+      {
+        "name": "slug",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "slug            String   @unique"
+      },
+      {
+        "name": "ownerId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "ownerId         String   @unique"
+      },
+      {
+        "name": "owner",
+        "type": "User",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "owner           User     @relation(\"AgencyOwner\", fields: [ownerId], references: [id])"
+      },
+      {
+        "name": "brandSettings",
+        "type": "BrandSettings?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "brandSettings   BrandSettings?"
+      },
+      {
+        "name": "customDomains",
+        "type": "CustomDomain[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "customDomains   CustomDomain[]"
+      },
+      {
+        "name": "members",
+        "type": "AgencyMember[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "members         AgencyMember[]"
+      },
+      {
+        "name": "clients",
+        "type": "Client[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "clients         Client[]"
+      },
+      {
+        "name": "templates",
+        "type": "Template[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "templates       Template[]"
+      },
+      {
+        "name": "workflows",
+        "type": "Workflow[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflows       Workflow[]"
+      },
+      {
+        "name": "integrations",
+        "type": "Integration[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "integrations    Integration[]"
+      },
+      {
+        "name": "deployments",
+        "type": "Deployment[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployments     Deployment[]"
+      },
+      {
+        "name": "apiKeys",
+        "type": "ApiKey[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "apiKeys         ApiKey[]"
+      },
+      {
+        "name": "webhooks",
+        "type": "Webhook[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhooks        Webhook[]"
+      },
+      {
+        "name": "webhookTriggers",
+        "type": "WebhookTrigger[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhookTriggers WebhookTrigger[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-agency-member",
+    "sourceProject": "noCodeAIAgency",
+    "name": "AgencyMember",
+    "displayName": "Agency Member",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id        String   @id @default(uuid())"
+      },
+      {
+        "name": "userId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "userId    String   @unique"
+      },
+      {
+        "name": "user",
+        "type": "User",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user      User     @relation(fields: [userId], references: [id])"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId  String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency    Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "role",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"member\"",
+        "sourceLine": "role      String   @default(\"member\")"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-ai-documentation",
+    "sourceProject": "noCodeAIAgency",
+    "name": "AIDocumentation",
+    "displayName": "AI Documentation",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "entityType",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entityType  String"
+      },
+      {
+        "name": "entityId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "entityId    String"
+      },
+      {
+        "name": "content",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content     String"
+      },
+      {
+        "name": "format",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"markdown\"",
+        "sourceLine": "format      String   @default(\"markdown\")"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-ai-generated-code",
+    "sourceProject": "noCodeAIAgency",
+    "name": "AIGeneratedCode",
+    "displayName": "AI Generated Code",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "prompt",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prompt      String"
+      },
+      {
+        "name": "code",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "code        String"
+      },
+      {
+        "name": "language",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "language    String"
+      },
+      {
+        "name": "metadata",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "metadata    Json     @default(\"{}\")"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-ai-suggestion",
+    "sourceProject": "noCodeAIAgency",
+    "name": "AISuggestion",
+    "displayName": "AI Suggestion",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "type",
+        "type": "AISuggestionType",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type        AISuggestionType"
+      },
+      {
+        "name": "context",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "context     Json"
+      },
+      {
+        "name": "suggestion",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "suggestion  Json"
+      },
+      {
+        "name": "confidence",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "confidence  Float"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"pending\"",
+        "sourceLine": "status      String   @default(\"pending\")"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-ai-usage-log",
+    "sourceProject": "noCodeAIAgency",
+    "name": "AIUsageLog",
+    "displayName": "AI Usage Log",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id           String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId     String?"
+      },
+      {
+        "name": "userId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "userId       String?"
+      },
+      {
+        "name": "feature",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature      String"
+      },
+      {
+        "name": "model",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model        String?"
+      },
+      {
+        "name": "input",
+        "type": "Json?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input        Json?"
+      },
+      {
+        "name": "output",
+        "type": "Json?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output       Json?"
+      },
+      {
+        "name": "error",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error        String?"
+      },
+      {
+        "name": "durationMs",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "durationMs   Int?"
+      },
+      {
+        "name": "tokensIn",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tokensIn     Int?"
+      },
+      {
+        "name": "tokensOut",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tokensOut    Int?"
+      },
+      {
+        "name": "costUsd",
+        "type": "Float?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "costUsd      Float?"
+      },
+      {
+        "name": "ai_results",
+        "type": "Json?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_results   Json?    // raw AI response payload (for cost/latency analytics)"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-api-key",
+    "sourceProject": "noCodeAIAgency",
+    "name": "ApiKey",
+    "displayName": "API Key",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId    String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency      Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        String"
+      },
+      {
+        "name": "key",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "key         String   @unique"
+      },
+      {
+        "name": "scopes",
+        "type": "String[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "[]",
+        "sourceLine": "scopes      String[] @default([])"
+      },
+      {
+        "name": "expiresAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "expiresAt   DateTime?"
+      },
+      {
+        "name": "lastUsedAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lastUsedAt  DateTime?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-brand-settings",
+    "sourceProject": "noCodeAIAgency",
+    "name": "BrandSettings",
+    "displayName": "Brand Settings",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String  @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String  @unique"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency          Agency  @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "primaryColor",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"#3B82F6\"",
+        "sourceLine": "primaryColor    String  @default(\"#3B82F6\")"
+      },
+      {
+        "name": "secondaryColor",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"#10B981\"",
+        "sourceLine": "secondaryColor  String  @default(\"#10B981\")"
+      },
+      {
+        "name": "accentColor",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"#8B5CF6\"",
+        "sourceLine": "accentColor     String  @default(\"#8B5CF6\")"
+      },
+      {
+        "name": "logo",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "logo            String?"
+      },
+      {
+        "name": "favicon",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "favicon         String?"
+      },
+      {
+        "name": "companyName",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "companyName     String?"
+      },
+      {
+        "name": "supportEmail",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "supportEmail    String?"
+      },
+      {
+        "name": "customCss",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "customCss       String?"
+      },
+      {
+        "name": "emailHeaderLogo",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "emailHeaderLogo String?"
+      },
+      {
+        "name": "emailFooterText",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "emailFooterText String?"
+      },
+      {
+        "name": "emailSignature",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "emailSignature  String?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-client",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Client",
+    "displayName": "Client",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId      String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency        Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name          String"
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "email         String"
+      },
+      {
+        "name": "company",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "company       String?"
+      },
+      {
+        "name": "phone",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "phone         String?"
+      },
+      {
+        "name": "avatar",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avatar        String?"
+      },
+      {
+        "name": "status",
+        "type": "ClientStatus",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "ACTIVE",
+        "sourceLine": "status        ClientStatus @default(ACTIVE)"
+      },
+      {
+        "name": "workspace",
+        "type": "ClientWorkspace?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workspace     ClientWorkspace?"
+      },
+      {
+        "name": "billing",
+        "type": "ClientBilling?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "billing       ClientBilling?"
+      },
+      {
+        "name": "usageRecords",
+        "type": "UsageRecord[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "usageRecords  UsageRecord[]"
+      },
+      {
+        "name": "supportTickets",
+        "type": "SupportTicket[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "supportTickets SupportTicket[]"
+      },
+      {
+        "name": "deployments",
+        "type": "Deployment[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployments   Deployment[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-client-billing",
+    "sourceProject": "noCodeAIAgency",
+    "name": "ClientBilling",
+    "displayName": "Client Billing",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id                String   @id @default(uuid())"
+      },
+      {
+        "name": "clientId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "clientId          String   @unique"
+      },
+      {
+        "name": "client",
+        "type": "Client",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "client            Client   @relation(fields: [clientId], references: [id])"
+      },
+      {
+        "name": "plan",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"starter\"",
+        "sourceLine": "plan              String   @default(\"starter\")"
+      },
+      {
+        "name": "monthlyRate",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "monthlyRate       Float    @default(0)"
+      },
+      {
+        "name": "billingCycle",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"monthly\"",
+        "sourceLine": "billingCycle      String   @default(\"monthly\")"
+      },
+      {
+        "name": "nextBillingDate",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "nextBillingDate   DateTime?"
+      },
+      {
+        "name": "paymentMethod",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "paymentMethod     String?"
+      },
+      {
+        "name": "stripeCustomerId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stripeCustomerId  String?"
+      },
+      {
+        "name": "invoices",
+        "type": "Invoice[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "invoices          Invoice[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-client-workspace",
+    "sourceProject": "noCodeAIAgency",
+    "name": "ClientWorkspace",
+    "displayName": "Client Workspace",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "clientId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "clientId    String   @unique"
+      },
+      {
+        "name": "client",
+        "type": "Client",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "client      Client   @relation(fields: [clientId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        String"
+      },
+      {
+        "name": "settings",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "settings    Json     @default(\"{}\")"
+      },
+      {
+        "name": "workflows",
+        "type": "WorkflowInstance[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflows   WorkflowInstance[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-connector-definition",
+    "sourceProject": "noCodeAIAgency",
+    "name": "ConnectorDefinition",
+    "displayName": "Connector Definition",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String   @id @default(uuid())"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name          String"
+      },
+      {
+        "name": "provider",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "provider      String   @unique"
+      },
+      {
+        "name": "category",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category      String"
+      },
+      {
+        "name": "icon",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "icon          String?"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description   String?"
+      },
+      {
+        "name": "authType",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "authType      String"
+      },
+      {
+        "name": "configSchema",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "configSchema  Json"
+      },
+      {
+        "name": "endpoints",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "endpoints     Json     @default(\"[]\")"
+      },
+      {
+        "name": "isBuiltIn",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "isBuiltIn     Boolean  @default(true)"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-custom-domain",
+    "sourceProject": "noCodeAIAgency",
+    "name": "CustomDomain",
+    "displayName": "Custom Domain",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId    String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency      Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "domain",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "domain      String   @unique"
+      },
+      {
+        "name": "verified",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "verified    Boolean  @default(false)"
+      },
+      {
+        "name": "sslEnabled",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "sslEnabled  Boolean  @default(false)"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-dashboard",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Dashboard",
+    "displayName": "Dashboard",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        String"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description String?"
+      },
+      {
+        "name": "layout",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "layout      Json     @default(\"[]\")"
+      },
+      {
+        "name": "widgets",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "widgets     Json     @default(\"[]\")"
+      },
+      {
+        "name": "settings",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "settings    Json     @default(\"{}\")"
+      },
+      {
+        "name": "isDefault",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "isDefault   Boolean  @default(false)"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-data-mapping",
+    "sourceProject": "noCodeAIAgency",
+    "name": "DataMapping",
+    "displayName": "Data Mapping",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "integrationId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "integrationId   String"
+      },
+      {
+        "name": "integration",
+        "type": "Integration",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "integration     Integration @relation(fields: [integrationId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name            String"
+      },
+      {
+        "name": "sourceField",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sourceField     String"
+      },
+      {
+        "name": "targetField",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "targetField     String"
+      },
+      {
+        "name": "transformation",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "transformation  String?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-deployment",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Deployment",
+    "displayName": "Deployment",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId      String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency        Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "clientId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "clientId      String?"
+      },
+      {
+        "name": "client",
+        "type": "Client?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "client        Client?  @relation(fields: [clientId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name          String"
+      },
+      {
+        "name": "environment",
+        "type": "DeploymentEnv",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "STAGING",
+        "sourceLine": "environment   DeploymentEnv @default(STAGING)"
+      },
+      {
+        "name": "status",
+        "type": "DeploymentStatus",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "PENDING",
+        "sourceLine": "status        DeploymentStatus @default(PENDING)"
+      },
+      {
+        "name": "version",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version       String"
+      },
+      {
+        "name": "config",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "config        Json     @default(\"{}\")"
+      },
+      {
+        "name": "url",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url           String?"
+      },
+      {
+        "name": "deployedAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "deployedAt    DateTime?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-execution-replay",
+    "sourceProject": "noCodeAIAgency",
+    "name": "ExecutionReplay",
+    "displayName": "Execution Replay",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "instanceId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "instanceId      String   @unique"
+      },
+      {
+        "name": "workflowId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowId      String"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String"
+      },
+      {
+        "name": "nodeOutputs",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "nodeOutputs     Json     // Full snapshot of nodeOutputs for click-to-replay"
+      },
+      {
+        "name": "variables",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "variables       Json"
+      },
+      {
+        "name": "triggerData",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "triggerData     Json"
+      },
+      {
+        "name": "durationMs",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "durationMs      Int"
+      },
+      {
+        "name": "totalCostUsd",
+        "type": "Float?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "totalCostUsd    Float?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-form-definition",
+    "sourceProject": "noCodeAIAgency",
+    "name": "FormDefinition",
+    "displayName": "Form Definition",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        String"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description String?"
+      },
+      {
+        "name": "fields",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "fields      Json     @default(\"[]\")"
+      },
+      {
+        "name": "settings",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "settings    Json     @default(\"{}\")"
+      },
+      {
+        "name": "submissions",
+        "type": "FormSubmission[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "submissions FormSubmission[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-form-submission",
+    "sourceProject": "noCodeAIAgency",
+    "name": "FormSubmission",
+    "displayName": "Form Submission",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "formId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "formId      String"
+      },
+      {
+        "name": "form",
+        "type": "FormDefinition",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "form        FormDefinition @relation(fields: [formId], references: [id])"
+      },
+      {
+        "name": "data",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data        Json"
+      },
+      {
+        "name": "submittedAt",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "now(",
+        "sourceLine": "submittedAt DateTime @default(now())"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-integration",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Integration",
+    "displayName": "Integration",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency          Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name            String"
+      },
+      {
+        "name": "type",
+        "type": "IntegrationType",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type            IntegrationType"
+      },
+      {
+        "name": "provider",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "provider        String"
+      },
+      {
+        "name": "config",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "config          Json     @default(\"{}\")"
+      },
+      {
+        "name": "credentials",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "credentials     Json     @default(\"{}\")"
+      },
+      {
+        "name": "status",
+        "type": "IntegrationStatus",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "INACTIVE",
+        "sourceLine": "status          IntegrationStatus @default(INACTIVE)"
+      },
+      {
+        "name": "lastSyncAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lastSyncAt      DateTime?"
+      },
+      {
+        "name": "dataMappings",
+        "type": "DataMapping[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dataMappings    DataMapping[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-invoice",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Invoice",
+    "displayName": "Invoice",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "billingId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "billingId       String"
+      },
+      {
+        "name": "billing",
+        "type": "ClientBilling",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "billing         ClientBilling @relation(fields: [billingId], references: [id])"
+      },
+      {
+        "name": "amount",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "amount          Float"
+      },
+      {
+        "name": "status",
+        "type": "InvoiceStatus",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "PENDING",
+        "sourceLine": "status          InvoiceStatus @default(PENDING)"
+      },
+      {
+        "name": "dueDate",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "dueDate         DateTime"
+      },
+      {
+        "name": "paidAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "paidAt          DateTime?"
+      },
+      {
+        "name": "invoiceNumber",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "invoiceNumber   String   @unique"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-marketplace-purchase",
+    "sourceProject": "noCodeAIAgency",
+    "name": "MarketplacePurchase",
+    "displayName": "Marketplace Purchase",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "templateId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "templateId      String"
+      },
+      {
+        "name": "buyerAgencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "buyerAgencyId   String"
+      },
+      {
+        "name": "sellerAgencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sellerAgencyId  String"
+      },
+      {
+        "name": "amountUsd",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "amountUsd       Float"
+      },
+      {
+        "name": "platformFeeUsd",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "platformFeeUsd  Float"
+      },
+      {
+        "name": "sellerNetUsd",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sellerNetUsd    Float"
+      },
+      {
+        "name": "stripeChargeId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stripeChargeId  String?"
+      },
+      {
+        "name": "stripeConnectAcct",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stripeConnectAcct String?"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"COMPLETED\"",
+        "sourceLine": "status          String   @default(\"COMPLETED\") // COMPLETED / REFUNDED / FAILED"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-report",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Report",
+    "displayName": "Report",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        String"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description String?"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type        String"
+      },
+      {
+        "name": "config",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "config      Json     @default(\"{}\")"
+      },
+      {
+        "name": "schedule",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "schedule    String?"
+      },
+      {
+        "name": "lastRunAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lastRunAt   DateTime?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-seller-stripe-connect",
+    "sourceProject": "noCodeAIAgency",
+    "name": "SellerStripeConnect",
+    "displayName": "Seller Stripe Connect",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String   @unique"
+      },
+      {
+        "name": "stripeAccountId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "stripeAccountId String   @unique"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"PENDING\"",
+        "sourceLine": "status          String   @default(\"PENDING\") // PENDING / ACTIVE / RESTRICTED"
+      },
+      {
+        "name": "payoutEnabled",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "payoutEnabled   Boolean  @default(false)"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-shared-component",
+    "sourceProject": "noCodeAIAgency",
+    "name": "SharedComponent",
+    "displayName": "Shared Component",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name            String"
+      },
+      {
+        "name": "type",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type            String   // PROMPT_BLOCK / SUB_WORKFLOW / CODE_SNIPPET"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description     String?"
+      },
+      {
+        "name": "content",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content         Json"
+      },
+      {
+        "name": "versions",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "versions        Json     @default(\"[]\") // [{version, content, createdAt}]"
+      },
+      {
+        "name": "currentVersion",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"1.0.0\"",
+        "sourceLine": "currentVersion  String   @default(\"1.0.0\")"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-support-ticket",
+    "sourceProject": "noCodeAIAgency",
+    "name": "SupportTicket",
+    "displayName": "Support Ticket",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "clientId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "clientId    String"
+      },
+      {
+        "name": "client",
+        "type": "Client",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "client      Client   @relation(fields: [clientId], references: [id])"
+      },
+      {
+        "name": "userId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "userId      String?"
+      },
+      {
+        "name": "user",
+        "type": "User?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user        User?    @relation(fields: [userId], references: [id])"
+      },
+      {
+        "name": "subject",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "subject     String"
+      },
+      {
+        "name": "description",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description String"
+      },
+      {
+        "name": "status",
+        "type": "TicketStatus",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "OPEN",
+        "sourceLine": "status      TicketStatus @default(OPEN)"
+      },
+      {
+        "name": "priority",
+        "type": "TicketPriority",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "MEDIUM",
+        "sourceLine": "priority    TicketPriority @default(MEDIUM)"
+      },
+      {
+        "name": "messages",
+        "type": "TicketMessage[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "messages    TicketMessage[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-template",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Template",
+    "displayName": "Template",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId      String?"
+      },
+      {
+        "name": "agency",
+        "type": "Agency?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency        Agency?  @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name          String"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description   String?"
+      },
+      {
+        "name": "type",
+        "type": "TemplateType",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "type          TemplateType"
+      },
+      {
+        "name": "category",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category      String"
+      },
+      {
+        "name": "industry",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "industry      String?"
+      },
+      {
+        "name": "thumbnail",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "thumbnail     String?"
+      },
+      {
+        "name": "content",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content       Json"
+      },
+      {
+        "name": "isPublic",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "isPublic      Boolean  @default(false)"
+      },
+      {
+        "name": "isBuiltIn",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "false",
+        "sourceLine": "isBuiltIn     Boolean  @default(false)"
+      },
+      {
+        "name": "version",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"1.0.0\"",
+        "sourceLine": "version       String   @default(\"1.0.0\")"
+      },
+      {
+        "name": "downloads",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "downloads     Int      @default(0)"
+      },
+      {
+        "name": "rating",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "rating        Float    @default(0)"
+      },
+      {
+        "name": "tags",
+        "type": "String[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "[]",
+        "sourceLine": "tags          String[] @default([])"
+      },
+      {
+        "name": "ratings",
+        "type": "TemplateRating[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ratings       TemplateRating[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-template-rating",
+    "sourceProject": "noCodeAIAgency",
+    "name": "TemplateRating",
+    "displayName": "Template Rating",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "templateId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "templateId  String"
+      },
+      {
+        "name": "template",
+        "type": "Template",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "template    Template @relation(fields: [templateId], references: [id])"
+      },
+      {
+        "name": "userId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "userId      String"
+      },
+      {
+        "name": "rating",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "rating      Int"
+      },
+      {
+        "name": "review",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "review      String?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-ticket-message",
+    "sourceProject": "noCodeAIAgency",
+    "name": "TicketMessage",
+    "displayName": "Ticket Message",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "ticketId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ticketId    String"
+      },
+      {
+        "name": "ticket",
+        "type": "SupportTicket",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ticket      SupportTicket @relation(fields: [ticketId], references: [id])"
+      },
+      {
+        "name": "content",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content     String"
+      },
+      {
+        "name": "senderType",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "senderType  String"
+      },
+      {
+        "name": "senderId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "senderId    String"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-usage-record",
+    "sourceProject": "noCodeAIAgency",
+    "name": "UsageRecord",
+    "displayName": "Usage Record",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "clientId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "clientId    String"
+      },
+      {
+        "name": "client",
+        "type": "Client",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "client      Client   @relation(fields: [clientId], references: [id])"
+      },
+      {
+        "name": "metric",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "metric      String"
+      },
+      {
+        "name": "value",
+        "type": "Float",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "value       Float"
+      },
+      {
+        "name": "date",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "now(",
+        "sourceLine": "date        DateTime @default(now())"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-user",
+    "sourceProject": "noCodeAIAgency",
+    "name": "User",
+    "displayName": "User",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String    @id @default(uuid())"
+      },
+      {
+        "name": "email",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email         String    @unique"
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password      String"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name          String"
+      },
+      {
+        "name": "avatar",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "avatar        String?"
+      },
+      {
+        "name": "role",
+        "type": "UserRole",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "AGENCY_OWNER",
+        "sourceLine": "role          UserRole  @default(AGENCY_OWNER)"
+      },
+      {
+        "name": "stripeCustomerId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "stripeCustomerId     String?  @unique"
+      },
+      {
+        "name": "stripeSubscriptionId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "stripeSubscriptionId String?  @unique"
+      },
+      {
+        "name": "stripePriceId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "stripePriceId        String?"
+      },
+      {
+        "name": "plan",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"free\"",
+        "sourceLine": "plan                 String   @default(\"free\")"
+      },
+      {
+        "name": "planExpiresAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "planExpiresAt        DateTime?"
+      },
+      {
+        "name": "agency",
+        "type": "Agency?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency        Agency?   @relation(\"AgencyOwner\")"
+      },
+      {
+        "name": "agencyMember",
+        "type": "AgencyMember?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyMember  AgencyMember?"
+      },
+      {
+        "name": "supportTickets",
+        "type": "SupportTicket[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "supportTickets SupportTicket[]"
+      },
+      {
+        "name": "activities",
+        "type": "ActivityLog[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "activities    ActivityLog[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-webhook",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Webhook",
+    "displayName": "Webhook",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId    String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency      Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name        String"
+      },
+      {
+        "name": "url",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url         String"
+      },
+      {
+        "name": "events",
+        "type": "String[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "events      String[]"
+      },
+      {
+        "name": "secret",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "secret      String"
+      },
+      {
+        "name": "isActive",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "isActive    Boolean  @default(true)"
+      },
+      {
+        "name": "logs",
+        "type": "WebhookLog[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "logs        WebhookLog[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-webhook-log",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WebhookLog",
+    "displayName": "Webhook Log",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "webhookId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhookId   String"
+      },
+      {
+        "name": "webhook",
+        "type": "Webhook",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhook     Webhook  @relation(fields: [webhookId], references: [id])"
+      },
+      {
+        "name": "event",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event       String"
+      },
+      {
+        "name": "payload",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payload     Json"
+      },
+      {
+        "name": "response",
+        "type": "Json?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "response    Json?"
+      },
+      {
+        "name": "statusCode",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "statusCode  Int?"
+      },
+      {
+        "name": "success",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "success     Boolean"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-webhook-retry",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WebhookRetry",
+    "displayName": "Webhook Retry",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String   @id @default(uuid())"
+      },
+      {
+        "name": "webhookId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhookId     String   // ID of the Webhook record (outbound webhook)"
+      },
+      {
+        "name": "event",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "event         String"
+      },
+      {
+        "name": "payload",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "payload       Json"
+      },
+      {
+        "name": "targetUrl",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "targetUrl     String"
+      },
+      {
+        "name": "attemptCount",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "attemptCount  Int      @default(0)"
+      },
+      {
+        "name": "maxAttempts",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "5",
+        "sourceLine": "maxAttempts   Int      @default(5)"
+      },
+      {
+        "name": "nextRetryAt",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "nextRetryAt   DateTime"
+      },
+      {
+        "name": "lastError",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lastError     String?"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"pending\"",
+        "sourceLine": "status        String   @default(\"pending\")  // pending | succeeded | exhausted"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-webhook-trigger",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WebhookTrigger",
+    "displayName": "Webhook Trigger",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id                String   @id @default(uuid())"
+      },
+      {
+        "name": "workflowId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowId        String"
+      },
+      {
+        "name": "workflow",
+        "type": "Workflow",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflow          Workflow @relation(fields: [workflowId], references: [id])"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId          String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency            Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name              String"
+      },
+      {
+        "name": "secret",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "secret            String"
+      },
+      {
+        "name": "isActive",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "true",
+        "sourceLine": "isActive          Boolean  @default(true)"
+      },
+      {
+        "name": "rateLimitPerMinute",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "60",
+        "sourceLine": "rateLimitPerMinute Int     @default(60)"
+      },
+      {
+        "name": "lastTriggeredAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "lastTriggeredAt   DateTime?"
+      },
+      {
+        "name": "logs",
+        "type": "WebhookTriggerLog[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "logs              WebhookTriggerLog[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-webhook-trigger-log",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WebhookTriggerLog",
+    "displayName": "Webhook Trigger Log",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "triggerId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "triggerId   String"
+      },
+      {
+        "name": "trigger",
+        "type": "WebhookTrigger",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "trigger     WebhookTrigger @relation(fields: [triggerId], references: [id])"
+      },
+      {
+        "name": "method",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "method      String"
+      },
+      {
+        "name": "headers",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "headers     Json     @default(\"{}\")"
+      },
+      {
+        "name": "body",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "body        Json     @default(\"{}\")"
+      },
+      {
+        "name": "statusCode",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "statusCode  Int"
+      },
+      {
+        "name": "instanceId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "instanceId  String?"
+      },
+      {
+        "name": "duration",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration    Int?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow",
+    "sourceProject": "noCodeAIAgency",
+    "name": "Workflow",
+    "displayName": "Workflow",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id            String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId      String"
+      },
+      {
+        "name": "agency",
+        "type": "Agency",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agency        Agency   @relation(fields: [agencyId], references: [id])"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name          String"
+      },
+      {
+        "name": "description",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description   String?"
+      },
+      {
+        "name": "nodes",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "nodes         Json     @default(\"[]\")"
+      },
+      {
+        "name": "edges",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "edges         Json     @default(\"[]\")"
+      },
+      {
+        "name": "variables",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "variables     Json     @default(\"{}\")"
+      },
+      {
+        "name": "settings",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "settings      Json     @default(\"{}\")"
+      },
+      {
+        "name": "status",
+        "type": "WorkflowStatus",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "DRAFT",
+        "sourceLine": "status        WorkflowStatus @default(DRAFT)"
+      },
+      {
+        "name": "version",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"1.0.0\"",
+        "sourceLine": "version       String   @default(\"1.0.0\")"
+      },
+      {
+        "name": "instances",
+        "type": "WorkflowInstance[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "instances       WorkflowInstance[]"
+      },
+      {
+        "name": "versions",
+        "type": "WorkflowVersion[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "versions        WorkflowVersion[]"
+      },
+      {
+        "name": "webhookTriggers",
+        "type": "WebhookTrigger[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "webhookTriggers WebhookTrigger[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow-ab-result",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WorkflowABResult",
+    "displayName": "Workflow AB Result",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "testId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "testId          String"
+      },
+      {
+        "name": "test",
+        "type": "WorkflowABTest",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "test            WorkflowABTest @relation(fields: [testId], references: [id], onDelete: Cascade)"
+      },
+      {
+        "name": "variant",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "variant         String   // \"A\" or \"B\""
+      },
+      {
+        "name": "workflowId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowId      String"
+      },
+      {
+        "name": "instanceId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "instanceId      String?"
+      },
+      {
+        "name": "durationMs",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "durationMs      Int?"
+      },
+      {
+        "name": "costUsd",
+        "type": "Float?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "costUsd         Float?"
+      },
+      {
+        "name": "succeeded",
+        "type": "Boolean",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "succeeded       Boolean"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow-ab-test",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WorkflowABTest",
+    "displayName": "Workflow AB Test",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String"
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name            String"
+      },
+      {
+        "name": "workflowAId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowAId     String"
+      },
+      {
+        "name": "workflowBId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowBId     String"
+      },
+      {
+        "name": "trafficSplit",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "50",
+        "sourceLine": "trafficSplit    Int      @default(50) // % to A"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"RUNNING\"",
+        "sourceLine": "status          String   @default(\"RUNNING\") // RUNNING / PAUSED / COMPLETED"
+      },
+      {
+        "name": "metricsConfig",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "metricsConfig   Json     @default(\"{}\") // {primary: \"duration\"|\"cost\"|\"successRate\"}"
+      },
+      {
+        "name": "results",
+        "type": "WorkflowABResult[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "results         WorkflowABResult[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow-execution",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WorkflowExecution",
+    "displayName": "Workflow Execution",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "instanceId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "instanceId  String"
+      },
+      {
+        "name": "instance",
+        "type": "WorkflowInstance",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "instance    WorkflowInstance @relation(fields: [instanceId], references: [id])"
+      },
+      {
+        "name": "nodeId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "nodeId      String"
+      },
+      {
+        "name": "nodeType",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "nodeType    String"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"pending\"",
+        "sourceLine": "status      String   @default(\"pending\")"
+      },
+      {
+        "name": "input",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "input       Json     @default(\"{}\")"
+      },
+      {
+        "name": "output",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "output      Json     @default(\"{}\")"
+      },
+      {
+        "name": "error",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error       String?"
+      },
+      {
+        "name": "duration",
+        "type": "Int?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration    Int?"
+      },
+      {
+        "name": "startedAt",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "now(",
+        "sourceLine": "startedAt   DateTime @default(now())"
+      },
+      {
+        "name": "completedAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completedAt DateTime?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow-instance",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WorkflowInstance",
+    "displayName": "Workflow Instance",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id             String   @id @default(uuid())"
+      },
+      {
+        "name": "workflowId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowId     String"
+      },
+      {
+        "name": "workflow",
+        "type": "Workflow",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflow       Workflow @relation(fields: [workflowId], references: [id])"
+      },
+      {
+        "name": "workspaceId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workspaceId    String"
+      },
+      {
+        "name": "workspace",
+        "type": "ClientWorkspace",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workspace      ClientWorkspace @relation(fields: [workspaceId], references: [id])"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"running\"",
+        "sourceLine": "status         String   @default(\"running\")"
+      },
+      {
+        "name": "currentNode",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "currentNode    String?"
+      },
+      {
+        "name": "data",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "data           Json     @default(\"{}\")"
+      },
+      {
+        "name": "executionMode",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"async\"",
+        "sourceLine": "executionMode  String   @default(\"async\")"
+      },
+      {
+        "name": "error",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error          String?"
+      },
+      {
+        "name": "logs",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"[]\"",
+        "sourceLine": "logs           Json     @default(\"[]\")"
+      },
+      {
+        "name": "startedAt",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "now(",
+        "sourceLine": "startedAt      DateTime @default(now())"
+      },
+      {
+        "name": "completedAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completedAt    DateTime?"
+      },
+      {
+        "name": "executions",
+        "type": "WorkflowExecution[]",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "executions     WorkflowExecution[]"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow-queue-job",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WorkflowQueueJob",
+    "displayName": "Workflow Queue Job",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id              String   @id @default(uuid())"
+      },
+      {
+        "name": "workflowId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowId      String"
+      },
+      {
+        "name": "agencyId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agencyId        String"
+      },
+      {
+        "name": "workspaceId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workspaceId     String"
+      },
+      {
+        "name": "triggerData",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "triggerData     Json     @default(\"{}\")"
+      },
+      {
+        "name": "variables",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"{}\"",
+        "sourceLine": "variables       Json     @default(\"{}\")"
+      },
+      {
+        "name": "status",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "\"PENDING\"",
+        "sourceLine": "status          String   @default(\"PENDING\") // PENDING / RUNNING / COMPLETED / FAILED"
+      },
+      {
+        "name": "attemptCount",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "attemptCount    Int      @default(0)"
+      },
+      {
+        "name": "maxAttempts",
+        "type": "Int",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "3",
+        "sourceLine": "maxAttempts     Int      @default(3)"
+      },
+      {
+        "name": "scheduledFor",
+        "type": "DateTime",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "now(",
+        "sourceLine": "scheduledFor    DateTime @default(now())"
+      },
+      {
+        "name": "pickedUpAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pickedUpAt      DateTime?"
+      },
+      {
+        "name": "completedAt",
+        "type": "DateTime?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completedAt     DateTime?"
+      },
+      {
+        "name": "instanceId",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "instanceId      String?"
+      },
+      {
+        "name": "error",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error           String?"
+      }
+    ]
+  },
+  {
+    "id": "no-code-ai-agency-prisma-schema-prisma-workflow-version",
+    "sourceProject": "noCodeAIAgency",
+    "name": "WorkflowVersion",
+    "displayName": "Workflow Version",
+    "framework": "Prisma",
+    "sourceFile": "prisma/schema.prisma",
+    "columns": [
+      {
+        "name": "id",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "uuid(",
+        "sourceLine": "id          String   @id @default(uuid())"
+      },
+      {
+        "name": "workflowId",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflowId  String"
+      },
+      {
+        "name": "workflow",
+        "type": "Workflow",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "workflow    Workflow @relation(fields: [workflowId], references: [id])"
+      },
+      {
+        "name": "version",
+        "type": "String",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "version     String"
+      },
+      {
+        "name": "nodes",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "nodes       Json"
+      },
+      {
+        "name": "edges",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "edges       Json"
+      },
+      {
+        "name": "variables",
+        "type": "Json",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "variables   Json"
+      },
+      {
+        "name": "changelog",
+        "type": "String?",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "changelog   String?"
+      }
+    ]
+  }
+];
