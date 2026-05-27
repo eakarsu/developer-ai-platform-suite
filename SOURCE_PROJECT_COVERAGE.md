@@ -18,3 +18,5 @@
 | cursor | 0 | 0 | 2 | 68 | vscode/src/vscode-dts/vscode.proposed.chatPromptFiles.d<br>vscode/src/vs/workbench/test/browser/componentFixtures/chat/promptFilePickers.fixture<br>vscode/AGENTS<br>vscode/test/smoke/src/main<br>vscode/test/sanity/src/main |
 | librelane | 0 | 0 | 0 | 16 | test/common/test_toolbox<br>librelane/__main__<br>librelane/container<br>librelane/steps/__main__<br>librelane/state/__main__ |
 | noCodeAIAgency | 0 | 0 | 4 | 24 | src/lib/ai/prompts<br>src/lib/ai/providers/anthropic<br>src/lib/ai/providers/openai<br>src/lib/ai/providers/openrouter<br>src/lib/ai-helpers |
+| AIVisualQAInspector | 0 | 0 | 0 | 1 | Test Case Generator<br>QA Plan Builder<br>Bug Reproduction<br>Visual QA Review |
+| AIAutonomousWebScrapingAgent | 0 | 0 | 0 | 1 | Scraping Jobs<br>Data Extraction Rules<br>Site Monitoring |

@@ -10,6 +10,153 @@ export type SourceAIToolField = {
 };
 
 export const sourceAIToolFieldsByToolId: Record<string, SourceAIToolField[]> = {
+  "web-scraping-agent-copilot": [
+    {
+      "name": "objective",
+      "label": "Objective",
+      "type": "textarea",
+      "defaultValue": "Improve the Web Scraping Agent workflow and produce audit-ready next actions.",
+      "placeholder": "Describe the goal",
+      "options": [],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    },
+    {
+      "name": "source_context",
+      "label": "Source Context",
+      "type": "textarea",
+      "defaultValue": "Paste Web Scraping Agent source details, notes, records, or documents.",
+      "placeholder": "Paste source context",
+      "options": [],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    },
+    {
+      "name": "output_format",
+      "label": "Output Format",
+      "type": "select",
+      "defaultValue": "Action plan",
+      "placeholder": "Select output format",
+      "options": [
+        "Action plan",
+        "Executive summary",
+        "Evidence table",
+        "Checklist"
+      ],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    }
+  ],
+  "database-admin-agent-copilot": [
+    {
+      "name": "objective",
+      "label": "Objective",
+      "type": "textarea",
+      "defaultValue": "Improve the Database Admin Agent workflow and produce audit-ready next actions.",
+      "placeholder": "Describe the goal",
+      "options": [],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    },
+    {
+      "name": "source_context",
+      "label": "Source Context",
+      "type": "textarea",
+      "defaultValue": "Paste Database Admin Agent source details, notes, records, or documents.",
+      "placeholder": "Paste source context",
+      "options": [],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    },
+    {
+      "name": "output_format",
+      "label": "Output Format",
+      "type": "select",
+      "defaultValue": "Action plan",
+      "placeholder": "Select output format",
+      "options": [
+        "Action plan",
+        "Executive summary",
+        "Evidence table",
+        "Checklist"
+      ],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    }
+  ],
+  "test-generation-qa-copilot": [
+    {
+      "name": "feature_under_test",
+      "label": "Feature Under Test",
+      "type": "text",
+      "defaultValue": "Source tables row editor",
+      "placeholder": "Enter feature under test",
+      "options": [],
+      "required": true,
+      "source": "AITestGenerationPlatform, AIVisualQAInspector"
+    },
+    {
+      "name": "requirements",
+      "label": "Requirements",
+      "type": "textarea",
+      "defaultValue": "Paste requirements, acceptance criteria, or bug report.",
+      "placeholder": "Enter requirements",
+      "options": [],
+      "required": true,
+      "source": "AITestGenerationPlatform, AIVisualQAInspector"
+    },
+    {
+      "name": "test_type",
+      "label": "Test Type",
+      "type": "select",
+      "defaultValue": "E2E",
+      "placeholder": "Enter test type",
+      "options": [
+        "Unit",
+        "Integration",
+        "E2E",
+        "Visual QA"
+      ],
+      "required": true,
+      "source": "AITestGenerationPlatform, AIVisualQAInspector"
+    }
+  ],
+  "code-review-docs-copilot": [
+    {
+      "name": "change_summary",
+      "label": "Change Summary",
+      "type": "textarea",
+      "defaultValue": "Describe the code change or paste diff context.",
+      "placeholder": "Enter change summary",
+      "options": [],
+      "required": true,
+      "source": "AiCodeReviewDocumentation, AICodeInterpreter"
+    },
+    {
+      "name": "code_context",
+      "label": "Code Context",
+      "type": "textarea",
+      "defaultValue": "Paste relevant code, API, or architecture notes.",
+      "placeholder": "Enter code context",
+      "options": [],
+      "required": true,
+      "source": "AiCodeReviewDocumentation, AICodeInterpreter"
+    },
+    {
+      "name": "review_mode",
+      "label": "Review Mode",
+      "type": "select",
+      "defaultValue": "Code review",
+      "placeholder": "Enter review mode",
+      "options": [
+        "Code review",
+        "Docs generation",
+        "Release notes"
+      ],
+      "required": true,
+      "source": "AiCodeReviewDocumentation, AICodeInterpreter"
+    }
+  ],
   "ai-cemetery-memorial-park-manager-ai-j615h1-exact-ai": [
     {
       "name": "achievements",

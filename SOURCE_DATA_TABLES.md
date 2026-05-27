@@ -1,11 +1,38 @@
 # Developer Ai Platform Suite Source Data Tables
 
-Mapped source projects: 16
+Mapped source projects: 18
 
-Detected source tables: 379
+Detected source tables: 427
 
 | Source Project | Table | Framework | Columns | Source File |
 | --- | --- | --- | ---: | --- |
+| AIAutonomousWebScrapingAgent | ai_results | SQL | 7 | backend/routes/agents.js |
+| AIAutonomousWebScrapingAgent | ai_results | SQL | 7 | backend/models/schema.sql |
+| AIAutonomousWebScrapingAgent | competitive_agents | SQL | 11 | backend/routes/competitiveAgents.js |
+| AIAutonomousWebScrapingAgent | competitive_results | SQL | 10 | backend/routes/competitiveAgents.js |
+| AIAutonomousWebScrapingAgent | cua_click_plans | SQL | 24 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_desktop_sessions | SQL | 21 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_form_fills | SQL | 23 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_human_handoffs | SQL | 22 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_policy_guard | SQL | 22 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_screen_captures | SQL | 22 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_session_recordings | SQL | 22 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | cua_tab_orchestrations | SQL | 23 | backend/models/cua.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_ai_css_xpath_selector_auto.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_ai_extraction_over_unstructured_html.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_ai_field_classification_extracted_columns.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_ai_website_structure_change_anomaly.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_headless_browser_engine_integration_puppeteer.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_notifications_subsystem.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_outbound_webhooks.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_proxy_rotation.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_robots_txt_aware_rate_limiting.js |
+| AIAutonomousWebScrapingAgent | gap_features | SQL | 6 | backend/routes/gap_schema_based_data_validation.js |
+| AIAutonomousWebScrapingAgent | job_queue | SQL | 10 | backend/routes/jobQueue.js |
+| AIAutonomousWebScrapingAgent | scraped_data | SQL | 5 | backend/models/schema.sql |
+| AIAutonomousWebScrapingAgent | scraping_jobs | SQL | 13 | backend/models/schema.sql |
+| AIAutonomousWebScrapingAgent | scraping_logs | SQL | 8 | backend/models/schema.sql |
+| AIAutonomousWebScrapingAgent | users | SQL | 5 | backend/models/schema.sql |
 | AICemeteryMemorialParkManager | gap_features | SQL | 6 | server/routes/gap_no_ai_grief_support_chatbot_for_families.js |
 | AICemeteryMemorialParkManager | gap_features | SQL | 6 | server/routes/gap_no_ai_memorial_video_generation.js |
 | AICemeteryMemorialParkManager | gap_features | SQL | 6 | server/routes/gap_no_ai_obituary_auto_generation_from_intake_form.js |
@@ -319,6 +346,27 @@ Detected source tables: 379
 | AITestGenerationPlatform | gap_features | SQL | 6 | backend/routes/gapNoTestFlakinessDetectionFeature.js |
 | AITestGenerationPlatform | gap_features | SQL | 6 | backend/routes/gapNotificationsLimitedToOneReferenceNotAFull.js |
 | AITestGenerationPlatform | import | Prisma | 4 | frontend/src/pages/GapNoFlakyTestDetectionMlModel.jsx |
+| AIVisualQAInspector | ai_reports | Sequelize | 10 | backend/models/index.js |
+| AIVisualQAInspector | defect_classifications | Sequelize | 9 | backend/models/index.js |
+| AIVisualQAInspector | defects | Sequelize | 9 | backend/models/index.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapLimitedIntegrationWithProductionLineCamerasOnlyGenericIntegrations.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoAutomatedRootCauseCorrelationMl.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoComputerVisionForDirectDefectDetectionFrom.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoErpIntegrationForReworkScrapTracking.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoNotificationsSubsystem.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoPredictiveQualityScoringForUpcomingProductionRuns.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoRealTimeSpcStatisticalProcessControlVisualization.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoSupplierQualityManagementModule.js |
+| AIVisualQAInspector | gap_features | SQL | 6 | backend/routes/gapNoWebhooksForMesEventsBeyondTheAlert.js |
+| AIVisualQAInspector | inspection_reports | Sequelize | 3 | backend/models/index.js |
+| AIVisualQAInspector | inspections | Sequelize | 7 | backend/models/index.js |
+| AIVisualQAInspector | packaging_optimizations | Sequelize | 13 | backend/models/index.js |
+| AIVisualQAInspector | products | Sequelize | 6 | backend/models/index.js |
+| AIVisualQAInspector | quality_inspections | Sequelize | 11 | backend/models/index.js |
+| AIVisualQAInspector | root_cause_analyses | Sequelize | 10 | backend/models/index.js |
+| AIVisualQAInspector | severity_scores | Sequelize | 9 | backend/models/index.js |
+| AIVisualQAInspector | trend_analyses | Sequelize | 10 | backend/models/index.js |
+| AIVisualQAInspector | users | Sequelize | 4 | backend/models/index.js |
 | cursor | file_edits | SQL | 7 | vscode/src/vs/platform/agentHost/node/sessionDatabase.ts |
 | cursor | file_edits | SQL | 7 | vscode/out/vs/platform/agentHost/node/sessionDatabase.js |
 | cursor | file_edits_v3 | SQL | 9 | vscode/src/vs/platform/agentHost/node/sessionDatabase.ts |

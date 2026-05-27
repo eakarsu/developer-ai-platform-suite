@@ -1,5 +1,62 @@
 export const sourceProjectTools = [
   {
+    "id": "web-scraping-agent-copilot",
+    "title": "Web Scraping Agent Copilot",
+    "category": "Web Scraping Agent",
+    "description": "Focused Web Scraping Agent AI tool elevated inside the current merged suite.",
+    "defaultPrompt": "Review the Web Scraping Agent context. Return a professional summary, risks, missing evidence, next actions, and audit-ready outputs.",
+    "inputLabel": "Web Scraping Agent context",
+    "outputLabel": "Web Scraping Agent AI response",
+    "signals": [
+      "Scraping Jobs",
+      "Data Extraction Rules",
+      "Site Monitoring"
+    ]
+  },
+  {
+    "id": "database-admin-agent-copilot",
+    "title": "Database Admin Agent Copilot",
+    "category": "Database Admin Agent",
+    "description": "Focused Database Admin Agent AI tool elevated inside the current merged suite.",
+    "defaultPrompt": "Review the Database Admin Agent context. Return a professional summary, risks, missing evidence, next actions, and audit-ready outputs.",
+    "inputLabel": "Database Admin Agent context",
+    "outputLabel": "Database Admin Agent AI response",
+    "signals": [
+      "Database Health",
+      "Query Optimization",
+      "Schema Migration Review"
+    ]
+  },
+  {
+    "id": "test-generation-qa-copilot",
+    "title": "Test Generation QA Copilot",
+    "category": "Test Generation QA",
+    "description": "Focused Test Generation QA AI tool elevated inside the current merged suite.",
+    "defaultPrompt": "Generate a QA plan with test cases, edge cases, regression coverage, bug reproduction steps, and visual QA checks.",
+    "inputLabel": "Test Generation QA context",
+    "outputLabel": "Test Generation QA AI response",
+    "signals": [
+      "Test Case Generator",
+      "QA Plan Builder",
+      "Bug Reproduction",
+      "Visual QA Review"
+    ]
+  },
+  {
+    "id": "code-review-docs-copilot",
+    "title": "Code Review Docs Copilot",
+    "category": "Code Review Docs",
+    "description": "Focused Code Review Docs AI tool elevated inside the current merged suite.",
+    "defaultPrompt": "Review the code/change context. Return bugs, risks, missing tests, docs updates, migration notes, and reviewer summary.",
+    "inputLabel": "Code Review Docs context",
+    "outputLabel": "Code Review Docs AI response",
+    "signals": [
+      "Code Review",
+      "Developer Documentation",
+      "Pull Request Summaries"
+    ]
+  },
+  {
     "id": "ai-cemetery-memorial-park-manager-source-workflow",
     "title": "AI Cemetery Memorial Park Manager Source Workflow",
     "category": "Source Project Coverage",

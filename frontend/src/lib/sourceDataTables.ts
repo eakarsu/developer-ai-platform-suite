@@ -20,6 +20,3111 @@ export type SourceDataTable = {
 
 export const sourceDataTables: SourceDataTable[] = [
   {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-agents-js-ai-results",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/agents.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "endpoint",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "endpoint VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "input_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_summary TEXT"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-schema-sql-ai-results",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "ai_results",
+    "displayName": "Ai Results",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "endpoint",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "endpoint VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "model",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "model VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "user_id INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "input_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input_summary TEXT"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-competitive-agents-js-competitive-agents",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "competitive_agents",
+    "displayName": "Competitive Agents",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/competitiveAgents.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "target_urls",
+        "type": "TEXT[]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "target_urls TEXT[] DEFAULT '{}'"
+      },
+      {
+        "name": "frequency",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'daily'",
+        "sourceLine": "frequency VARCHAR(50) DEFAULT 'daily'"
+      },
+      {
+        "name": "analysis_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'general'",
+        "sourceLine": "analysis_type VARCHAR(100) DEFAULT 'general'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "last_run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run_at TIMESTAMP"
+      },
+      {
+        "name": "next_run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "next_run_at TIMESTAMP"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-competitive-agents-js-competitive-results",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "competitive_results",
+    "displayName": "Competitive Results",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/competitiveAgents.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "agent_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agent_id INTEGER REFERENCES competitive_agents(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "analysis_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "analysis_type VARCHAR(100)"
+      },
+      {
+        "name": "target_urls",
+        "type": "TEXT[]",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_urls TEXT[]"
+      },
+      {
+        "name": "html_content",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "html_content TEXT"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis JSONB"
+      },
+      {
+        "name": "raw_response",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "raw_response TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'completed'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'completed'"
+      },
+      {
+        "name": "error_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_message TEXT"
+      },
+      {
+        "name": "run_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "run_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-click-plans",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_click_plans",
+    "displayName": "Cua Click Plans",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id                  SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id          INTEGER"
+      },
+      {
+        "name": "capture_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "capture_id          INTEGER"
+      },
+      {
+        "name": "target_description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_description  TEXT"
+      },
+      {
+        "name": "predicted_x",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "predicted_x         INTEGER"
+      },
+      {
+        "name": "predicted_y",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "predicted_y         INTEGER"
+      },
+      {
+        "name": "element_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "element_type        VARCHAR(100)"
+      },
+      {
+        "name": "confidence_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "confidence_score    FLOAT"
+      },
+      {
+        "name": "xpath_selector",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "xpath_selector      TEXT"
+      },
+      {
+        "name": "css_selector",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "css_selector        TEXT"
+      },
+      {
+        "name": "wait_strategy",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "wait_strategy       TEXT"
+      },
+      {
+        "name": "misclick_risk",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "misclick_risk       FLOAT"
+      },
+      {
+        "name": "target_stability",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_stability    FLOAT"
+      },
+      {
+        "name": "button_purpose",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "button_purpose      VARCHAR(100)"
+      },
+      {
+        "name": "is_dynamic",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_dynamic          BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "is_ambiguous",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_ambiguous        BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "disambiguation_hint",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "disambiguation_hint TEXT"
+      },
+      {
+        "name": "alternate_target",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "alternate_target    TEXT"
+      },
+      {
+        "name": "selector_strategy",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "selector_strategy   TEXT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status              VARCHAR(50) DEFAULT 'pending'"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived            BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by          INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at          TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at          TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-desktop-sessions",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_desktop_sessions",
+    "displayName": "Cua Desktop Sessions",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id              SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_name    VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "target_app",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "target_app      VARCHAR(255)"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'idle'",
+        "sourceLine": "status          VARCHAR(50) DEFAULT 'idle'"
+      },
+      {
+        "name": "os_platform",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "os_platform     VARCHAR(100)"
+      },
+      {
+        "name": "resolution",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resolution      VARCHAR(50)"
+      },
+      {
+        "name": "mouse_x",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "mouse_x         INTEGER DEFAULT 0"
+      },
+      {
+        "name": "mouse_y",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "mouse_y         INTEGER DEFAULT 0"
+      },
+      {
+        "name": "last_action",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_action     TEXT"
+      },
+      {
+        "name": "last_action_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_action_at  TIMESTAMP"
+      },
+      {
+        "name": "action_log",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "action_log      JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "script_payload",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "script_payload  TEXT"
+      },
+      {
+        "name": "error_state",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_state     TEXT"
+      },
+      {
+        "name": "recovery_plan",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recovery_plan   TEXT"
+      },
+      {
+        "name": "ai_screen_class",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_screen_class TEXT"
+      },
+      {
+        "name": "ai_risk_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_risk_score   FLOAT"
+      },
+      {
+        "name": "ai_next_action",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_next_action  TEXT"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived        BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by      INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at      TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at      TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-form-fills",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_form_fills",
+    "displayName": "Cua Form Fills",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id                SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id        INTEGER"
+      },
+      {
+        "name": "capture_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "capture_id        INTEGER"
+      },
+      {
+        "name": "form_url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "form_url          TEXT"
+      },
+      {
+        "name": "form_purpose",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "form_purpose      VARCHAR(100)"
+      },
+      {
+        "name": "fields_detected",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "fields_detected   JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "fill_order",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "fill_order        JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "filled_values",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "filled_values     JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "validation_errors",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "validation_errors JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "captcha_detected",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "captcha_detected  BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "captcha_strategy",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "captcha_strategy  TEXT"
+      },
+      {
+        "name": "is_multi_step",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_multi_step     BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "step_current",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "1",
+        "sourceLine": "step_current      INTEGER DEFAULT 1"
+      },
+      {
+        "name": "step_total",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "1",
+        "sourceLine": "step_total        INTEGER DEFAULT 1"
+      },
+      {
+        "name": "complexity_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "complexity_score  FLOAT"
+      },
+      {
+        "name": "submit_success",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "submit_success    BOOLEAN"
+      },
+      {
+        "name": "submit_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "submit_at         TIMESTAMP"
+      },
+      {
+        "name": "test_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "test_data         JSONB"
+      },
+      {
+        "name": "ai_fill_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_fill_notes     TEXT"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived          BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by        INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at        TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at        TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-human-handoffs",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_human_handoffs",
+    "displayName": "Cua Human Handoffs",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id                  SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id          INTEGER"
+      },
+      {
+        "name": "recording_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recording_id        INTEGER"
+      },
+      {
+        "name": "handoff_reason",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "handoff_reason      VARCHAR(255)"
+      },
+      {
+        "name": "urgency_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "urgency_score       FLOAT"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'queued'",
+        "sourceLine": "status              VARCHAR(50) DEFAULT 'queued'"
+      },
+      {
+        "name": "assigned_to",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "assigned_to         VARCHAR(255)"
+      },
+      {
+        "name": "context_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "context_payload     JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "handoff_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "handoff_summary     TEXT"
+      },
+      {
+        "name": "human_actions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "human_actions       JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "resolution_notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resolution_notes    TEXT"
+      },
+      {
+        "name": "return_to_bot_ready",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "return_to_bot_ready BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "resolution_time_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "resolution_time_ms  INTEGER"
+      },
+      {
+        "name": "predicted_resolve",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "predicted_resolve   FLOAT"
+      },
+      {
+        "name": "coach_feedback",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "coach_feedback      TEXT"
+      },
+      {
+        "name": "quality_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quality_score       FLOAT"
+      },
+      {
+        "name": "is_low_value",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_low_value        BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "prevention_hint",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "prevention_hint     TEXT"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived            BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by          INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at          TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at          TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-policy-guard",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_policy_guard",
+    "displayName": "Cua Policy Guard",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id               SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id       INTEGER"
+      },
+      {
+        "name": "action_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action_type      VARCHAR(100)"
+      },
+      {
+        "name": "action_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "action_payload   JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "policy_decision",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'allow'",
+        "sourceLine": "policy_decision  VARCHAR(50) DEFAULT 'allow'"
+      },
+      {
+        "name": "violation_type",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "violation_type   VARCHAR(100)"
+      },
+      {
+        "name": "risk_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "risk_score       FLOAT"
+      },
+      {
+        "name": "pii_detected",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "pii_detected     BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "pii_redacted_payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "pii_redacted_payload JSONB"
+      },
+      {
+        "name": "policy_rule_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "policy_rule_id   VARCHAR(100)"
+      },
+      {
+        "name": "policy_name",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "policy_name      TEXT"
+      },
+      {
+        "name": "explanation",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "explanation      TEXT"
+      },
+      {
+        "name": "audit_event",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "audit_event      TEXT"
+      },
+      {
+        "name": "compliance_flags",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "compliance_flags JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "drift_detected",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "drift_detected   BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "coverage_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "coverage_score   FLOAT"
+      },
+      {
+        "name": "reviewed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "reviewed_at      TIMESTAMP"
+      },
+      {
+        "name": "reviewed_by",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "reviewed_by      VARCHAR(255)"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived         BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by       INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at       TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at       TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-screen-captures",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_screen_captures",
+    "displayName": "Cua Screen Captures",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id              SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id      INTEGER"
+      },
+      {
+        "name": "capture_url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "capture_url     TEXT"
+      },
+      {
+        "name": "thumbnail_url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "thumbnail_url   TEXT"
+      },
+      {
+        "name": "width",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "width           INTEGER"
+      },
+      {
+        "name": "height",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "height          INTEGER"
+      },
+      {
+        "name": "file_size_bytes",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "file_size_bytes INTEGER"
+      },
+      {
+        "name": "captured_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "captured_at     TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "ocr_text",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ocr_text        TEXT"
+      },
+      {
+        "name": "diff_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "diff_score      FLOAT"
+      },
+      {
+        "name": "change_detected",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "change_detected BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "content_class",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "content_class   TEXT"
+      },
+      {
+        "name": "pii_redacted",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "pii_redacted    BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "quality_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quality_score   FLOAT"
+      },
+      {
+        "name": "region_of_interest",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "region_of_interest JSONB"
+      },
+      {
+        "name": "loading_state",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "loading_state   VARCHAR(50)"
+      },
+      {
+        "name": "storage_tier",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'hot'",
+        "sourceLine": "storage_tier    VARCHAR(50) DEFAULT 'hot'"
+      },
+      {
+        "name": "ai_alt_text",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_alt_text     TEXT"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived        BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by      INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at      TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at      TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-session-recordings",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_session_recordings",
+    "displayName": "Cua Session Recordings",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id                  SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id          INTEGER"
+      },
+      {
+        "name": "recording_name",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recording_name      VARCHAR(255)"
+      },
+      {
+        "name": "actions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "actions             JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "checkpoints",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "checkpoints         JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "assertions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "assertions          JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "duration_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration_ms         INTEGER"
+      },
+      {
+        "name": "action_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "action_count        INTEGER DEFAULT 0"
+      },
+      {
+        "name": "flaky_actions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "flaky_actions       JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "sensitive_actions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'[]'",
+        "sourceLine": "sensitive_actions   JSONB DEFAULT '[]'"
+      },
+      {
+        "name": "completeness_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completeness_score  FLOAT"
+      },
+      {
+        "name": "replay_script",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "replay_script       TEXT"
+      },
+      {
+        "name": "test_script",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "test_script         TEXT"
+      },
+      {
+        "name": "coverage_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "coverage_summary    TEXT"
+      },
+      {
+        "name": "failure_cause",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "failure_cause       TEXT"
+      },
+      {
+        "name": "drift_detected",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "drift_detected      BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'recording'",
+        "sourceLine": "status              VARCHAR(50) DEFAULT 'recording'"
+      },
+      {
+        "name": "export_url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "export_url          TEXT"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived            BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by          INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at          TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at          TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-cua-js-cua-tab-orchestrations",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "cua_tab_orchestrations",
+    "displayName": "Cua Tab Orchestrations",
+    "framework": "SQL",
+    "sourceFile": "backend/models/cua.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id              SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "session_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "session_id      INTEGER"
+      },
+      {
+        "name": "tab_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tab_id          VARCHAR(255)"
+      },
+      {
+        "name": "window_id",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "window_id       VARCHAR(255)"
+      },
+      {
+        "name": "tab_purpose",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tab_purpose     VARCHAR(100)"
+      },
+      {
+        "name": "tab_url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tab_url         TEXT"
+      },
+      {
+        "name": "tab_title",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tab_title       TEXT"
+      },
+      {
+        "name": "is_focused",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_focused      BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "tab_group",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "tab_group       VARCHAR(100)"
+      },
+      {
+        "name": "relevance_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "relevance_score FLOAT"
+      },
+      {
+        "name": "context_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "context_data    JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "load_predicted",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "load_predicted  FLOAT"
+      },
+      {
+        "name": "is_leaked",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_leaked       BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "deadlock_risk",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "deadlock_risk   BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "context_isolated",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "TRUE",
+        "sourceLine": "context_isolated BOOLEAN DEFAULT TRUE"
+      },
+      {
+        "name": "is_window",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "is_window       BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "priority_rank",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "priority_rank   INTEGER"
+      },
+      {
+        "name": "health_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "health_score    FLOAT"
+      },
+      {
+        "name": "ai_tab_summary",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_tab_summary  TEXT"
+      },
+      {
+        "name": "archived",
+        "type": "BOOLEAN",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "FALSE",
+        "sourceLine": "archived        BOOLEAN DEFAULT FALSE"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by      INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at      TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at      TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-ai-css-xpath-selector-auto-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_ai_css_xpath_selector_auto.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-ai-extraction-over-unstructured-html-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_ai_extraction_over_unstructured_html.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-ai-field-classification-extracted-columns-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_ai_field_classification_extracted_columns.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-ai-website-structure-change-anomaly-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_ai_website_structure_change_anomaly.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-headless-browser-engine-integration-puppeteer-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_headless_browser_engine_integration_puppeteer.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-notifications-subsystem-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_notifications_subsystem.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-outbound-webhooks-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_outbound_webhooks.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-proxy-rotation-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_proxy_rotation.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-robots-txt-aware-rate-limiting-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_robots_txt_aware_rate_limiting.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-gap-schema-based-data-validation-js-gap-features",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gap_schema_based_data_validation.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "slug",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "slug TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-routes-job-queue-js-job-queue",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "job_queue",
+    "displayName": "Job Queue",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/jobQueue.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "job_type",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "job_type VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "payload",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "payload JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'pending'"
+      },
+      {
+        "name": "result",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "result JSONB"
+      },
+      {
+        "name": "error_message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "error_message TEXT"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "started_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "started_at TIMESTAMP"
+      },
+      {
+        "name": "completed_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "completed_at TIMESTAMP"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-schema-sql-scraped-data",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "scraped_data",
+    "displayName": "Scraped Data",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "job_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "job_id INTEGER REFERENCES scraping_jobs(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "data",
+        "type": "JSONB",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data JSONB NOT NULL"
+      },
+      {
+        "name": "url",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url TEXT"
+      },
+      {
+        "name": "scraped_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "scraped_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-schema-sql-scraping-jobs",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "scraping_jobs",
+    "displayName": "Scraping Jobs",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "url",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "url TEXT NOT NULL"
+      },
+      {
+        "name": "selectors",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'{}'",
+        "sourceLine": "selectors JSONB DEFAULT '{}'"
+      },
+      {
+        "name": "schedule",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'0",
+        "sourceLine": "schedule VARCHAR(100) DEFAULT '0 */6 * * *'"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'active'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'active'"
+      },
+      {
+        "name": "last_run",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "last_run TIMESTAMP"
+      },
+      {
+        "name": "total_runs",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "total_runs INTEGER DEFAULT 0"
+      },
+      {
+        "name": "data_collected",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "data_collected INTEGER DEFAULT 0"
+      },
+      {
+        "name": "error_count",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "0",
+        "sourceLine": "error_count INTEGER DEFAULT 0"
+      },
+      {
+        "name": "created_by",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "created_by INTEGER REFERENCES users(id)"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      },
+      {
+        "name": "updated_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "updated_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-schema-sql-scraping-logs",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "scraping_logs",
+    "displayName": "Scraping Logs",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "job_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "job_id INTEGER REFERENCES scraping_jobs(id) ON DELETE CASCADE"
+      },
+      {
+        "name": "agent",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "agent VARCHAR(100) NOT NULL"
+      },
+      {
+        "name": "action",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "action VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'info'",
+        "sourceLine": "status VARCHAR(50) DEFAULT 'info'"
+      },
+      {
+        "name": "message",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "message TEXT"
+      },
+      {
+        "name": "duration_ms",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "duration_ms INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-autonomous-web-scraping-agent-backend-models-schema-sql-users",
+    "sourceProject": "AIAutonomousWebScrapingAgent",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "SQL",
+    "sourceFile": "backend/models/schema.sql",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email VARCHAR(255) UNIQUE NOT NULL"
+      },
+      {
+        "name": "password",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name VARCHAR(255) NOT NULL"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMP DEFAULT NOW()"
+      }
+    ]
+  },
+  {
     "id": "ai-cemetery-memorial-park-manager-server-routes-gap-no-ai-grief-support-chatbot-for-families-js-gap-features",
     "sourceProject": "AICemeteryMemorialParkManager",
     "name": "gap_features",
@@ -28670,6 +31775,1611 @@ export const sourceDataTables: SourceDataTable[] = [
         "unique": false,
         "defaultValue": "",
         "sourceLine": "return { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-ai-reports",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "ai_reports",
+    "displayName": "Ai Reports",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "report_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_name: { ... }"
+      },
+      {
+        "name": "report_type",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_type: { ... }"
+      },
+      {
+        "name": "report_scope",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_scope: { ... }"
+      },
+      {
+        "name": "include_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "include_data: { ... }"
+      },
+      {
+        "name": "executive_summary",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "executive_summary: { ... }"
+      },
+      {
+        "name": "sections",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sections: { ... }"
+      },
+      {
+        "name": "recommendations",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recommendations: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-defect-classifications",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "defect_classifications",
+    "displayName": "Defect Classifications",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "defect_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defect_id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "defect_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defect_name: { ... }"
+      },
+      {
+        "name": "defect_description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defect_description: { ... }"
+      },
+      {
+        "name": "category",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category: { ... }"
+      },
+      {
+        "name": "sub_category",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "sub_category: { ... }"
+      },
+      {
+        "name": "confidence_score",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "confidence_score: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-defects",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "defects",
+    "displayName": "Defects",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "inspection_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "inspection_id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "defect_type",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defect_type: { ... }"
+      },
+      {
+        "name": "severity",
+        "type": "ENUM('critical'",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity: { ... }"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description: { ... }"
+      },
+      {
+        "name": "location",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "location: { ... }"
+      },
+      {
+        "name": "image_url",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "image_url: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-limited-integration-with-production-line-cameras-only-generic-integrations-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapLimitedIntegrationWithProductionLineCamerasOnlyGenericIntegrations.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-automated-root-cause-correlation-ml-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoAutomatedRootCauseCorrelationMl.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-computer-vision-for-direct-defect-detection-from-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoComputerVisionForDirectDefectDetectionFrom.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-erp-integration-for-rework-scrap-tracking-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoErpIntegrationForReworkScrapTracking.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-notifications-subsystem-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoNotificationsSubsystem.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-predictive-quality-scoring-for-upcoming-production-runs-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoPredictiveQualityScoringForUpcomingProductionRuns.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-real-time-spc-statistical-process-control-visualization-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoRealTimeSpcStatisticalProcessControlVisualization.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-supplier-quality-management-module-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoSupplierQualityManagementModule.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-routes-gap-no-webhooks-for-mes-events-beyond-the-alert-js-gap-features",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "gap_features",
+    "displayName": "Gap Features",
+    "framework": "SQL",
+    "sourceFile": "backend/routes/gapNoWebhooksForMesEventsBeyondTheAlert.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "SERIAL",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id SERIAL PRIMARY KEY"
+      },
+      {
+        "name": "feature_slug",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "feature_slug TEXT NOT NULL"
+      },
+      {
+        "name": "project",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "project TEXT"
+      },
+      {
+        "name": "input",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "input JSONB"
+      },
+      {
+        "name": "output",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "output JSONB"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMPTZ",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "NOW()",
+        "sourceLine": "created_at TIMESTAMPTZ DEFAULT NOW()"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-inspection-reports",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "inspection_reports",
+    "displayName": "Inspection Reports",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "inspection_id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "inspection_id: { ... }"
+      },
+      {
+        "name": "report_data",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "report_data: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-inspections",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "inspections",
+    "displayName": "Inspections",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "inspector_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "inspector_name: { ... }"
+      },
+      {
+        "name": "status",
+        "type": "ENUM('pending'",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status: { ... }"
+      },
+      {
+        "name": "notes",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "notes: { ... }"
+      },
+      {
+        "name": "image_url",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "image_url: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-packaging-optimizations",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "packaging_optimizations",
+    "displayName": "Packaging Optimizations",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "optimization_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "optimization_name: { ... }"
+      },
+      {
+        "name": "current_packaging",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "current_packaging: { ... }"
+      },
+      {
+        "name": "product_dimensions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_dimensions: { ... }"
+      },
+      {
+        "name": "product_weight",
+        "type": "FLOAT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_weight: { ... }"
+      },
+      {
+        "name": "fragility_level",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "fragility_level: { ... }"
+      },
+      {
+        "name": "shipping_requirements",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "shipping_requirements: { ... }"
+      },
+      {
+        "name": "optimization_goals",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "optimization_goals: { ... }"
+      },
+      {
+        "name": "recommended_packaging",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "recommended_packaging: { ... }"
+      },
+      {
+        "name": "cost_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "cost_analysis: { ... }"
+      },
+      {
+        "name": "environmental_impact",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "environmental_impact: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-products",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "products",
+    "displayName": "Products",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name: { ... }"
+      },
+      {
+        "name": "sku",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "sku: { ... }"
+      },
+      {
+        "name": "category",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "category: { ... }"
+      },
+      {
+        "name": "description",
+        "type": "TEXT",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "description: { ... }"
+      },
+      {
+        "name": "image_url",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "image_url: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-quality-inspections",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "quality_inspections",
+    "displayName": "Quality Inspections",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "inspection_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "inspection_name: { ... }"
+      },
+      {
+        "name": "batch_number",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "batch_number: { ... }"
+      },
+      {
+        "name": "inspection_type",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "inspection_type: { ... }"
+      },
+      {
+        "name": "inspector_name",
+        "type": "STRING",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "inspector_name: { ... }"
+      },
+      {
+        "name": "status",
+        "type": "ENUM('pending'",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "'pending'",
+        "sourceLine": "status: { ... }"
+      },
+      {
+        "name": "quality_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "quality_score: { ... }"
+      },
+      {
+        "name": "parameters",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "parameters: { ... }"
+      },
+      {
+        "name": "findings",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "findings: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-root-cause-analyses",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "root_cause_analyses",
+    "displayName": "Root Cause Analyses",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "defect_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defect_id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "problem_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "problem_name: { ... }"
+      },
+      {
+        "name": "problem_description",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "problem_description: { ... }"
+      },
+      {
+        "name": "root_causes",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "root_causes: { ... }"
+      },
+      {
+        "name": "contributing_factors",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "contributing_factors: { ... }"
+      },
+      {
+        "name": "corrective_actions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "corrective_actions: { ... }"
+      },
+      {
+        "name": "preventive_measures",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "preventive_measures: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-severity-scores",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "severity_scores",
+    "displayName": "Severity Scores",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "defect_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "defect_id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "issue_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "issue_name: { ... }"
+      },
+      {
+        "name": "issue_description",
+        "type": "TEXT",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "issue_description: { ... }"
+      },
+      {
+        "name": "severity_level",
+        "type": "ENUM('critical'",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity_level: { ... }"
+      },
+      {
+        "name": "severity_score",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "severity_score: { ... }"
+      },
+      {
+        "name": "impact_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "impact_analysis: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-trend-analyses",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "trend_analyses",
+    "displayName": "Trend Analyses",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "product_id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "product_id: { ... }"
+      },
+      {
+        "name": "trend_name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "trend_name: { ... }"
+      },
+      {
+        "name": "analysis_period",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "analysis_period: { ... }"
+      },
+      {
+        "name": "trend_type",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "trend_type: { ... }"
+      },
+      {
+        "name": "data_points",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "data_points: { ... }"
+      },
+      {
+        "name": "metrics",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "metrics: { ... }"
+      },
+      {
+        "name": "patterns",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "patterns: { ... }"
+      },
+      {
+        "name": "predictions",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "predictions: { ... }"
+      },
+      {
+        "name": "ai_analysis",
+        "type": "JSONB",
+        "nullable": true,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "ai_analysis: { ... }"
+      }
+    ]
+  },
+  {
+    "id": "ai-visual-qa-inspector-backend-models-index-js-users",
+    "sourceProject": "AIVisualQAInspector",
+    "name": "users",
+    "displayName": "Users",
+    "framework": "Sequelize",
+    "sourceFile": "backend/models/index.js",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "nullable": true,
+        "primaryKey": true,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "id: { ... }"
+      },
+      {
+        "name": "email",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": true,
+        "defaultValue": "",
+        "sourceLine": "email: { ... }"
+      },
+      {
+        "name": "password",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "password: { ... }"
+      },
+      {
+        "name": "name",
+        "type": "STRING",
+        "nullable": false,
+        "primaryKey": false,
+        "unique": false,
+        "defaultValue": "",
+        "sourceLine": "name: { ... }"
       }
     ]
   },

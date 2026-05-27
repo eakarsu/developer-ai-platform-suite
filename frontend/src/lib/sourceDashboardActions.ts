@@ -10,6 +10,69 @@ export type SourceDashboardAction = {
 
 export const sourceDashboardActions: SourceDashboardAction[] = [
   {
+    "id": "web-scraping-agent",
+    "label": "Web Scraping Agent",
+    "description": "Open Web Scraping Agent workflows elevated from AIAutonomousWebScrapingAgent.",
+    "href": "/scraping-jobs",
+    "sourceProjects": [
+      "AIAutonomousWebScrapingAgent"
+    ],
+    "examples": [
+      "Scraping Jobs",
+      "Data Extraction Rules",
+      "Site Monitoring"
+    ],
+    "count": 1
+  },
+  {
+    "id": "database-admin-agent",
+    "label": "Database Admin Agent",
+    "description": "Open Database Admin Agent workflows elevated from AIDatabaseAdminAgent.",
+    "href": "/database-health",
+    "sourceProjects": [
+      "AIDatabaseAdminAgent"
+    ],
+    "examples": [
+      "Database Health",
+      "Query Optimization",
+      "Schema Migration Review"
+    ],
+    "count": 1
+  },
+  {
+    "id": "test-generation-qa",
+    "label": "Test Generation QA",
+    "description": "Open Test Generation QA workflows elevated from AITestGenerationPlatform, AIVisualQAInspector.",
+    "href": "/test-case-generator",
+    "sourceProjects": [
+      "AITestGenerationPlatform",
+      "AIVisualQAInspector"
+    ],
+    "examples": [
+      "Test Case Generator",
+      "QA Plan Builder",
+      "Bug Reproduction",
+      "Visual QA Review"
+    ],
+    "count": 2
+  },
+  {
+    "id": "code-review-docs",
+    "label": "Code Review Docs",
+    "description": "Open Code Review Docs workflows elevated from AiCodeReviewDocumentation, AICodeInterpreter.",
+    "href": "/code-review",
+    "sourceProjects": [
+      "AiCodeReviewDocumentation",
+      "AICodeInterpreter"
+    ],
+    "examples": [
+      "Code Review",
+      "Developer Documentation",
+      "Pull Request Summaries"
+    ],
+    "count": 2
+  },
+  {
     "id": "ai-assistant",
     "label": "AI Assistant",
     "description": "Run source-derived AI assistant workflows and prompts.",

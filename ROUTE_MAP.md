@@ -7,6 +7,18 @@ Primary routes:
 - `/profiles`
 
 Feature routes:
+- `/site-monitoring`
+- `/data-extraction-rules`
+- `/scraping-jobs`
+- `/schema-migration-review`
+- `/query-optimization`
+- `/database-health`
+- `/visual-qa-review`
+- `/bug-reproduction`
+- `/qa-plan-builder`
+- `/test-case-generator`
+- `/pull-request-summaries`
+- `/developer-documentation`
 - `/projects`
 - `/agents`
 - `/prompts`
