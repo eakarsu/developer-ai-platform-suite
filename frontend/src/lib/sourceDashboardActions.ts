@@ -10,6 +10,38 @@ export type SourceDashboardAction = {
 
 export const sourceDashboardActions: SourceDashboardAction[] = [
   {
+    "id": "web-scraping-deep-workflows",
+    "label": "Web Scraping Deep Workflows",
+    "description": "Open deeper Web Scraping Deep Workflows workflows elevated from AIAutonomousWebScrapingAgent.",
+    "href": "/robots-compliance-review",
+    "sourceProjects": [
+      "AIAutonomousWebScrapingAgent"
+    ],
+    "examples": [
+      "Robots Compliance Review",
+      "Selector Drift Monitor",
+      "Proxy Retry Queue",
+      "Scraped Data Quality"
+    ],
+    "count": 1
+  },
+  {
+    "id": "database-admin-deep-workflows",
+    "label": "Database Admin Deep Workflows",
+    "description": "Open deeper Database Admin Deep Workflows workflows elevated from AIDatabaseAdminAgent.",
+    "href": "/backup-restore-checks",
+    "sourceProjects": [
+      "AIDatabaseAdminAgent"
+    ],
+    "examples": [
+      "Backup Restore Checks",
+      "Index Advisor",
+      "Connection Pool Monitor",
+      "Database Security Review"
+    ],
+    "count": 1
+  },
+  {
     "id": "web-scraping-agent",
     "label": "Web Scraping Agent",
     "description": "Open Web Scraping Agent workflows elevated from AIAutonomousWebScrapingAgent.",

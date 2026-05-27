@@ -10,6 +10,112 @@ export type SourceAIToolField = {
 };
 
 export const sourceAIToolFieldsByToolId: Record<string, SourceAIToolField[]> = {
+  "web-scraping-deep-workflows-copilot": [
+    {
+      "name": "objective",
+      "label": "Objective",
+      "type": "textarea",
+      "defaultValue": "Improve the Web Scraping Deep Workflows workflow and produce a decision-ready output.",
+      "placeholder": "Describe the review goal, business context, or decision needed",
+      "options": [],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    },
+    {
+      "name": "source_context",
+      "label": "Source Context",
+      "type": "textarea",
+      "defaultValue": "Paste notes, records, documents, transcript text, metrics, or case details for Web Scraping Deep Workflows.",
+      "placeholder": "Paste the source context to analyze",
+      "options": [],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    },
+    {
+      "name": "workflow_focus",
+      "label": "Workflow Focus",
+      "type": "select",
+      "defaultValue": "Robots Compliance Review",
+      "placeholder": "Select the workflow to optimize",
+      "options": [
+        "Robots Compliance Review",
+        "Selector Drift Monitor",
+        "Proxy Retry Queue",
+        "Scraped Data Quality"
+      ],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    },
+    {
+      "name": "output_format",
+      "label": "Output Format",
+      "type": "select",
+      "defaultValue": "Professional action plan",
+      "placeholder": "Select output format",
+      "options": [
+        "Professional action plan",
+        "Evidence table",
+        "Risk review",
+        "Checklist",
+        "Executive summary"
+      ],
+      "required": true,
+      "source": "AIAutonomousWebScrapingAgent"
+    }
+  ],
+  "database-admin-deep-workflows-copilot": [
+    {
+      "name": "objective",
+      "label": "Objective",
+      "type": "textarea",
+      "defaultValue": "Improve the Database Admin Deep Workflows workflow and produce a decision-ready output.",
+      "placeholder": "Describe the review goal, business context, or decision needed",
+      "options": [],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    },
+    {
+      "name": "source_context",
+      "label": "Source Context",
+      "type": "textarea",
+      "defaultValue": "Paste notes, records, documents, transcript text, metrics, or case details for Database Admin Deep Workflows.",
+      "placeholder": "Paste the source context to analyze",
+      "options": [],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    },
+    {
+      "name": "workflow_focus",
+      "label": "Workflow Focus",
+      "type": "select",
+      "defaultValue": "Backup Restore Checks",
+      "placeholder": "Select the workflow to optimize",
+      "options": [
+        "Backup Restore Checks",
+        "Index Advisor",
+        "Connection Pool Monitor",
+        "Database Security Review"
+      ],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    },
+    {
+      "name": "output_format",
+      "label": "Output Format",
+      "type": "select",
+      "defaultValue": "Professional action plan",
+      "placeholder": "Select output format",
+      "options": [
+        "Professional action plan",
+        "Evidence table",
+        "Risk review",
+        "Checklist",
+        "Executive summary"
+      ],
+      "required": true,
+      "source": "AIDatabaseAdminAgent"
+    }
+  ],
   "web-scraping-agent-copilot": [
     {
       "name": "objective",

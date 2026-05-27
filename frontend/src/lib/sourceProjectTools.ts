@@ -1,5 +1,35 @@
 export const sourceProjectTools = [
   {
+    "id": "web-scraping-deep-workflows-copilot",
+    "title": "Web Scraping Deep Workflows Copilot",
+    "category": "Web Scraping Deep Workflows",
+    "description": "Deep source-derived AI tool for Web Scraping Deep Workflows inside the current merged suite.",
+    "defaultPrompt": "Review the Web Scraping Deep Workflows context. Return a professional summary, evidence table, risks, missing information, recommended actions, owner assignments, and audit-ready output.",
+    "inputLabel": "Web Scraping Deep Workflows context",
+    "outputLabel": "Web Scraping Deep Workflows AI response",
+    "signals": [
+      "Robots Compliance Review",
+      "Selector Drift Monitor",
+      "Proxy Retry Queue",
+      "Scraped Data Quality"
+    ]
+  },
+  {
+    "id": "database-admin-deep-workflows-copilot",
+    "title": "Database Admin Deep Workflows Copilot",
+    "category": "Database Admin Deep Workflows",
+    "description": "Deep source-derived AI tool for Database Admin Deep Workflows inside the current merged suite.",
+    "defaultPrompt": "Review the Database Admin Deep Workflows context. Return a professional summary, evidence table, risks, missing information, recommended actions, owner assignments, and audit-ready output.",
+    "inputLabel": "Database Admin Deep Workflows context",
+    "outputLabel": "Database Admin Deep Workflows AI response",
+    "signals": [
+      "Backup Restore Checks",
+      "Index Advisor",
+      "Connection Pool Monitor",
+      "Database Security Review"
+    ]
+  },
+  {
     "id": "web-scraping-agent-copilot",
     "title": "Web Scraping Agent Copilot",
     "category": "Web Scraping Agent",

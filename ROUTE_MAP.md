@@ -7,6 +7,15 @@ Primary routes:
 - `/profiles`
 
 Feature routes:
+- `/unit-test-writer`
+- `/scraped-data-quality`
+- `/proxy-retry-queue`
+- `/selector-drift-monitor`
+- `/robots-compliance-review`
+- `/database-security-review`
+- `/connection-pool-monitor`
+- `/index-advisor`
+- `/backup-restore-checks`
 - `/site-monitoring`
 - `/data-extraction-rules`
 - `/scraping-jobs`

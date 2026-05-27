@@ -8,3 +8,9 @@
 - Deployments operating view
 - Costs operating view
 - Observability operating view
+
+- Database Admin Deep Workflows operating view
+
+- Web Scraping Deep Workflows operating view
+
+- Test Generation QA operating view
